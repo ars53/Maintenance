@@ -231,6 +231,7 @@ Partial Class Form1
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -2289,11 +2290,21 @@ Partial Class Form1
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(552, 71)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 518
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(831, 616)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label52)
         Me.Controls.Add(Me.btnClearSearchFields)
         Me.Controls.Add(Me.btnSaveChanges)
@@ -2529,4 +2540,5 @@ Partial Class Form1
     Friend WithEvents Label77 As Label
     Friend WithEvents Label75 As Label
     Friend WithEvents Label74 As Label
+    Friend WithEvents Button1 As Button
 End Class
