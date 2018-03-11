@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Home
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -9,13 +9,13 @@
 
     Private Sub btnAddRecord_Click(sender As Object, e As EventArgs) Handles btnAddRecord.Click
         Me.Hide()
-        Form2.Show()
+        SemSel.Show()
 
     End Sub
 
     Private Sub btnEditRecord_Click(sender As Object, e As EventArgs) Handles btnEditRecord.Click
         Me.Hide()
-        Form9.Show()
+        RecEdit.Show()
 
     End Sub
 End Class

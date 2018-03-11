@@ -1,4 +1,4 @@
-﻿Public Class Form5
+﻿Public Class App1
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         If TextBox1.Text = "First" Then
             TextBox1.Clear()
@@ -47,6 +47,6 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Form6.Show()
+        App2.Show()
     End Sub
 End Class

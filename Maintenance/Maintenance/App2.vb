@@ -1,4 +1,4 @@
-﻿Public Class Form6
+﻿Public Class App2
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
 
     End Sub
@@ -65,6 +65,6 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Form7.Show()
+        App3.Show()
     End Sub
 End Class
