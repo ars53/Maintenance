@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddRecord.Designer.vb">
+      <DependentUpon>AddRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Advising.Designer.vb">
       <DependentUpon>Advising.vb</DependentUpon>
     </Compile>
@@ -79,6 +85,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="db.vb" />
+    <Compile Include="FacultySearch.Designer.vb">
+      <DependentUpon>FacultySearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacultySearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GradApp.Designer.vb">
       <DependentUpon>GradApp.vb</DependentUpon>
     </Compile>
@@ -145,8 +157,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddRecord.resx">
+      <DependentUpon>AddRecord.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Advising.resx">
       <DependentUpon>Advising.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultySearch.resx">
+      <DependentUpon>FacultySearch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GradApp.resx">
       <DependentUpon>GradApp.vb</DependentUpon>

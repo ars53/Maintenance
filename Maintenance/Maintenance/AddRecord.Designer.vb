@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Home
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmAdd
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,8 @@ Partial Class Home
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.btnClearSearchFields = New System.Windows.Forms.Button()
-        Me.btnSaveChanges = New System.Windows.Forms.Button()
-        Me.Label103 = New System.Windows.Forms.Label()
-        Me.lblSearchDescription = New System.Windows.Forms.Label()
-        Me.btnSearchRecord = New System.Windows.Forms.Button()
-        Me.btnDeleteRecord = New System.Windows.Forms.Button()
-        Me.btnEditRecord = New System.Windows.Forms.Button()
-        Me.btnAddRecord = New System.Windows.Forms.Button()
         Me.tabApplication = New System.Windows.Forms.TabControl()
         Me.tabPersonalInfo = New System.Windows.Forms.TabPage()
         Me.lblBirthdayFormat = New System.Windows.Forms.Label()
@@ -238,100 +229,17 @@ Partial Class Home
         Me.tabStudentStatus.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(13, 90)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(143, 13)
-        Me.Label52.TabIndex = 517
-        Me.Label52.Text = "* Denotes a searchable field "
-        '
-        'btnClearSearchFields
-        '
-        Me.btnClearSearchFields.Location = New System.Drawing.Point(235, 12)
-        Me.btnClearSearchFields.Name = "btnClearSearchFields"
-        Me.btnClearSearchFields.Size = New System.Drawing.Size(110, 26)
-        Me.btnClearSearchFields.TabIndex = 513
-        Me.btnClearSearchFields.Text = "Clear Search Fields"
-        Me.btnClearSearchFields.UseVisualStyleBackColor = True
-        '
-        'btnSaveChanges
-        '
-        Me.btnSaveChanges.Location = New System.Drawing.Point(457, 12)
-        Me.btnSaveChanges.Name = "btnSaveChanges"
-        Me.btnSaveChanges.Size = New System.Drawing.Size(102, 26)
-        Me.btnSaveChanges.TabIndex = 515
-        Me.btnSaveChanges.Text = "Save Changes"
-        Me.btnSaveChanges.UseVisualStyleBackColor = True
-        '
-        'Label103
-        '
-        Me.Label103.AutoSize = True
-        Me.Label103.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label103.Location = New System.Drawing.Point(13, 51)
-        Me.Label103.Name = "Label103"
-        Me.Label103.Size = New System.Drawing.Size(91, 16)
-        Me.Label103.TabIndex = 509
-        Me.Label103.Text = "How to search:"
-        '
-        'lblSearchDescription
-        '
-        Me.lblSearchDescription.AutoSize = True
-        Me.lblSearchDescription.Location = New System.Drawing.Point(13, 71)
-        Me.lblSearchDescription.Name = "lblSearchDescription"
-        Me.lblSearchDescription.Size = New System.Drawing.Size(557, 13)
-        Me.lblSearchDescription.TabIndex = 510
-        Me.lblSearchDescription.Text = "Enter one of the fields:  Last & First Name, Student ID, Student email address, S" &
-    "tudent SSN, and click Search Record."
-        '
-        'btnSearchRecord
-        '
-        Me.btnSearchRecord.Location = New System.Drawing.Point(130, 12)
-        Me.btnSearchRecord.Name = "btnSearchRecord"
-        Me.btnSearchRecord.Size = New System.Drawing.Size(100, 26)
-        Me.btnSearchRecord.TabIndex = 512
-        Me.btnSearchRecord.Text = "Search Record"
-        Me.btnSearchRecord.UseVisualStyleBackColor = True
-        '
-        'btnDeleteRecord
-        '
-        Me.btnDeleteRecord.Location = New System.Drawing.Point(565, 12)
-        Me.btnDeleteRecord.Name = "btnDeleteRecord"
-        Me.btnDeleteRecord.Size = New System.Drawing.Size(102, 26)
-        Me.btnDeleteRecord.TabIndex = 516
-        Me.btnDeleteRecord.Text = "Delete Record"
-        Me.btnDeleteRecord.UseVisualStyleBackColor = True
-        '
-        'btnEditRecord
-        '
-        Me.btnEditRecord.Location = New System.Drawing.Point(351, 12)
-        Me.btnEditRecord.Name = "btnEditRecord"
-        Me.btnEditRecord.Size = New System.Drawing.Size(100, 26)
-        Me.btnEditRecord.TabIndex = 514
-        Me.btnEditRecord.Text = "Edit Record"
-        Me.btnEditRecord.UseVisualStyleBackColor = True
-        '
-        'btnAddRecord
-        '
-        Me.btnAddRecord.Location = New System.Drawing.Point(12, 12)
-        Me.btnAddRecord.Name = "btnAddRecord"
-        Me.btnAddRecord.Size = New System.Drawing.Size(112, 26)
-        Me.btnAddRecord.TabIndex = 511
-        Me.btnAddRecord.Text = "Add New Record"
-        Me.btnAddRecord.UseVisualStyleBackColor = True
-        '
         'tabApplication
         '
         Me.tabApplication.Controls.Add(Me.tabPersonalInfo)
         Me.tabApplication.Controls.Add(Me.TabAdmission)
         Me.tabApplication.Controls.Add(Me.tabCredentials)
         Me.tabApplication.Controls.Add(Me.tabStudentStatus)
-        Me.tabApplication.Location = New System.Drawing.Point(12, 120)
+        Me.tabApplication.Location = New System.Drawing.Point(12, 12)
         Me.tabApplication.Name = "tabApplication"
         Me.tabApplication.SelectedIndex = 0
         Me.tabApplication.Size = New System.Drawing.Size(809, 478)
-        Me.tabApplication.TabIndex = 508
+        Me.tabApplication.TabIndex = 509
         '
         'tabPersonalInfo
         '
@@ -2289,23 +2197,14 @@ Partial Class Home
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
-        'Home
+        'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(831, 616)
-        Me.Controls.Add(Me.Label52)
-        Me.Controls.Add(Me.btnClearSearchFields)
-        Me.Controls.Add(Me.btnSaveChanges)
-        Me.Controls.Add(Me.Label103)
-        Me.Controls.Add(Me.lblSearchDescription)
-        Me.Controls.Add(Me.btnSearchRecord)
-        Me.Controls.Add(Me.btnDeleteRecord)
-        Me.Controls.Add(Me.btnEditRecord)
-        Me.Controls.Add(Me.btnAddRecord)
+        Me.ClientSize = New System.Drawing.Size(912, 671)
         Me.Controls.Add(Me.tabApplication)
-        Me.Name = "Home"
-        Me.Text = "Form1"
+        Me.Name = "frmAdd"
+        Me.Text = "Add Record"
         Me.tabApplication.ResumeLayout(False)
         Me.tabPersonalInfo.ResumeLayout(False)
         Me.tabPersonalInfo.PerformLayout()
@@ -2316,19 +2215,9 @@ Partial Class Home
         Me.tabStudentStatus.ResumeLayout(False)
         Me.tabStudentStatus.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label52 As Label
-    Friend WithEvents btnClearSearchFields As Button
-    Friend WithEvents btnSaveChanges As Button
-    Friend WithEvents Label103 As Label
-    Friend WithEvents lblSearchDescription As Label
-    Friend WithEvents btnSearchRecord As Button
-    Friend WithEvents btnDeleteRecord As Button
-    Friend WithEvents btnEditRecord As Button
-    Friend WithEvents btnAddRecord As Button
     Friend WithEvents tabApplication As TabControl
     Friend WithEvents tabPersonalInfo As TabPage
     Friend WithEvents lblBirthdayFormat As Label
