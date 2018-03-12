@@ -131,10 +131,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Welcome.Designer.vb">
-      <DependentUpon>Welcome.vb</DependentUpon>
+    <Compile Include="InstructorWelcome.Designer.vb">
+      <DependentUpon>InstructorWelcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="Welcome.vb">
+    <Compile Include="InstructorWelcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentWelcome.Designer.vb">
+      <DependentUpon>StudentWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentWelcome.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -166,8 +172,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Welcome.resx">
-      <DependentUpon>Welcome.vb</DependentUpon>
+    <EmbeddedResource Include="InstructorWelcome.resx">
+      <DependentUpon>InstructorWelcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentWelcome.resx">
+      <DependentUpon>StudentWelcome.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

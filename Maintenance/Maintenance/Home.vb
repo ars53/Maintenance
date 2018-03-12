@@ -9,7 +9,7 @@
 
     Private Sub btnAddRecord_Click(sender As Object, e As EventArgs) Handles btnAddRecord.Click
         Me.Hide()
-        SemSel.Show()
+
 
     End Sub
 

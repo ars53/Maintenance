@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub btnLogOff_Click(sender As Object, e As EventArgs) Handles btnLogOff.Click
+    Private Sub btnLogOff_Click(sender As Object, e As EventArgs)
         frmLogin.Show()
         Me.Dispose()
     End Sub

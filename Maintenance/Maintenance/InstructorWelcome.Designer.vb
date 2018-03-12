@@ -27,8 +27,7 @@ Partial Class frmWelcome
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
-        Me.btnLogOff = New System.Windows.Forms.Button()
-        Me.btnApply = New System.Windows.Forms.Button()
+        Me.btnAdvising = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,31 +70,21 @@ Partial Class frmWelcome
         Me.btnSearch.Text = "Search Records"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
-        'btnLogOff
+        'btnAdvising
         '
-        Me.btnLogOff.Location = New System.Drawing.Point(243, 259)
-        Me.btnLogOff.Name = "btnLogOff"
-        Me.btnLogOff.Size = New System.Drawing.Size(107, 23)
-        Me.btnLogOff.TabIndex = 4
-        Me.btnLogOff.Text = "Log off"
-        Me.btnLogOff.UseVisualStyleBackColor = True
-        '
-        'btnApply
-        '
-        Me.btnApply.Location = New System.Drawing.Point(102, 288)
-        Me.btnApply.Name = "btnApply"
-        Me.btnApply.Size = New System.Drawing.Size(162, 23)
-        Me.btnApply.TabIndex = 5
-        Me.btnApply.Text = "Apply for Graduate School"
-        Me.btnApply.UseVisualStyleBackColor = True
+        Me.btnAdvising.Location = New System.Drawing.Point(246, 259)
+        Me.btnAdvising.Name = "btnAdvising"
+        Me.btnAdvising.Size = New System.Drawing.Size(107, 23)
+        Me.btnAdvising.TabIndex = 5
+        Me.btnAdvising.Text = "Advising Form"
+        Me.btnAdvising.UseVisualStyleBackColor = True
         '
         'frmWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(365, 317)
-        Me.Controls.Add(Me.btnApply)
-        Me.Controls.Add(Me.btnLogOff)
+        Me.ClientSize = New System.Drawing.Size(365, 296)
+        Me.Controls.Add(Me.btnAdvising)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
@@ -112,6 +101,5 @@ Partial Class frmWelcome
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnSearch As Button
-    Friend WithEvents btnLogOff As Button
-    Friend WithEvents btnApply As Button
+    Friend WithEvents btnAdvising As Button
 End Class

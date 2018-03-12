@@ -1,3 +1,3 @@
-﻿Public Class Advising
+﻿Public Class frmAdvising
 
 End Class

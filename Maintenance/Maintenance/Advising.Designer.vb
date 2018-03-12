@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Advising
+Partial Class frmAdvising
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -49,6 +49,8 @@ Partial Class Advising
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtTermYear = New System.Windows.Forms.TextBox()
+        Me.lblYear = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -65,8 +67,6 @@ Partial Class Advising
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnReturn = New System.Windows.Forms.Button()
-        Me.lblYear = New System.Windows.Forms.Label()
-        Me.txtTermYear = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -313,6 +313,22 @@ Partial Class Advising
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Info:"
         '
+        'txtTermYear
+        '
+        Me.txtTermYear.Location = New System.Drawing.Point(317, 118)
+        Me.txtTermYear.Name = "txtTermYear"
+        Me.txtTermYear.Size = New System.Drawing.Size(108, 20)
+        Me.txtTermYear.TabIndex = 20
+        '
+        'lblYear
+        '
+        Me.lblYear.AutoSize = True
+        Me.lblYear.Location = New System.Drawing.Point(286, 121)
+        Me.lblYear.Name = "lblYear"
+        Me.lblYear.Size = New System.Drawing.Size(29, 13)
+        Me.lblYear.TabIndex = 19
+        Me.lblYear.Text = "Year"
+        '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(100, 40)
@@ -446,23 +462,7 @@ Partial Class Advising
         Me.btnReturn.Text = "Return"
         Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'lblYear
-        '
-        Me.lblYear.AutoSize = True
-        Me.lblYear.Location = New System.Drawing.Point(286, 121)
-        Me.lblYear.Name = "lblYear"
-        Me.lblYear.Size = New System.Drawing.Size(29, 13)
-        Me.lblYear.TabIndex = 19
-        Me.lblYear.Text = "Year"
-        '
-        'txtTermYear
-        '
-        Me.txtTermYear.Location = New System.Drawing.Point(317, 118)
-        Me.txtTermYear.Name = "txtTermYear"
-        Me.txtTermYear.Size = New System.Drawing.Size(108, 20)
-        Me.txtTermYear.TabIndex = 20
-        '
-        'Advising
+        'frmAdvising
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -474,7 +474,7 @@ Partial Class Advising
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox1)
-        Me.Name = "Advising"
+        Me.Name = "frmAdvising"
         Me.Text = "Advising"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
