@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class SummerAdvise
+Partial Class Advising
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -63,20 +63,17 @@ Partial Class SummerAdvise
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.lblSpringFall = New System.Windows.Forms.Label()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClearTextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.lblYear = New System.Windows.Forms.Label()
+        Me.txtTermYear = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(20, 564)
+        Me.Button1.Location = New System.Drawing.Point(12, 550)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 25
@@ -109,7 +106,7 @@ Partial Class SummerAdvise
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.TextBox7)
         Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Location = New System.Drawing.Point(20, 187)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 173)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(551, 241)
         Me.GroupBox2.TabIndex = 24
@@ -295,6 +292,8 @@ Partial Class SummerAdvise
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtTermYear)
+        Me.GroupBox1.Controls.Add(Me.lblYear)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -307,16 +306,16 @@ Partial Class SummerAdvise
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Location = New System.Drawing.Point(102, 66)
+        Me.GroupBox1.Location = New System.Drawing.Point(58, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(388, 115)
+        Me.GroupBox1.Size = New System.Drawing.Size(483, 155)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Info:"
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(100, 37)
+        Me.TextBox3.Location = New System.Drawing.Point(100, 40)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(114, 20)
         Me.TextBox3.TabIndex = 10
@@ -324,10 +323,10 @@ Partial Class SummerAdvise
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Term 1", "Term 2", "Term 3"})
-        Me.ListBox1.Location = New System.Drawing.Point(301, 65)
+        Me.ListBox1.Items.AddRange(New Object() {"Summer (Term 1)", "Summer (Term 2)", "Summer (Term 3)", "Fall", "Spring"})
+        Me.ListBox1.Location = New System.Drawing.Point(289, 43)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(76, 43)
+        Me.ListBox1.Size = New System.Drawing.Size(136, 69)
         Me.ListBox1.TabIndex = 18
         '
         'Label1
@@ -342,7 +341,7 @@ Partial Class SummerAdvise
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 41)
+        Me.Label2.Location = New System.Drawing.Point(11, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 2
@@ -351,7 +350,7 @@ Partial Class SummerAdvise
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 64)
+        Me.Label3.Location = New System.Drawing.Point(11, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(58, 13)
         Me.Label3.TabIndex = 3
@@ -359,14 +358,14 @@ Partial Class SummerAdvise
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(301, 34)
+        Me.TextBox8.Location = New System.Drawing.Point(289, 12)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(66, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(136, 20)
         Me.TextBox8.TabIndex = 15
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(100, 86)
+        Me.TextBox5.Location = New System.Drawing.Point(100, 92)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(114, 20)
         Me.TextBox5.TabIndex = 12
@@ -374,7 +373,7 @@ Partial Class SummerAdvise
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 89)
+        Me.Label4.Location = New System.Drawing.Point(11, 95)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 13)
         Me.Label4.TabIndex = 4
@@ -383,7 +382,7 @@ Partial Class SummerAdvise
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(251, 65)
+        Me.Label6.Location = New System.Drawing.Point(239, 43)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(31, 13)
         Me.Label6.TabIndex = 6
@@ -391,7 +390,7 @@ Partial Class SummerAdvise
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(100, 60)
+        Me.TextBox4.Location = New System.Drawing.Point(100, 66)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(114, 20)
         Me.TextBox4.TabIndex = 11
@@ -399,7 +398,7 @@ Partial Class SummerAdvise
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(251, 37)
+        Me.Label5.Location = New System.Drawing.Point(239, 15)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(33, 13)
         Me.Label5.TabIndex = 5
@@ -415,7 +414,7 @@ Partial Class SummerAdvise
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(17, 432)
+        Me.Label7.Location = New System.Drawing.Point(9, 418)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(59, 13)
         Me.Label7.TabIndex = 22
@@ -423,77 +422,64 @@ Partial Class SummerAdvise
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(20, 450)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 436)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(518, 108)
+        Me.TextBox1.Size = New System.Drawing.Size(551, 108)
         Me.TextBox1.TabIndex = 21
         '
-        'lblSpringFall
+        'btnClear
         '
-        Me.lblSpringFall.AutoSize = True
-        Me.lblSpringFall.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpringFall.Location = New System.Drawing.Point(27, 34)
-        Me.lblSpringFall.Name = "lblSpringFall"
-        Me.lblSpringFall.Size = New System.Drawing.Size(182, 24)
-        Me.lblSpringFall.TabIndex = 20
-        Me.lblSpringFall.Text = "Summer Semester"
+        Me.btnClear.Location = New System.Drawing.Point(117, 550)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 26
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
-        'MenuStrip1
+        'btnReturn
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ViewToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(586, 24)
-        Me.MenuStrip1.TabIndex = 26
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.btnReturn.Location = New System.Drawing.Point(269, 551)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(75, 23)
+        Me.btnReturn.TabIndex = 27
+        Me.btnReturn.Text = "Return"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'FileToolStripMenuItem
+        'lblYear
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClearTextToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
+        Me.lblYear.AutoSize = True
+        Me.lblYear.Location = New System.Drawing.Point(286, 121)
+        Me.lblYear.Name = "lblYear"
+        Me.lblYear.Size = New System.Drawing.Size(29, 13)
+        Me.lblYear.TabIndex = 19
+        Me.lblYear.Text = "Year"
         '
-        'ClearTextToolStripMenuItem
+        'txtTermYear
         '
-        Me.ClearTextToolStripMenuItem.Name = "ClearTextToolStripMenuItem"
-        Me.ClearTextToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ClearTextToolStripMenuItem.Text = "Clear Text"
+        Me.txtTermYear.Location = New System.Drawing.Point(317, 118)
+        Me.txtTermYear.Name = "txtTermYear"
+        Me.txtTermYear.Size = New System.Drawing.Size(108, 20)
+        Me.txtTermYear.TabIndex = 20
         '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'ViewToolStripMenuItem
-        '
-        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.ViewToolStripMenuItem.Text = "View"
-        '
-        'Form4
+        'Advising
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(586, 597)
+        Me.ClientSize = New System.Drawing.Size(574, 584)
+        Me.Controls.Add(Me.btnReturn)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.lblSpringFall)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form4"
-        Me.Text = "Form4"
+        Me.Name = "Advising"
+        Me.Text = "Advising"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -540,10 +526,8 @@ Partial Class SummerAdvise
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents lblSpringFall As Label
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ClearTextToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnReturn As Button
+    Friend WithEvents txtTermYear As TextBox
+    Friend WithEvents lblYear As Label
 End Class

@@ -72,7 +72,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advising.Designer.vb">
+      <DependentUpon>Advising.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advising.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="db.vb" />
+    <Compile Include="GradApp.Designer.vb">
+      <DependentUpon>GradApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GradApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,48 +108,6 @@
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SemSel.Designer.vb">
-      <DependentUpon>SemSel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SemSel.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SpFallAdvise.Designer.vb">
-      <DependentUpon>SpFallAdvise.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SpFallAdvise.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SummerAdvise.Designer.vb">
-      <DependentUpon>SummerAdvise.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SummerAdvise.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App1.Designer.vb">
-      <DependentUpon>App1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="App1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App2.Designer.vb">
-      <DependentUpon>App2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="App2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App3.Designer.vb">
-      <DependentUpon>App3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="App3.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App4.Designer.vb">
-      <DependentUpon>App4.vb</DependentUpon>
-    </Compile>
-    <Compile Include="App4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RecEdit.Designer.vb">
@@ -169,6 +139,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Advising.resx">
+      <DependentUpon>Advising.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradApp.resx">
+      <DependentUpon>GradApp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
@@ -180,27 +156,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SemSel.resx">
-      <DependentUpon>SemSel.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SpFallAdvise.resx">
-      <DependentUpon>SpFallAdvise.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SummerAdvise.resx">
-      <DependentUpon>SummerAdvise.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App1.resx">
-      <DependentUpon>App1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App2.resx">
-      <DependentUpon>App2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App3.resx">
-      <DependentUpon>App3.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App4.resx">
-      <DependentUpon>App4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RecEdit.resx">
       <DependentUpon>RecEdit.vb</DependentUpon>

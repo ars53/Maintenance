@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Login
+Partial Class frmLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -85,7 +85,7 @@ Partial Class Login
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'Login
+        'frmLogin
         '
         Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -98,8 +98,8 @@ Partial Class Login
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.btnLogin)
         Me.ForeColor = System.Drawing.Color.DarkRed
-        Me.Name = "Login"
-        Me.Text = "Form12"
+        Me.Name = "frmLogin"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

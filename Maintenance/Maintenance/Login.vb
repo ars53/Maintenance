@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class Login
+Public Class frmLogin
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=arshephe; Trusted_Connection=yes"}
         Dim command As New SqlCommand("Select * FROM Logins_maint where USERNAME = @username AND Password = @password", connection)
@@ -12,7 +12,7 @@ Public Class Login
         If table.Rows.Count() <= 0 Then
             MsgBox("Wrong password")
         Else
-            Welcome.Show()
+            frmWelcome.Show()
             Me.Dispose()
         End If
     End Sub

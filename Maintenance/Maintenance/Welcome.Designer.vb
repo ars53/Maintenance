@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Welcome
+Partial Class frmWelcome
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,12 +22,13 @@ Partial Class Welcome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Welcome))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWelcome))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnLogOff = New System.Windows.Forms.Button()
+        Me.btnApply = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,17 +80,27 @@ Partial Class Welcome
         Me.btnLogOff.Text = "Log off"
         Me.btnLogOff.UseVisualStyleBackColor = True
         '
-        'Welcome
+        'btnApply
+        '
+        Me.btnApply.Location = New System.Drawing.Point(102, 288)
+        Me.btnApply.Name = "btnApply"
+        Me.btnApply.Size = New System.Drawing.Size(162, 23)
+        Me.btnApply.TabIndex = 5
+        Me.btnApply.Text = "Apply for Graduate School"
+        Me.btnApply.UseVisualStyleBackColor = True
+        '
+        'frmWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(363, 300)
+        Me.ClientSize = New System.Drawing.Size(365, 317)
+        Me.Controls.Add(Me.btnApply)
         Me.Controls.Add(Me.btnLogOff)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "Welcome"
+        Me.Name = "frmWelcome"
         Me.Text = "Welcome"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -102,4 +113,5 @@ Partial Class Welcome
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnLogOff As Button
+    Friend WithEvents btnApply As Button
 End Class
