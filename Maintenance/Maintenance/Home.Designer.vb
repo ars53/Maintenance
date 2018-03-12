@@ -2299,7 +2299,7 @@ Partial Class Home
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Form1
+        'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -2315,7 +2315,7 @@ Partial Class Home
         Me.Controls.Add(Me.btnEditRecord)
         Me.Controls.Add(Me.btnAddRecord)
         Me.Controls.Add(Me.tabApplication)
-        Me.Name = "Form1"
+        Me.Name = "Home"
         Me.Text = "Form1"
         Me.tabApplication.ResumeLayout(False)
         Me.tabPersonalInfo.ResumeLayout(False)
