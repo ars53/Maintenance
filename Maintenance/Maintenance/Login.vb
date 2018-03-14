@@ -28,8 +28,10 @@ Public Class frmLogin
             If table.Rows.Count() <= 0 Then
                 MsgBox("Wrong password")
             Else
-                frmWelcome.Show()
+                Dim welcome As New frmStudentWelcome(txtUser.Text.ToString)
+                welcome.Show()
                 Me.Dispose()
+                Me.Close()
             End If
 
         End If
@@ -49,6 +51,13 @@ Public Class frmLogin
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub linkNewUser_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkNewUser.LinkClicked
+        frmAdd.Show()
+        Me.Dispose()
+        Me.Close()
 
     End Sub
 End Class
