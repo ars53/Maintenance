@@ -18,12 +18,16 @@
 
     Private Sub btnEditRecord_Click(sender As Object, e As EventArgs) Handles btnEditRecord.Click
         Me.Hide()
-        RecEdit.Show()
+        frmRecEdit.Show()
 
     End Sub
 
     Private Sub btnDeleteRecord_Click(sender As Object, e As EventArgs) Handles btnDeleteRecord.Click
         '------------------------------------------------------------------
         MessageBox.Show("You are not authorized to remove student records.")
+    End Sub
+
+    Private Sub txtStudentID_TextChanged(sender As Object, e As EventArgs) Handles txtStudentID.TextChanged
+
     End Sub
 End Class

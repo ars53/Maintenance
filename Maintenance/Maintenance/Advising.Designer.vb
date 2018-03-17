@@ -49,20 +49,20 @@ Partial Class frmAdvising
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtTermYear = New System.Windows.Forms.TextBox()
-        Me.lblYear = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtTermYear = New System.Windows.Forms.TextBox()
+        Me.lblYear = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnClear = New System.Windows.Forms.Button()
@@ -304,28 +304,12 @@ Partial Class frmAdvising
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Location = New System.Drawing.Point(48, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(49, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(247, 155)
+        Me.GroupBox1.Size = New System.Drawing.Size(239, 155)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Info:"
-        '
-        'txtTermYear
-        '
-        Me.txtTermYear.Location = New System.Drawing.Point(85, 107)
-        Me.txtTermYear.Name = "txtTermYear"
-        Me.txtTermYear.Size = New System.Drawing.Size(72, 20)
-        Me.txtTermYear.TabIndex = 20
-        '
-        'lblYear
-        '
-        Me.lblYear.AutoSize = True
-        Me.lblYear.Location = New System.Drawing.Point(12, 110)
-        Me.lblYear.Name = "lblYear"
-        Me.lblYear.Size = New System.Drawing.Size(29, 13)
-        Me.lblYear.TabIndex = 19
-        Me.lblYear.Text = "Year"
         '
         'TextBox3
         '
@@ -333,15 +317,6 @@ Partial Class frmAdvising
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(114, 20)
         Me.TextBox3.TabIndex = 10
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Summer (Term 1)", "Summer (Term 2)", "Summer (Full)", "Fall", "Spring"})
-        Me.ListBox1.Location = New System.Drawing.Point(57, 32)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(136, 69)
-        Me.ListBox1.TabIndex = 18
         '
         'Label1
         '
@@ -393,15 +368,6 @@ Partial Class frmAdvising
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "ID Number"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 32)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(31, 13)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Term"
-        '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(100, 72)
@@ -424,6 +390,40 @@ Partial Class frmAdvising
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(114, 20)
         Me.TextBox2.TabIndex = 9
+        '
+        'txtTermYear
+        '
+        Me.txtTermYear.Location = New System.Drawing.Point(85, 107)
+        Me.txtTermYear.Name = "txtTermYear"
+        Me.txtTermYear.Size = New System.Drawing.Size(72, 20)
+        Me.txtTermYear.TabIndex = 20
+        '
+        'lblYear
+        '
+        Me.lblYear.AutoSize = True
+        Me.lblYear.Location = New System.Drawing.Point(12, 110)
+        Me.lblYear.Name = "lblYear"
+        Me.lblYear.Size = New System.Drawing.Size(29, 13)
+        Me.lblYear.TabIndex = 19
+        Me.lblYear.Text = "Year"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"Summer (Term 1)", "Summer (Term 2)", "Summer (Full)", "Fall", "Spring"})
+        Me.ListBox1.Location = New System.Drawing.Point(57, 32)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(136, 69)
+        Me.ListBox1.TabIndex = 18
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(7, 32)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(31, 13)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Term"
         '
         'Label7
         '
@@ -457,7 +457,7 @@ Partial Class frmAdvising
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Controls.Add(Me.ListBox1)
         Me.GroupBox3.Controls.Add(Me.lblYear)
-        Me.GroupBox3.Location = New System.Drawing.Point(321, 12)
+        Me.GroupBox3.Location = New System.Drawing.Point(317, 12)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(200, 155)
         Me.GroupBox3.TabIndex = 28
@@ -487,7 +487,7 @@ Partial Class frmAdvising
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "frmAdvising"
-        Me.Text = "Advising"
+        Me.Text = "Advising Enrollment Form"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)

@@ -8,13 +8,4 @@
         frmLogin.Show()
         Me.Dispose()
     End Sub
-
-    Public Sub New(ByVal Tid As Integer)
-
-        ' This call is required by the designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-        facID = Tid
-    End Sub
 End Class
