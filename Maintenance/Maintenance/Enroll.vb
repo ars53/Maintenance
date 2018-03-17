@@ -40,6 +40,25 @@ Public Class frmEnroll
         Dim enroll As New frmAddClass(sid)
         enroll.ShowDialog()
         fillEnroll()
+        fillEnroll()
 
     End Sub
+
+    Private Sub btnDel_Click(sender As Object, e As EventArgs) Handles btnDel.Click
+        If dgvEnroll.Visible = True Then
+            db.sql = "DELETE FROM Enrollment where Classname = @class AND StudentID = @sid AND SemY = @sem"
+            db.bind("@class", getEnrollValue("Classname"))
+            db.bind("@sem", getEnrollValue("semy"))
+            db.bind("@sid", sid)
+            db.execute()
+            fillEnroll()
+
+        End If
+    End Sub
+    Public Function getEnrollID() As String
+        Return getEnrollValue("ClassName")
+    End Function
+    Public Function getEnrollValue(ByVal column As String)
+        Return dgvEnroll.Item(column, dgvEnroll.CurrentRow.Index).Value
+    End Function
 End Class

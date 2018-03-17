@@ -13,15 +13,15 @@ Public Class frmLogin
             If table.Rows.Count() <= 0 Then
                 MsgBox("Wrong password")
             Else
-                Dim teachid = (table.Rows(0).Item(3))
+                Dim teachid = (table.Rows(0).Item(4))
                 Dim adminwelcome As New frmInstructorWelcome(teachid)
-                teachid.show
+                adminwelcome.Show()
                 Me.Dispose()
                 Me.Close()
             End If
         ElseIf radStudent.Checked = True Then
             Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
-            Dim command As New SqlCommand("SELECT * FROM Logins l JOIN Usernames g on g.username = l.username where l.username = @user AND l.password = @pass", connection)
+            Dim command As New SqlCommand("SELECT * FROM Logins l JOIN Usernames g on g.username = l.username where l.username = @user AND l.password = @pass AND g.studentid is not null", connection)
             command.Parameters.Add("@user", SqlDbType.VarChar).Value = txtUser.Text
             command.Parameters.Add("@pass", SqlDbType.VarChar).Value = txtPassword.Text
 
