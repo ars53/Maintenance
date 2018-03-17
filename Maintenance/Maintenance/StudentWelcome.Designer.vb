@@ -27,9 +27,8 @@ Partial Class frmStudentWelcome
         Me.btnEnroll = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.dgvStud = New System.Windows.Forms.DataGridView()
+        Me.lblGreeting = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvStud, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnView
@@ -71,20 +70,20 @@ Partial Class frmStudentWelcome
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'dgvStud
+        'lblGreeting
         '
-        Me.dgvStud.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvStud.Location = New System.Drawing.Point(71, 293)
-        Me.dgvStud.Name = "dgvStud"
-        Me.dgvStud.Size = New System.Drawing.Size(240, 150)
-        Me.dgvStud.TabIndex = 10
+        Me.lblGreeting.AutoSize = True
+        Me.lblGreeting.Location = New System.Drawing.Point(89, 286)
+        Me.lblGreeting.Name = "lblGreeting"
+        Me.lblGreeting.Size = New System.Drawing.Size(0, 13)
+        Me.lblGreeting.TabIndex = 10
         '
         'frmStudentWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(361, 291)
-        Me.Controls.Add(Me.dgvStud)
+        Me.ClientSize = New System.Drawing.Size(370, 277)
+        Me.Controls.Add(Me.lblGreeting)
         Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.btnEnroll)
         Me.Controls.Add(Me.Label1)
@@ -92,7 +91,6 @@ Partial Class frmStudentWelcome
         Me.Name = "frmStudentWelcome"
         Me.Text = "Welcome"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvStud, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -101,5 +99,5 @@ Partial Class frmStudentWelcome
     Friend WithEvents btnEnroll As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents dgvStud As DataGridView
+    Friend WithEvents lblGreeting As Label
 End Class

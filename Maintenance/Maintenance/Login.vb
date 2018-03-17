@@ -2,10 +2,10 @@
 Public Class frmLogin
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If radFaculty.Checked = True Then
-            Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=arshephe; Trusted_Connection=yes"}
-            Dim command As New SqlCommand("Select * FROM Logins_maint where USERNAME = @username AND Password = @password AND instructor = 1", connection)
-            command.Parameters.Add("@username", SqlDbType.VarChar).Value = txtUser.Text
-            command.Parameters.Add("@password", SqlDbType.VarChar).Value = txtPassword.Text
+            Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+            Dim command As New SqlCommand("SELECT * FROM Logins l JOIN usernames g on g.username = l.username where l.username = @user AND l.password = @pass AND g.instructorid is not null", connection)
+            command.Parameters.Add("@user", SqlDbType.VarChar).Value = txtUser.Text
+            command.Parameters.Add("@pass", SqlDbType.VarChar).Value = txtPassword.Text
 
             Dim adapter As New SqlDataAdapter(command)
             Dim table As New DataTable()
@@ -13,14 +13,17 @@ Public Class frmLogin
             If table.Rows.Count() <= 0 Then
                 MsgBox("Wrong password")
             Else
-                frmAdvising.Show()
+                Dim teachid = (table.Rows(0).Item(3))
+                Dim adminwelcome As New frmInstructorWelcome(teachid)
+                teachid.show
                 Me.Dispose()
+                Me.Close()
             End If
         ElseIf radStudent.Checked = True Then
-            Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=arshephe; Trusted_Connection=yes"}
-            Dim command As New SqlCommand("Select * FROM Logins_maint where USERNAME = @username AND Password = @password AND student = 1 ", connection)
-            command.Parameters.Add("@username", SqlDbType.VarChar).Value = txtUser.Text
-            command.Parameters.Add("@password", SqlDbType.VarChar).Value = txtPassword.Text
+            Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+            Dim command As New SqlCommand("SELECT * FROM Logins l JOIN Usernames g on g.username = l.username where l.username = @user AND l.password = @pass", connection)
+            command.Parameters.Add("@user", SqlDbType.VarChar).Value = txtUser.Text
+            command.Parameters.Add("@pass", SqlDbType.VarChar).Value = txtPassword.Text
 
             Dim adapter As New SqlDataAdapter(command)
             Dim table As New DataTable()
@@ -28,9 +31,10 @@ Public Class frmLogin
             If table.Rows.Count() <= 0 Then
                 MsgBox("Wrong password")
             Else
-                Dim welcome As New frmStudentWelcome(txtUser.Text.ToString)
+                Dim studentid = (table.Rows(0).Item(3))
+                Dim welcome As New frmStudentWelcome(studentid)
                 welcome.Show()
-                Me.Dispose()
+                'Me.Dispose()
                 Me.Close()
             End If
 
@@ -50,9 +54,6 @@ Public Class frmLogin
         txtUser.Clear()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
 
     Private Sub linkNewUser_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkNewUser.LinkClicked
         frmAdd.Show()
