@@ -10,12 +10,12 @@
         sid = id
     End Sub
     Private Sub AddClass_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        db.sql = "SELECT * FROM Classes"
+        db.sql = "SELECT * FROM Classes_M"
         db.fill(dgvClasses)
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        db.sql = "INSERT INTO Enrollment values (@sid, @classname)"
+        db.sql = "INSERT INTO Enrollment_M values (@sid, @classname)"
         db.bind("@sid", sid)
         db.bind("@classname", getClassID())
         db.execute()
