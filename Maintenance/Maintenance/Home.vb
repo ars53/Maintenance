@@ -18,7 +18,7 @@
 
     Private Sub btnEditRecord_Click(sender As Object, e As EventArgs) Handles btnEditRecord.Click
         Me.Hide()
-        RecEdit.Show()
+        frmRecEdit.Show()
 
     End Sub
 

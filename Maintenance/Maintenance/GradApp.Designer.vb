@@ -24,7 +24,6 @@ Partial Class frmGradApp
     Private Sub InitializeComponent()
         Me.tabGradApp = New System.Windows.Forms.TabControl()
         Me.tab1 = New System.Windows.Forms.TabPage()
-        Me.tab2 = New System.Windows.Forms.TabPage()
         Me.TextBox28 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TextBox27 = New System.Windows.Forms.TextBox()
@@ -75,8 +74,7 @@ Partial Class frmGradApp
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.tab3 = New System.Windows.Forms.TabPage()
-        Me.tab4 = New System.Windows.Forms.TabPage()
+        Me.tab2 = New System.Windows.Forms.TabPage()
         Me.TextBox29 = New System.Windows.Forms.TextBox()
         Me.RadioButton13 = New System.Windows.Forms.RadioButton()
         Me.RadioButton14 = New System.Windows.Forms.RadioButton()
@@ -132,6 +130,7 @@ Partial Class frmGradApp
         Me.RadioButton18 = New System.Windows.Forms.RadioButton()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
+        Me.tab3 = New System.Windows.Forms.TabPage()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TextBox46 = New System.Windows.Forms.TextBox()
         Me.TextBox47 = New System.Windows.Forms.TextBox()
@@ -208,6 +207,7 @@ Partial Class frmGradApp
         Me.CheckBox18 = New System.Windows.Forms.CheckBox()
         Me.CheckBox19 = New System.Windows.Forms.CheckBox()
         Me.CheckBox20 = New System.Windows.Forms.CheckBox()
+        Me.tab4 = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox101 = New System.Windows.Forms.TextBox()
         Me.CheckBox22 = New System.Windows.Forms.CheckBox()
@@ -236,13 +236,21 @@ Partial Class frmGradApp
         Me.CheckBox42 = New System.Windows.Forms.CheckBox()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
+        Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPrevious = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.tabGradApp.SuspendLayout()
         Me.tab1.SuspendLayout()
-        Me.tab2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.tab2.SuspendLayout()
         Me.tab3.SuspendLayout()
-        Me.tab4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.tab4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -252,14 +260,16 @@ Partial Class frmGradApp
         Me.tabGradApp.Controls.Add(Me.tab2)
         Me.tabGradApp.Controls.Add(Me.tab3)
         Me.tabGradApp.Controls.Add(Me.tab4)
-        Me.tabGradApp.Location = New System.Drawing.Point(12, 31)
+        Me.tabGradApp.Location = New System.Drawing.Point(12, 32)
         Me.tabGradApp.Name = "tabGradApp"
         Me.tabGradApp.SelectedIndex = 0
-        Me.tabGradApp.Size = New System.Drawing.Size(776, 608)
+        Me.tabGradApp.Size = New System.Drawing.Size(625, 497)
         Me.tabGradApp.TabIndex = 0
         '
         'tab1
         '
+        Me.tab1.Controls.Add(Me.Button5)
+        Me.tab1.Controls.Add(Me.btnNext)
         Me.tab1.Controls.Add(Me.TextBox28)
         Me.tab1.Controls.Add(Me.Label16)
         Me.tab1.Controls.Add(Me.TextBox27)
@@ -305,18 +315,445 @@ Partial Class frmGradApp
         Me.tab1.Controls.Add(Me.TextBox2)
         Me.tab1.Controls.Add(Me.TextBox1)
         Me.tab1.Controls.Add(Me.Label3)
-        Me.tab1.Controls.Add(Me.Label2)
         Me.tab1.Controls.Add(Me.GroupBox1)
         Me.tab1.Location = New System.Drawing.Point(4, 22)
         Me.tab1.Name = "tab1"
         Me.tab1.Padding = New System.Windows.Forms.Padding(3)
-        Me.tab1.Size = New System.Drawing.Size(768, 582)
+        Me.tab1.Size = New System.Drawing.Size(617, 471)
         Me.tab1.TabIndex = 0
         Me.tab1.Text = "1"
         Me.tab1.UseVisualStyleBackColor = True
         '
+        'TextBox28
+        '
+        Me.TextBox28.Location = New System.Drawing.Point(444, 403)
+        Me.TextBox28.Name = "TextBox28"
+        Me.TextBox28.Size = New System.Drawing.Size(41, 20)
+        Me.TextBox28.TabIndex = 122
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(306, 406)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(130, 13)
+        Me.Label16.TabIndex = 121
+        Me.Label16.Text = "Years at current employer:"
+        '
+        'TextBox27
+        '
+        Me.TextBox27.Location = New System.Drawing.Point(113, 403)
+        Me.TextBox27.Name = "TextBox27"
+        Me.TextBox27.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox27.TabIndex = 120
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(21, 406)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(89, 13)
+        Me.Label15.TabIndex = 119
+        Me.Label15.Text = "Current employer:"
+        '
+        'TextBox26
+        '
+        Me.TextBox26.Location = New System.Drawing.Point(307, 368)
+        Me.TextBox26.Name = "TextBox26"
+        Me.TextBox26.Size = New System.Drawing.Size(243, 20)
+        Me.TextBox26.TabIndex = 118
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(265, 371)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(35, 13)
+        Me.Label14.TabIndex = 117
+        Me.Label14.Text = "Email:"
+        '
+        'TextBox25
+        '
+        Me.TextBox25.Location = New System.Drawing.Point(119, 368)
+        Me.TextBox25.Name = "TextBox25"
+        Me.TextBox25.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox25.TabIndex = 116
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(21, 371)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(95, 13)
+        Me.Label13.TabIndex = 115
+        Me.Label13.Text = "Permanent Phone:"
+        '
+        'TextBox24
+        '
+        Me.TextBox24.Location = New System.Drawing.Point(307, 336)
+        Me.TextBox24.Name = "TextBox24"
+        Me.TextBox24.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox24.TabIndex = 114
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(88, 336)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox18.TabIndex = 113
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(234, 339)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(70, 13)
+        Me.Label12.TabIndex = 112
+        Me.Label12.Text = "Work Phone:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(21, 339)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(61, 13)
+        Me.Label11.TabIndex = 111
+        Me.Label11.Text = "Cell Phone:"
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Location = New System.Drawing.Point(132, 299)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox19.TabIndex = 110
+        Me.TextBox19.Text = "Country"
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Location = New System.Drawing.Point(401, 272)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(68, 20)
+        Me.TextBox20.TabIndex = 109
+        Me.TextBox20.Text = "Zipcode"
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Location = New System.Drawing.Point(359, 272)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(35, 20)
+        Me.TextBox21.TabIndex = 108
+        Me.TextBox21.Text = "State"
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(253, 272)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(98, 20)
+        Me.TextBox22.TabIndex = 107
+        Me.TextBox22.Text = "City"
+        '
+        'TextBox23
+        '
+        Me.TextBox23.Location = New System.Drawing.Point(132, 272)
+        Me.TextBox23.Name = "TextBox23"
+        Me.TextBox23.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox23.TabIndex = 106
+        Me.TextBox23.Text = "Street Address"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(21, 275)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(87, 13)
+        Me.Label10.TabIndex = 105
+        Me.Label10.Text = "Mailing Address: "
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(290, 246)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(39, 17)
+        Me.RadioButton4.TabIndex = 104
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "No"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(246, 246)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton3.TabIndex = 103
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Yes"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(86, 246)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(151, 13)
+        Me.Label9.TabIndex = 102
+        Me.Label9.Text = "Are you an Arkansas resident?"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(300, 222)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(186, 17)
+        Me.CheckBox1.TabIndex = 101
+        Me.CheckBox1.Text = "If less than 6 months, check here:"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TextBox17
+        '
+        Me.TextBox17.Location = New System.Drawing.Point(235, 219)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(39, 20)
+        Me.TextBox17.TabIndex = 100
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(85, 222)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(146, 13)
+        Me.Label8.TabIndex = 99
+        Me.Label8.Text = "Years lived in above address:"
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(253, 192)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox16.TabIndex = 98
+        Me.TextBox16.Text = "County"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(132, 192)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox15.TabIndex = 97
+        Me.TextBox15.Text = "Country"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(401, 165)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(68, 20)
+        Me.TextBox14.TabIndex = 96
+        Me.TextBox14.Text = "Zipcode"
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(359, 165)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(35, 20)
+        Me.TextBox13.TabIndex = 95
+        Me.TextBox13.Text = "State"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(253, 165)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(98, 20)
+        Me.TextBox12.TabIndex = 94
+        Me.TextBox12.Text = "City"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(132, 165)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox11.TabIndex = 93
+        Me.TextBox11.Text = "Street Address"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(21, 168)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(105, 13)
+        Me.Label7.TabIndex = 92
+        Me.Label7.Text = "Permanent Address: "
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(300, 127)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox10.TabIndex = 91
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(220, 130)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(73, 13)
+        Me.Label6.TabIndex = 90
+        Me.Label6.Text = "Place of Birth:"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(115, 127)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(39, 20)
+        Me.TextBox7.TabIndex = 89
+        Me.TextBox7.Text = "M"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(165, 127)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(48, 20)
+        Me.TextBox8.TabIndex = 88
+        Me.TextBox8.Text = "Y"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(66, 127)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(39, 20)
+        Me.TextBox9.TabIndex = 87
+        Me.TextBox9.Text = "D"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(18, 130)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(33, 13)
+        Me.Label5.TabIndex = 86
+        Me.Label5.Text = "DOB:"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(66, 89)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(216, 20)
+        Me.TextBox6.TabIndex = 85
+        Me.TextBox6.Text = "Former Name"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(311, 63)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(126, 20)
+        Me.TextBox5.TabIndex = 84
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(267, 66)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 13)
+        Me.Label4.TabIndex = 83
+        Me.Label4.Text = "SSN #:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(66, 60)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(192, 20)
+        Me.TextBox4.TabIndex = 82
+        Me.TextBox4.Text = "Preferred Name"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(182, 33)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 81
+        Me.TextBox3.Text = "Middle"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(298, 33)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 80
+        Me.TextBox2.Text = "Last"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(66, 33)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 79
+        Me.TextBox1.Text = "First"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(15, 35)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.TabIndex = 78
+        Me.Label3.Text = "Name:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(452, 20)
+        Me.Label2.TabIndex = 77
+        Me.Label2.Text = "Graduate School of Business Application for Admission"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(454, 35)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(147, 90)
+        Me.GroupBox1.TabIndex = 76
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Office Use Only"
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(42, 66)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(39, 17)
+        Me.RadioButton2.TabIndex = 2
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "No"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(42, 47)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton1.TabIndex = 1
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Yes"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(21, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(105, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Admission Fee Paid?"
+        '
         'tab2
         '
+        Me.tab2.Controls.Add(Me.Button4)
+        Me.tab2.Controls.Add(Me.Button1)
         Me.tab2.Controls.Add(Me.TextBox29)
         Me.tab2.Controls.Add(Me.RadioButton13)
         Me.tab2.Controls.Add(Me.RadioButton14)
@@ -375,439 +812,551 @@ Partial Class frmGradApp
         Me.tab2.Location = New System.Drawing.Point(4, 22)
         Me.tab2.Name = "tab2"
         Me.tab2.Padding = New System.Windows.Forms.Padding(3)
-        Me.tab2.Size = New System.Drawing.Size(768, 582)
+        Me.tab2.Size = New System.Drawing.Size(617, 471)
         Me.tab2.TabIndex = 1
         Me.tab2.Text = "2"
         Me.tab2.UseVisualStyleBackColor = True
         '
-        'TextBox28
-        '
-        Me.TextBox28.Location = New System.Drawing.Point(447, 429)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(41, 20)
-        Me.TextBox28.TabIndex = 122
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(309, 432)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(130, 13)
-        Me.Label16.TabIndex = 121
-        Me.Label16.Text = "Years at current employer:"
-        '
-        'TextBox27
-        '
-        Me.TextBox27.Location = New System.Drawing.Point(116, 429)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox27.TabIndex = 120
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(24, 432)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(89, 13)
-        Me.Label15.TabIndex = 119
-        Me.Label15.Text = "Current employer:"
-        '
-        'TextBox26
-        '
-        Me.TextBox26.Location = New System.Drawing.Point(310, 394)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(243, 20)
-        Me.TextBox26.TabIndex = 118
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(268, 397)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(35, 13)
-        Me.Label14.TabIndex = 117
-        Me.Label14.Text = "Email:"
-        '
-        'TextBox25
-        '
-        Me.TextBox25.Location = New System.Drawing.Point(122, 394)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox25.TabIndex = 116
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(24, 397)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(95, 13)
-        Me.Label13.TabIndex = 115
-        Me.Label13.Text = "Permanent Phone:"
-        '
-        'TextBox24
-        '
-        Me.TextBox24.Location = New System.Drawing.Point(310, 362)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox24.TabIndex = 114
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Location = New System.Drawing.Point(91, 362)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox18.TabIndex = 113
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(237, 365)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(70, 13)
-        Me.Label12.TabIndex = 112
-        Me.Label12.Text = "Work Phone:"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(24, 365)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(61, 13)
-        Me.Label11.TabIndex = 111
-        Me.Label11.Text = "Cell Phone:"
-        '
-        'TextBox19
-        '
-        Me.TextBox19.Location = New System.Drawing.Point(135, 325)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox19.TabIndex = 110
-        Me.TextBox19.Text = "Country"
-        '
-        'TextBox20
-        '
-        Me.TextBox20.Location = New System.Drawing.Point(404, 298)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(68, 20)
-        Me.TextBox20.TabIndex = 109
-        Me.TextBox20.Text = "Zipcode"
-        '
-        'TextBox21
-        '
-        Me.TextBox21.Location = New System.Drawing.Point(362, 298)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(35, 20)
-        Me.TextBox21.TabIndex = 108
-        Me.TextBox21.Text = "State"
-        '
-        'TextBox22
-        '
-        Me.TextBox22.Location = New System.Drawing.Point(256, 298)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(98, 20)
-        Me.TextBox22.TabIndex = 107
-        Me.TextBox22.Text = "City"
-        '
-        'TextBox23
-        '
-        Me.TextBox23.Location = New System.Drawing.Point(135, 298)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox23.TabIndex = 106
-        Me.TextBox23.Text = "Street Address"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(24, 301)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(87, 13)
-        Me.Label10.TabIndex = 105
-        Me.Label10.Text = "Mailing Address: "
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(293, 272)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(39, 17)
-        Me.RadioButton4.TabIndex = 104
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "No"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(249, 272)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(43, 17)
-        Me.RadioButton3.TabIndex = 103
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Yes"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(89, 272)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(151, 13)
-        Me.Label9.TabIndex = 102
-        Me.Label9.Text = "Are you an Arkansas resident?"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(303, 248)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(186, 17)
-        Me.CheckBox1.TabIndex = 101
-        Me.CheckBox1.Text = "If less than 6 months, check here:"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Location = New System.Drawing.Point(238, 245)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(39, 20)
-        Me.TextBox17.TabIndex = 100
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(88, 248)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(146, 13)
-        Me.Label8.TabIndex = 99
-        Me.Label8.Text = "Years lived in above address:"
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(256, 218)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox16.TabIndex = 98
-        Me.TextBox16.Text = "County"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(135, 218)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox15.TabIndex = 97
-        Me.TextBox15.Text = "Country"
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(404, 191)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(68, 20)
-        Me.TextBox14.TabIndex = 96
-        Me.TextBox14.Text = "Zipcode"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(362, 191)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(35, 20)
-        Me.TextBox13.TabIndex = 95
-        Me.TextBox13.Text = "State"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(256, 191)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(98, 20)
-        Me.TextBox12.TabIndex = 94
-        Me.TextBox12.Text = "City"
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(135, 191)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox11.TabIndex = 93
-        Me.TextBox11.Text = "Street Address"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(24, 194)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(105, 13)
-        Me.Label7.TabIndex = 92
-        Me.Label7.Text = "Permanent Address: "
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(303, 153)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox10.TabIndex = 91
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(223, 156)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(73, 13)
-        Me.Label6.TabIndex = 90
-        Me.Label6.Text = "Place of Birth:"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(118, 153)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(39, 20)
-        Me.TextBox7.TabIndex = 89
-        Me.TextBox7.Text = "M"
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(168, 153)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(48, 20)
-        Me.TextBox8.TabIndex = 88
-        Me.TextBox8.Text = "Y"
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(69, 153)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(39, 20)
-        Me.TextBox9.TabIndex = 87
-        Me.TextBox9.Text = "D"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(21, 156)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(33, 13)
-        Me.Label5.TabIndex = 86
-        Me.Label5.Text = "DOB:"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(69, 115)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(216, 20)
-        Me.TextBox6.TabIndex = 85
-        Me.TextBox6.Text = "Former Name"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(314, 89)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(126, 20)
-        Me.TextBox5.TabIndex = 84
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(270, 92)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 13)
-        Me.Label4.TabIndex = 83
-        Me.Label4.Text = "SSN #:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(69, 86)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(192, 20)
-        Me.TextBox4.TabIndex = 82
-        Me.TextBox4.Text = "Preferred Name"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(185, 59)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 81
-        Me.TextBox3.Text = "Middle"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(301, 59)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 80
-        Me.TextBox2.Text = "Last"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(69, 59)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 79
-        Me.TextBox1.Text = "First"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 61)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
-        Me.Label3.TabIndex = 78
-        Me.Label3.Text = "Name:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(15, 27)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(452, 20)
-        Me.Label2.TabIndex = 77
-        Me.Label2.Text = "Graduate School of Business Application for Admission"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(506, 19)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(147, 90)
-        Me.GroupBox1.TabIndex = 76
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Office Use Only"
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(42, 66)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(39, 17)
-        Me.RadioButton2.TabIndex = 2
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "No"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(42, 47)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(43, 17)
-        Me.RadioButton1.TabIndex = 1
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Yes"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 30)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Admission Fee Paid?"
+        'TextBox29
+        '
+        Me.TextBox29.Location = New System.Drawing.Point(433, 440)
+        Me.TextBox29.Name = "TextBox29"
+        Me.TextBox29.Size = New System.Drawing.Size(60, 20)
+        Me.TextBox29.TabIndex = 137
+        Me.TextBox29.Text = "Other"
+        '
+        'RadioButton13
+        '
+        Me.RadioButton13.AutoSize = True
+        Me.RadioButton13.Location = New System.Drawing.Point(427, 417)
+        Me.RadioButton13.Name = "RadioButton13"
+        Me.RadioButton13.Size = New System.Drawing.Size(137, 17)
+        Me.RadioButton13.TabIndex = 136
+        Me.RadioButton13.TabStop = True
+        Me.RadioButton13.Text = "Under-graduate student"
+        Me.RadioButton13.UseVisualStyleBackColor = True
+        '
+        'RadioButton14
+        '
+        Me.RadioButton14.AutoSize = True
+        Me.RadioButton14.Location = New System.Drawing.Point(427, 397)
+        Me.RadioButton14.Name = "RadioButton14"
+        Me.RadioButton14.Size = New System.Drawing.Size(107, 17)
+        Me.RadioButton14.TabIndex = 135
+        Me.RadioButton14.TabStop = True
+        Me.RadioButton14.Text = "Graduate student"
+        Me.RadioButton14.UseVisualStyleBackColor = True
+        '
+        'TextBox30
+        '
+        Me.TextBox30.Location = New System.Drawing.Point(369, 397)
+        Me.TextBox30.Name = "TextBox30"
+        Me.TextBox30.Size = New System.Drawing.Size(28, 20)
+        Me.TextBox30.TabIndex = 134
+        Me.TextBox30.Text = "Year"
+        '
+        'TextBox31
+        '
+        Me.TextBox31.Location = New System.Drawing.Point(301, 397)
+        Me.TextBox31.Name = "TextBox31"
+        Me.TextBox31.Size = New System.Drawing.Size(60, 20)
+        Me.TextBox31.TabIndex = 133
+        Me.TextBox31.Text = "Semester"
+        '
+        'RadioButton11
+        '
+        Me.RadioButton11.AutoSize = True
+        Me.RadioButton11.Location = New System.Drawing.Point(254, 417)
+        Me.RadioButton11.Name = "RadioButton11"
+        Me.RadioButton11.Size = New System.Drawing.Size(39, 17)
+        Me.RadioButton11.TabIndex = 132
+        Me.RadioButton11.TabStop = True
+        Me.RadioButton11.Text = "No"
+        Me.RadioButton11.UseVisualStyleBackColor = True
+        '
+        'RadioButton12
+        '
+        Me.RadioButton12.AutoSize = True
+        Me.RadioButton12.Location = New System.Drawing.Point(254, 397)
+        Me.RadioButton12.Name = "RadioButton12"
+        Me.RadioButton12.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton12.TabIndex = 131
+        Me.RadioButton12.TabStop = True
+        Me.RadioButton12.Text = "Yes"
+        Me.RadioButton12.UseVisualStyleBackColor = True
+        '
+        'TextBox32
+        '
+        Me.TextBox32.Location = New System.Drawing.Point(175, 394)
+        Me.TextBox32.Name = "TextBox32"
+        Me.TextBox32.Size = New System.Drawing.Size(28, 20)
+        Me.TextBox32.TabIndex = 130
+        Me.TextBox32.Text = "Year"
+        '
+        'TextBox33
+        '
+        Me.TextBox33.Location = New System.Drawing.Point(107, 394)
+        Me.TextBox33.Name = "TextBox33"
+        Me.TextBox33.Size = New System.Drawing.Size(60, 20)
+        Me.TextBox33.TabIndex = 129
+        Me.TextBox33.Text = "Semester"
+        '
+        'RadioButton10
+        '
+        Me.RadioButton10.AutoSize = True
+        Me.RadioButton10.Location = New System.Drawing.Point(60, 414)
+        Me.RadioButton10.Name = "RadioButton10"
+        Me.RadioButton10.Size = New System.Drawing.Size(39, 17)
+        Me.RadioButton10.TabIndex = 128
+        Me.RadioButton10.TabStop = True
+        Me.RadioButton10.Text = "No"
+        Me.RadioButton10.UseVisualStyleBackColor = True
+        '
+        'RadioButton9
+        '
+        Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.Location = New System.Drawing.Point(60, 394)
+        Me.RadioButton9.Name = "RadioButton9"
+        Me.RadioButton9.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton9.TabIndex = 127
+        Me.RadioButton9.TabStop = True
+        Me.RadioButton9.Text = "Yes"
+        Me.RadioButton9.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(417, 381)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(125, 13)
+        Me.Label17.TabIndex = 126
+        Me.Label17.Text = "If you enrolled, were you:"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(250, 379)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(77, 13)
+        Me.Label18.TabIndex = 125
+        Me.Label18.Text = "Did you enroll?"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(43, 378)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(198, 13)
+        Me.Label19.TabIndex = 124
+        Me.Label19.Text = "Have you ever applied to this institution?"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(157, 351)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(18, 13)
+        Me.Label20.TabIndex = 123
+        Me.Label20.Text = "->"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(355, 327)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(18, 13)
+        Me.Label21.TabIndex = 122
+        Me.Label21.Text = "->"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(375, 306)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(18, 13)
+        Me.Label22.TabIndex = 121
+        Me.Label22.Text = "->"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(255, 305)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(18, 13)
+        Me.Label23.TabIndex = 120
+        Me.Label23.Text = "->"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(241, 327)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(18, 13)
+        Me.Label24.TabIndex = 119
+        Me.Label24.Text = "->"
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Location = New System.Drawing.Point(439, 349)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(36, 17)
+        Me.CheckBox16.TabIndex = 118
+        Me.CheckBox16.Text = "BI"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'CheckBox15
+        '
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Location = New System.Drawing.Point(385, 350)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(48, 17)
+        Me.CheckBox15.TabIndex = 117
+        Me.CheckBox15.Text = "ERP"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(176, 351)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(203, 13)
+        Me.Label25.TabIndex = 116
+        Me.Label25.Text = "If degree is sought, please indicate either:"
+        '
+        'CheckBox14
+        '
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Location = New System.Drawing.Point(375, 326)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(165, 17)
+        Me.CheckBox14.TabIndex = 115
+        Me.CheckBox14.Text = "Partial-Time/Professional MIS"
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Location = New System.Drawing.Point(261, 326)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(96, 17)
+        Me.CheckBox13.TabIndex = 114
+        Me.CheckBox13.Text = "Full-Time (MIS)"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Location = New System.Drawing.Point(401, 305)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(179, 17)
+        Me.CheckBox12.TabIndex = 113
+        Me.CheckBox12.Text = "Partial-Time/Managerial (MMBA)"
+        Me.CheckBox12.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Location = New System.Drawing.Point(277, 305)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(100, 17)
+        Me.CheckBox11.TabIndex = 112
+        Me.CheckBox11.Text = "Full-Time (MBA)"
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(77, 349)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(84, 17)
+        Me.CheckBox10.TabIndex = 111
+        Me.CheckBox10.Text = "Non-Degree"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Location = New System.Drawing.Point(77, 326)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(167, 17)
+        Me.CheckBox9.TabIndex = 110
+        Me.CheckBox9.Text = "Master of Information Systems"
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Location = New System.Drawing.Point(77, 303)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(183, 17)
+        Me.CheckBox8.TabIndex = 109
+        Me.CheckBox8.Text = "Master of Business Administration"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Location = New System.Drawing.Point(77, 280)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(207, 17)
+        Me.CheckBox7.TabIndex = 108
+        Me.CheckBox7.Text = "Master of Arts in Economics (MAEcon)"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Location = New System.Drawing.Point(77, 257)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(173, 17)
+        Me.CheckBox6.TabIndex = 107
+        Me.CheckBox6.Text = "Master of Accountancy (MAcc)"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(48, 232)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(228, 13)
+        Me.Label26.TabIndex = 106
+        Me.Label26.Text = "Please select the Program you are applying for:"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(48, 203)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(127, 13)
+        Me.Label27.TabIndex = 105
+        Me.Label27.Text = "Admission Requested for:"
+        '
+        'TextBox34
+        '
+        Me.TextBox34.Location = New System.Drawing.Point(180, 200)
+        Me.TextBox34.Name = "TextBox34"
+        Me.TextBox34.Size = New System.Drawing.Size(35, 20)
+        Me.TextBox34.TabIndex = 104
+        Me.TextBox34.Text = "Year"
+        '
+        'TextBox35
+        '
+        Me.TextBox35.Location = New System.Drawing.Point(473, 126)
+        Me.TextBox35.Name = "TextBox35"
+        Me.TextBox35.Size = New System.Drawing.Size(57, 20)
+        Me.TextBox35.TabIndex = 103
+        Me.TextBox35.Text = "Visa Type"
+        '
+        'TextBox36
+        '
+        Me.TextBox36.Location = New System.Drawing.Point(352, 151)
+        Me.TextBox36.Name = "TextBox36"
+        Me.TextBox36.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox36.TabIndex = 102
+        Me.TextBox36.Text = "Country of citizenship"
+        '
+        'TextBox37
+        '
+        Me.TextBox37.Location = New System.Drawing.Point(208, 151)
+        Me.TextBox37.Name = "TextBox37"
+        Me.TextBox37.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox37.TabIndex = 101
+        Me.TextBox37.Text = "Country of citizenship"
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(340, 129)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(111, 17)
+        Me.RadioButton6.TabIndex = 100
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "Non-resident Alien"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'RadioButton7
+        '
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.Location = New System.Drawing.Point(194, 129)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(147, 17)
+        Me.RadioButton7.TabIndex = 99
+        Me.RadioButton7.TabStop = True
+        Me.RadioButton7.Text = "Resident Alien (Immigrant)"
+        Me.RadioButton7.UseVisualStyleBackColor = True
+        '
+        'RadioButton8
+        '
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.Location = New System.Drawing.Point(114, 129)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(79, 17)
+        Me.RadioButton8.TabIndex = 98
+        Me.RadioButton8.TabStop = True
+        Me.RadioButton8.Text = "U.S. citizen"
+        Me.RadioButton8.UseVisualStyleBackColor = True
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(48, 129)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(60, 13)
+        Me.Label28.TabIndex = 97
+        Me.Label28.Text = "Citizenship:"
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(201, 103)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(51, 17)
+        Me.RadioButton5.TabIndex = 96
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "Other"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'RadioButton15
+        '
+        Me.RadioButton15.AutoSize = True
+        Me.RadioButton15.Location = New System.Drawing.Point(156, 103)
+        Me.RadioButton15.Name = "RadioButton15"
+        Me.RadioButton15.Size = New System.Drawing.Size(48, 17)
+        Me.RadioButton15.TabIndex = 95
+        Me.RadioButton15.TabStop = True
+        Me.RadioButton15.Text = "Male"
+        Me.RadioButton15.UseVisualStyleBackColor = True
+        '
+        'RadioButton16
+        '
+        Me.RadioButton16.AutoSize = True
+        Me.RadioButton16.Location = New System.Drawing.Point(99, 103)
+        Me.RadioButton16.Name = "RadioButton16"
+        Me.RadioButton16.Size = New System.Drawing.Size(59, 17)
+        Me.RadioButton16.TabIndex = 94
+        Me.RadioButton16.TabStop = True
+        Me.RadioButton16.Text = "Female"
+        Me.RadioButton16.UseVisualStyleBackColor = True
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(48, 105)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(45, 13)
+        Me.Label29.TabIndex = 93
+        Me.Label29.Text = "Gender:"
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(362, 79)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(185, 17)
+        Me.CheckBox5.TabIndex = 92
+        Me.CheckBox5.Text = "Native Hawaiin or Pacific Islander"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(399, 55)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(52, 17)
+        Me.CheckBox4.TabIndex = 91
+        Me.CheckBox4.Text = "Asian"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(453, 55)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(54, 17)
+        Me.CheckBox3.TabIndex = 90
+        Me.CheckBox3.Text = "White"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(210, 79)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(148, 17)
+        Me.CheckBox2.TabIndex = 89
+        Me.CheckBox2.Text = "Black or African American"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox17
+        '
+        Me.CheckBox17.AutoSize = True
+        Me.CheckBox17.Location = New System.Drawing.Point(210, 56)
+        Me.CheckBox17.Name = "CheckBox17"
+        Me.CheckBox17.Size = New System.Drawing.Size(189, 17)
+        Me.CheckBox17.TabIndex = 88
+        Me.CheckBox17.Text = "American Indian or Alaskan Native"
+        Me.CheckBox17.UseVisualStyleBackColor = True
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(44, 56)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(161, 13)
+        Me.Label30.TabIndex = 87
+        Me.Label30.Text = "Select one or more, if applicable:"
+        '
+        'RadioButton17
+        '
+        Me.RadioButton17.AutoSize = True
+        Me.RadioButton17.Location = New System.Drawing.Point(190, 30)
+        Me.RadioButton17.Name = "RadioButton17"
+        Me.RadioButton17.Size = New System.Drawing.Size(39, 17)
+        Me.RadioButton17.TabIndex = 86
+        Me.RadioButton17.TabStop = True
+        Me.RadioButton17.Text = "No"
+        Me.RadioButton17.UseVisualStyleBackColor = True
+        '
+        'RadioButton18
+        '
+        Me.RadioButton18.AutoSize = True
+        Me.RadioButton18.Location = New System.Drawing.Point(146, 30)
+        Me.RadioButton18.Name = "RadioButton18"
+        Me.RadioButton18.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton18.TabIndex = 85
+        Me.RadioButton18.TabStop = True
+        Me.RadioButton18.Text = "Yes"
+        Me.RadioButton18.UseVisualStyleBackColor = True
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(44, 30)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(95, 13)
+        Me.Label31.TabIndex = 84
+        Me.Label31.Text = "Hispanic or Latino:"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(27, 3)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(181, 15)
+        Me.Label32.TabIndex = 83
+        Me.Label32.Text = "Please indicate if you are..."
         '
         'tab3
         '
+        Me.tab3.Controls.Add(Me.Button3)
+        Me.tab3.Controls.Add(Me.Button2)
         Me.tab3.Controls.Add(Me.GroupBox2)
         Me.tab3.Controls.Add(Me.TextBox92)
         Me.tab3.Controls.Add(Me.TextBox93)
@@ -824,568 +1373,10 @@ Partial Class frmGradApp
         Me.tab3.Controls.Add(Me.CheckBox20)
         Me.tab3.Location = New System.Drawing.Point(4, 22)
         Me.tab3.Name = "tab3"
-        Me.tab3.Size = New System.Drawing.Size(768, 582)
+        Me.tab3.Size = New System.Drawing.Size(617, 471)
         Me.tab3.TabIndex = 2
         Me.tab3.Text = "3"
         Me.tab3.UseVisualStyleBackColor = True
-        '
-        'tab4
-        '
-        Me.tab4.Controls.Add(Me.GroupBox3)
-        Me.tab4.Controls.Add(Me.CheckBox33)
-        Me.tab4.Controls.Add(Me.CheckBox34)
-        Me.tab4.Controls.Add(Me.CheckBox35)
-        Me.tab4.Controls.Add(Me.CheckBox36)
-        Me.tab4.Controls.Add(Me.CheckBox37)
-        Me.tab4.Controls.Add(Me.CheckBox38)
-        Me.tab4.Controls.Add(Me.CheckBox39)
-        Me.tab4.Controls.Add(Me.CheckBox40)
-        Me.tab4.Controls.Add(Me.CheckBox41)
-        Me.tab4.Controls.Add(Me.CheckBox42)
-        Me.tab4.Controls.Add(Me.Label43)
-        Me.tab4.Controls.Add(Me.Label44)
-        Me.tab4.Location = New System.Drawing.Point(4, 22)
-        Me.tab4.Name = "tab4"
-        Me.tab4.Size = New System.Drawing.Size(768, 582)
-        Me.tab4.TabIndex = 3
-        Me.tab4.Text = "4"
-        Me.tab4.UseVisualStyleBackColor = True
-        '
-        'TextBox29
-        '
-        Me.TextBox29.Location = New System.Drawing.Point(514, 500)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(60, 20)
-        Me.TextBox29.TabIndex = 137
-        Me.TextBox29.Text = "Other"
-        '
-        'RadioButton13
-        '
-        Me.RadioButton13.AutoSize = True
-        Me.RadioButton13.Location = New System.Drawing.Point(508, 477)
-        Me.RadioButton13.Name = "RadioButton13"
-        Me.RadioButton13.Size = New System.Drawing.Size(137, 17)
-        Me.RadioButton13.TabIndex = 136
-        Me.RadioButton13.TabStop = True
-        Me.RadioButton13.Text = "Under-graduate student"
-        Me.RadioButton13.UseVisualStyleBackColor = True
-        '
-        'RadioButton14
-        '
-        Me.RadioButton14.AutoSize = True
-        Me.RadioButton14.Location = New System.Drawing.Point(508, 457)
-        Me.RadioButton14.Name = "RadioButton14"
-        Me.RadioButton14.Size = New System.Drawing.Size(107, 17)
-        Me.RadioButton14.TabIndex = 135
-        Me.RadioButton14.TabStop = True
-        Me.RadioButton14.Text = "Graduate student"
-        Me.RadioButton14.UseVisualStyleBackColor = True
-        '
-        'TextBox30
-        '
-        Me.TextBox30.Location = New System.Drawing.Point(450, 457)
-        Me.TextBox30.Name = "TextBox30"
-        Me.TextBox30.Size = New System.Drawing.Size(28, 20)
-        Me.TextBox30.TabIndex = 134
-        Me.TextBox30.Text = "Year"
-        '
-        'TextBox31
-        '
-        Me.TextBox31.Location = New System.Drawing.Point(382, 457)
-        Me.TextBox31.Name = "TextBox31"
-        Me.TextBox31.Size = New System.Drawing.Size(60, 20)
-        Me.TextBox31.TabIndex = 133
-        Me.TextBox31.Text = "Semester"
-        '
-        'RadioButton11
-        '
-        Me.RadioButton11.AutoSize = True
-        Me.RadioButton11.Location = New System.Drawing.Point(335, 477)
-        Me.RadioButton11.Name = "RadioButton11"
-        Me.RadioButton11.Size = New System.Drawing.Size(39, 17)
-        Me.RadioButton11.TabIndex = 132
-        Me.RadioButton11.TabStop = True
-        Me.RadioButton11.Text = "No"
-        Me.RadioButton11.UseVisualStyleBackColor = True
-        '
-        'RadioButton12
-        '
-        Me.RadioButton12.AutoSize = True
-        Me.RadioButton12.Location = New System.Drawing.Point(335, 457)
-        Me.RadioButton12.Name = "RadioButton12"
-        Me.RadioButton12.Size = New System.Drawing.Size(43, 17)
-        Me.RadioButton12.TabIndex = 131
-        Me.RadioButton12.TabStop = True
-        Me.RadioButton12.Text = "Yes"
-        Me.RadioButton12.UseVisualStyleBackColor = True
-        '
-        'TextBox32
-        '
-        Me.TextBox32.Location = New System.Drawing.Point(256, 454)
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(28, 20)
-        Me.TextBox32.TabIndex = 130
-        Me.TextBox32.Text = "Year"
-        '
-        'TextBox33
-        '
-        Me.TextBox33.Location = New System.Drawing.Point(188, 454)
-        Me.TextBox33.Name = "TextBox33"
-        Me.TextBox33.Size = New System.Drawing.Size(60, 20)
-        Me.TextBox33.TabIndex = 129
-        Me.TextBox33.Text = "Semester"
-        '
-        'RadioButton10
-        '
-        Me.RadioButton10.AutoSize = True
-        Me.RadioButton10.Location = New System.Drawing.Point(141, 474)
-        Me.RadioButton10.Name = "RadioButton10"
-        Me.RadioButton10.Size = New System.Drawing.Size(39, 17)
-        Me.RadioButton10.TabIndex = 128
-        Me.RadioButton10.TabStop = True
-        Me.RadioButton10.Text = "No"
-        Me.RadioButton10.UseVisualStyleBackColor = True
-        '
-        'RadioButton9
-        '
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.Location = New System.Drawing.Point(141, 454)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(43, 17)
-        Me.RadioButton9.TabIndex = 127
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "Yes"
-        Me.RadioButton9.UseVisualStyleBackColor = True
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(498, 441)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(125, 13)
-        Me.Label17.TabIndex = 126
-        Me.Label17.Text = "If you enrolled, were you:"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(331, 439)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(77, 13)
-        Me.Label18.TabIndex = 125
-        Me.Label18.Text = "Did you enroll?"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(124, 438)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(198, 13)
-        Me.Label19.TabIndex = 124
-        Me.Label19.Text = "Have you ever applied to this institution?"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(238, 411)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(18, 13)
-        Me.Label20.TabIndex = 123
-        Me.Label20.Text = "->"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(436, 387)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(18, 13)
-        Me.Label21.TabIndex = 122
-        Me.Label21.Text = "->"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(456, 366)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(18, 13)
-        Me.Label22.TabIndex = 121
-        Me.Label22.Text = "->"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(336, 365)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(18, 13)
-        Me.Label23.TabIndex = 120
-        Me.Label23.Text = "->"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(322, 387)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(18, 13)
-        Me.Label24.TabIndex = 119
-        Me.Label24.Text = "->"
-        '
-        'CheckBox16
-        '
-        Me.CheckBox16.AutoSize = True
-        Me.CheckBox16.Location = New System.Drawing.Point(520, 409)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(36, 17)
-        Me.CheckBox16.TabIndex = 118
-        Me.CheckBox16.Text = "BI"
-        Me.CheckBox16.UseVisualStyleBackColor = True
-        '
-        'CheckBox15
-        '
-        Me.CheckBox15.AutoSize = True
-        Me.CheckBox15.Location = New System.Drawing.Point(466, 410)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(48, 17)
-        Me.CheckBox15.TabIndex = 117
-        Me.CheckBox15.Text = "ERP"
-        Me.CheckBox15.UseVisualStyleBackColor = True
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(257, 411)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(203, 13)
-        Me.Label25.TabIndex = 116
-        Me.Label25.Text = "If degree is sought, please indicate either:"
-        '
-        'CheckBox14
-        '
-        Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.Location = New System.Drawing.Point(456, 386)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(165, 17)
-        Me.CheckBox14.TabIndex = 115
-        Me.CheckBox14.Text = "Partial-Time/Professional MIS"
-        Me.CheckBox14.UseVisualStyleBackColor = True
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.Location = New System.Drawing.Point(342, 386)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(96, 17)
-        Me.CheckBox13.TabIndex = 114
-        Me.CheckBox13.Text = "Full-Time (MIS)"
-        Me.CheckBox13.UseVisualStyleBackColor = True
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Location = New System.Drawing.Point(482, 365)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(179, 17)
-        Me.CheckBox12.TabIndex = 113
-        Me.CheckBox12.Text = "Partial-Time/Managerial (MMBA)"
-        Me.CheckBox12.UseVisualStyleBackColor = True
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.Location = New System.Drawing.Point(358, 365)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(100, 17)
-        Me.CheckBox11.TabIndex = 112
-        Me.CheckBox11.Text = "Full-Time (MBA)"
-        Me.CheckBox11.UseVisualStyleBackColor = True
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Location = New System.Drawing.Point(158, 409)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(84, 17)
-        Me.CheckBox10.TabIndex = 111
-        Me.CheckBox10.Text = "Non-Degree"
-        Me.CheckBox10.UseVisualStyleBackColor = True
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Location = New System.Drawing.Point(158, 386)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(167, 17)
-        Me.CheckBox9.TabIndex = 110
-        Me.CheckBox9.Text = "Master of Information Systems"
-        Me.CheckBox9.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(158, 363)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(183, 17)
-        Me.CheckBox8.TabIndex = 109
-        Me.CheckBox8.Text = "Master of Business Administration"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(158, 340)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(207, 17)
-        Me.CheckBox7.TabIndex = 108
-        Me.CheckBox7.Text = "Master of Arts in Economics (MAEcon)"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(158, 317)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(173, 17)
-        Me.CheckBox6.TabIndex = 107
-        Me.CheckBox6.Text = "Master of Accountancy (MAcc)"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(129, 292)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(228, 13)
-        Me.Label26.TabIndex = 106
-        Me.Label26.Text = "Please select the Program you are applying for:"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(129, 263)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(127, 13)
-        Me.Label27.TabIndex = 105
-        Me.Label27.Text = "Admission Requested for:"
-        '
-        'TextBox34
-        '
-        Me.TextBox34.Location = New System.Drawing.Point(261, 260)
-        Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.Size = New System.Drawing.Size(35, 20)
-        Me.TextBox34.TabIndex = 104
-        Me.TextBox34.Text = "Year"
-        '
-        'TextBox35
-        '
-        Me.TextBox35.Location = New System.Drawing.Point(554, 186)
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.Size = New System.Drawing.Size(57, 20)
-        Me.TextBox35.TabIndex = 103
-        Me.TextBox35.Text = "Visa Type"
-        '
-        'TextBox36
-        '
-        Me.TextBox36.Location = New System.Drawing.Point(433, 211)
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox36.TabIndex = 102
-        Me.TextBox36.Text = "Country of citizenship"
-        '
-        'TextBox37
-        '
-        Me.TextBox37.Location = New System.Drawing.Point(289, 211)
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox37.TabIndex = 101
-        Me.TextBox37.Text = "Country of citizenship"
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(421, 189)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(111, 17)
-        Me.RadioButton6.TabIndex = 100
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Non-resident Alien"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Location = New System.Drawing.Point(275, 189)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(147, 17)
-        Me.RadioButton7.TabIndex = 99
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "Resident Alien (Immigrant)"
-        Me.RadioButton7.UseVisualStyleBackColor = True
-        '
-        'RadioButton8
-        '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Location = New System.Drawing.Point(195, 189)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(79, 17)
-        Me.RadioButton8.TabIndex = 98
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "U.S. citizen"
-        Me.RadioButton8.UseVisualStyleBackColor = True
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(129, 189)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(60, 13)
-        Me.Label28.TabIndex = 97
-        Me.Label28.Text = "Citizenship:"
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(282, 163)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(51, 17)
-        Me.RadioButton5.TabIndex = 96
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Other"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton15
-        '
-        Me.RadioButton15.AutoSize = True
-        Me.RadioButton15.Location = New System.Drawing.Point(237, 163)
-        Me.RadioButton15.Name = "RadioButton15"
-        Me.RadioButton15.Size = New System.Drawing.Size(48, 17)
-        Me.RadioButton15.TabIndex = 95
-        Me.RadioButton15.TabStop = True
-        Me.RadioButton15.Text = "Male"
-        Me.RadioButton15.UseVisualStyleBackColor = True
-        '
-        'RadioButton16
-        '
-        Me.RadioButton16.AutoSize = True
-        Me.RadioButton16.Location = New System.Drawing.Point(180, 163)
-        Me.RadioButton16.Name = "RadioButton16"
-        Me.RadioButton16.Size = New System.Drawing.Size(59, 17)
-        Me.RadioButton16.TabIndex = 94
-        Me.RadioButton16.TabStop = True
-        Me.RadioButton16.Text = "Female"
-        Me.RadioButton16.UseVisualStyleBackColor = True
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(129, 165)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(45, 13)
-        Me.Label29.TabIndex = 93
-        Me.Label29.Text = "Gender:"
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(443, 139)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(185, 17)
-        Me.CheckBox5.TabIndex = 92
-        Me.CheckBox5.Text = "Native Hawaiin or Pacific Islander"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(480, 115)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(52, 17)
-        Me.CheckBox4.TabIndex = 91
-        Me.CheckBox4.Text = "Asian"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(534, 115)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(54, 17)
-        Me.CheckBox3.TabIndex = 90
-        Me.CheckBox3.Text = "White"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(291, 139)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(148, 17)
-        Me.CheckBox2.TabIndex = 89
-        Me.CheckBox2.Text = "Black or African American"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox17
-        '
-        Me.CheckBox17.AutoSize = True
-        Me.CheckBox17.Location = New System.Drawing.Point(291, 116)
-        Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.Size = New System.Drawing.Size(189, 17)
-        Me.CheckBox17.TabIndex = 88
-        Me.CheckBox17.Text = "American Indian or Alaskan Native"
-        Me.CheckBox17.UseVisualStyleBackColor = True
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(125, 116)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(161, 13)
-        Me.Label30.TabIndex = 87
-        Me.Label30.Text = "Select one or more, if applicable:"
-        '
-        'RadioButton17
-        '
-        Me.RadioButton17.AutoSize = True
-        Me.RadioButton17.Location = New System.Drawing.Point(271, 90)
-        Me.RadioButton17.Name = "RadioButton17"
-        Me.RadioButton17.Size = New System.Drawing.Size(39, 17)
-        Me.RadioButton17.TabIndex = 86
-        Me.RadioButton17.TabStop = True
-        Me.RadioButton17.Text = "No"
-        Me.RadioButton17.UseVisualStyleBackColor = True
-        '
-        'RadioButton18
-        '
-        Me.RadioButton18.AutoSize = True
-        Me.RadioButton18.Location = New System.Drawing.Point(227, 90)
-        Me.RadioButton18.Name = "RadioButton18"
-        Me.RadioButton18.Size = New System.Drawing.Size(43, 17)
-        Me.RadioButton18.TabIndex = 85
-        Me.RadioButton18.TabStop = True
-        Me.RadioButton18.Text = "Yes"
-        Me.RadioButton18.UseVisualStyleBackColor = True
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(125, 90)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(95, 13)
-        Me.Label31.TabIndex = 84
-        Me.Label31.Text = "Hispanic or Latino:"
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(108, 63)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(181, 15)
-        Me.Label32.TabIndex = 83
-        Me.Label32.Text = "Please indicate if you are..."
         '
         'GroupBox2
         '
@@ -1451,7 +1442,7 @@ Partial Class frmGradApp
         Me.GroupBox2.Controls.Add(Me.Label38)
         Me.GroupBox2.Controls.Add(Me.Label39)
         Me.GroupBox2.Controls.Add(Me.Label40)
-        Me.GroupBox2.Location = New System.Drawing.Point(104, 231)
+        Me.GroupBox2.Location = New System.Drawing.Point(23, 159)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(560, 206)
         Me.GroupBox2.TabIndex = 47
@@ -1933,7 +1924,7 @@ Partial Class frmGradApp
         '
         'TextBox92
         '
-        Me.TextBox92.Location = New System.Drawing.Point(153, 443)
+        Me.TextBox92.Location = New System.Drawing.Point(72, 371)
         Me.TextBox92.Name = "TextBox92"
         Me.TextBox92.Size = New System.Drawing.Size(200, 20)
         Me.TextBox92.TabIndex = 46
@@ -1941,7 +1932,7 @@ Partial Class frmGradApp
         '
         'TextBox93
         '
-        Me.TextBox93.Location = New System.Drawing.Point(395, 443)
+        Me.TextBox93.Location = New System.Drawing.Point(314, 371)
         Me.TextBox93.Name = "TextBox93"
         Me.TextBox93.Size = New System.Drawing.Size(90, 20)
         Me.TextBox93.TabIndex = 45
@@ -1949,7 +1940,7 @@ Partial Class frmGradApp
         '
         'TextBox94
         '
-        Me.TextBox94.Location = New System.Drawing.Point(491, 193)
+        Me.TextBox94.Location = New System.Drawing.Point(410, 121)
         Me.TextBox94.Name = "TextBox94"
         Me.TextBox94.Size = New System.Drawing.Size(90, 20)
         Me.TextBox94.TabIndex = 44
@@ -1958,7 +1949,7 @@ Partial Class frmGradApp
         'Label41
         '
         Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(133, 196)
+        Me.Label41.Location = New System.Drawing.Point(52, 124)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(352, 13)
         Me.Label41.TabIndex = 43
@@ -1966,7 +1957,7 @@ Partial Class frmGradApp
         '
         'TextBox95
         '
-        Me.TextBox95.Location = New System.Drawing.Point(309, 169)
+        Me.TextBox95.Location = New System.Drawing.Point(228, 97)
         Me.TextBox95.Name = "TextBox95"
         Me.TextBox95.Size = New System.Drawing.Size(61, 20)
         Me.TextBox95.TabIndex = 42
@@ -1974,7 +1965,7 @@ Partial Class frmGradApp
         '
         'TextBox96
         '
-        Me.TextBox96.Location = New System.Drawing.Point(221, 169)
+        Me.TextBox96.Location = New System.Drawing.Point(140, 97)
         Me.TextBox96.Name = "TextBox96"
         Me.TextBox96.Size = New System.Drawing.Size(61, 20)
         Me.TextBox96.TabIndex = 41
@@ -1982,7 +1973,7 @@ Partial Class frmGradApp
         '
         'TextBox97
         '
-        Me.TextBox97.Location = New System.Drawing.Point(132, 169)
+        Me.TextBox97.Location = New System.Drawing.Point(51, 97)
         Me.TextBox97.Name = "TextBox97"
         Me.TextBox97.Size = New System.Drawing.Size(61, 20)
         Me.TextBox97.TabIndex = 40
@@ -1990,7 +1981,7 @@ Partial Class frmGradApp
         '
         'TextBox98
         '
-        Me.TextBox98.Location = New System.Drawing.Point(310, 143)
+        Me.TextBox98.Location = New System.Drawing.Point(229, 71)
         Me.TextBox98.Name = "TextBox98"
         Me.TextBox98.Size = New System.Drawing.Size(82, 20)
         Me.TextBox98.TabIndex = 39
@@ -1998,7 +1989,7 @@ Partial Class frmGradApp
         '
         'TextBox99
         '
-        Me.TextBox99.Location = New System.Drawing.Point(222, 143)
+        Me.TextBox99.Location = New System.Drawing.Point(141, 71)
         Me.TextBox99.Name = "TextBox99"
         Me.TextBox99.Size = New System.Drawing.Size(82, 20)
         Me.TextBox99.TabIndex = 38
@@ -2006,7 +1997,7 @@ Partial Class frmGradApp
         '
         'TextBox100
         '
-        Me.TextBox100.Location = New System.Drawing.Point(133, 143)
+        Me.TextBox100.Location = New System.Drawing.Point(52, 71)
         Me.TextBox100.Name = "TextBox100"
         Me.TextBox100.Size = New System.Drawing.Size(82, 20)
         Me.TextBox100.TabIndex = 37
@@ -2015,7 +2006,7 @@ Partial Class frmGradApp
         'CheckBox18
         '
         Me.CheckBox18.AutoSize = True
-        Me.CheckBox18.Location = New System.Drawing.Point(308, 120)
+        Me.CheckBox18.Location = New System.Drawing.Point(227, 48)
         Me.CheckBox18.Name = "CheckBox18"
         Me.CheckBox18.Size = New System.Drawing.Size(94, 17)
         Me.CheckBox18.TabIndex = 36
@@ -2025,7 +2016,7 @@ Partial Class frmGradApp
         'CheckBox19
         '
         Me.CheckBox19.AutoSize = True
-        Me.CheckBox19.Location = New System.Drawing.Point(221, 120)
+        Me.CheckBox19.Location = New System.Drawing.Point(140, 48)
         Me.CheckBox19.Name = "CheckBox19"
         Me.CheckBox19.Size = New System.Drawing.Size(83, 17)
         Me.CheckBox19.TabIndex = 35
@@ -2035,12 +2026,36 @@ Partial Class frmGradApp
         'CheckBox20
         '
         Me.CheckBox20.AutoSize = True
-        Me.CheckBox20.Location = New System.Drawing.Point(124, 120)
+        Me.CheckBox20.Location = New System.Drawing.Point(43, 48)
         Me.CheckBox20.Name = "CheckBox20"
         Me.CheckBox20.Size = New System.Drawing.Size(91, 17)
         Me.CheckBox20.TabIndex = 34
         Me.CheckBox20.Text = "GMAT Taken"
         Me.CheckBox20.UseVisualStyleBackColor = True
+        '
+        'tab4
+        '
+        Me.tab4.Controls.Add(Me.btnPrevious)
+        Me.tab4.Controls.Add(Me.btnSubmit)
+        Me.tab4.Controls.Add(Me.GroupBox3)
+        Me.tab4.Controls.Add(Me.CheckBox33)
+        Me.tab4.Controls.Add(Me.CheckBox34)
+        Me.tab4.Controls.Add(Me.CheckBox35)
+        Me.tab4.Controls.Add(Me.CheckBox36)
+        Me.tab4.Controls.Add(Me.CheckBox37)
+        Me.tab4.Controls.Add(Me.CheckBox38)
+        Me.tab4.Controls.Add(Me.CheckBox39)
+        Me.tab4.Controls.Add(Me.CheckBox40)
+        Me.tab4.Controls.Add(Me.CheckBox41)
+        Me.tab4.Controls.Add(Me.CheckBox42)
+        Me.tab4.Controls.Add(Me.Label43)
+        Me.tab4.Controls.Add(Me.Label44)
+        Me.tab4.Location = New System.Drawing.Point(4, 22)
+        Me.tab4.Name = "tab4"
+        Me.tab4.Size = New System.Drawing.Size(617, 471)
+        Me.tab4.TabIndex = 3
+        Me.tab4.Text = "4"
+        Me.tab4.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -2059,7 +2074,7 @@ Partial Class frmGradApp
         Me.GroupBox3.Controls.Add(Me.CheckBox31)
         Me.GroupBox3.Controls.Add(Me.CheckBox32)
         Me.GroupBox3.Controls.Add(Me.Label42)
-        Me.GroupBox3.Location = New System.Drawing.Point(148, 335)
+        Me.GroupBox3.Location = New System.Drawing.Point(65, 268)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(475, 150)
         Me.GroupBox3.TabIndex = 25
@@ -2213,7 +2228,7 @@ Partial Class frmGradApp
         'CheckBox33
         '
         Me.CheckBox33.AutoSize = True
-        Me.CheckBox33.Location = New System.Drawing.Point(176, 304)
+        Me.CheckBox33.Location = New System.Drawing.Point(93, 237)
         Me.CheckBox33.Name = "CheckBox33"
         Me.CheckBox33.Size = New System.Drawing.Size(60, 17)
         Me.CheckBox33.TabIndex = 24
@@ -2223,7 +2238,7 @@ Partial Class frmGradApp
         'CheckBox34
         '
         Me.CheckBox34.AutoSize = True
-        Me.CheckBox34.Location = New System.Drawing.Point(176, 286)
+        Me.CheckBox34.Location = New System.Drawing.Point(93, 219)
         Me.CheckBox34.Name = "CheckBox34"
         Me.CheckBox34.Size = New System.Drawing.Size(237, 17)
         Me.CheckBox34.TabIndex = 23
@@ -2233,7 +2248,7 @@ Partial Class frmGradApp
         'CheckBox35
         '
         Me.CheckBox35.AutoSize = True
-        Me.CheckBox35.Location = New System.Drawing.Point(176, 269)
+        Me.CheckBox35.Location = New System.Drawing.Point(93, 202)
         Me.CheckBox35.Name = "CheckBox35"
         Me.CheckBox35.Size = New System.Drawing.Size(222, 17)
         Me.CheckBox35.TabIndex = 22
@@ -2243,7 +2258,7 @@ Partial Class frmGradApp
         'CheckBox36
         '
         Me.CheckBox36.AutoSize = True
-        Me.CheckBox36.Location = New System.Drawing.Point(176, 219)
+        Me.CheckBox36.Location = New System.Drawing.Point(93, 152)
         Me.CheckBox36.Name = "CheckBox36"
         Me.CheckBox36.Size = New System.Drawing.Size(147, 17)
         Me.CheckBox36.TabIndex = 21
@@ -2253,7 +2268,7 @@ Partial Class frmGradApp
         'CheckBox37
         '
         Me.CheckBox37.AutoSize = True
-        Me.CheckBox37.Location = New System.Drawing.Point(176, 202)
+        Me.CheckBox37.Location = New System.Drawing.Point(93, 135)
         Me.CheckBox37.Name = "CheckBox37"
         Me.CheckBox37.Size = New System.Drawing.Size(104, 17)
         Me.CheckBox37.TabIndex = 20
@@ -2263,7 +2278,7 @@ Partial Class frmGradApp
         'CheckBox38
         '
         Me.CheckBox38.AutoSize = True
-        Me.CheckBox38.Location = New System.Drawing.Point(176, 185)
+        Me.CheckBox38.Location = New System.Drawing.Point(93, 118)
         Me.CheckBox38.Name = "CheckBox38"
         Me.CheckBox38.Size = New System.Drawing.Size(246, 17)
         Me.CheckBox38.TabIndex = 19
@@ -2273,7 +2288,7 @@ Partial Class frmGradApp
         'CheckBox39
         '
         Me.CheckBox39.AutoSize = True
-        Me.CheckBox39.Location = New System.Drawing.Point(176, 167)
+        Me.CheckBox39.Location = New System.Drawing.Point(93, 100)
         Me.CheckBox39.Name = "CheckBox39"
         Me.CheckBox39.Size = New System.Drawing.Size(165, 17)
         Me.CheckBox39.TabIndex = 18
@@ -2283,7 +2298,7 @@ Partial Class frmGradApp
         'CheckBox40
         '
         Me.CheckBox40.AutoSize = True
-        Me.CheckBox40.Location = New System.Drawing.Point(176, 149)
+        Me.CheckBox40.Location = New System.Drawing.Point(93, 82)
         Me.CheckBox40.Name = "CheckBox40"
         Me.CheckBox40.Size = New System.Drawing.Size(65, 17)
         Me.CheckBox40.TabIndex = 17
@@ -2293,7 +2308,7 @@ Partial Class frmGradApp
         'CheckBox41
         '
         Me.CheckBox41.AutoSize = True
-        Me.CheckBox41.Location = New System.Drawing.Point(176, 131)
+        Me.CheckBox41.Location = New System.Drawing.Point(93, 64)
         Me.CheckBox41.Name = "CheckBox41"
         Me.CheckBox41.Size = New System.Drawing.Size(99, 17)
         Me.CheckBox41.TabIndex = 16
@@ -2303,7 +2318,7 @@ Partial Class frmGradApp
         'CheckBox42
         '
         Me.CheckBox42.AutoSize = True
-        Me.CheckBox42.Location = New System.Drawing.Point(176, 114)
+        Me.CheckBox42.Location = New System.Drawing.Point(93, 47)
         Me.CheckBox42.Name = "CheckBox42"
         Me.CheckBox42.Size = New System.Drawing.Size(104, 17)
         Me.CheckBox42.TabIndex = 15
@@ -2313,7 +2328,7 @@ Partial Class frmGradApp
         'Label43
         '
         Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(145, 252)
+        Me.Label43.Location = New System.Drawing.Point(62, 185)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(273, 13)
         Me.Label43.TabIndex = 14
@@ -2322,36 +2337,110 @@ Partial Class frmGradApp
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(145, 97)
+        Me.Label44.Location = New System.Drawing.Point(62, 30)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(153, 13)
         Me.Label44.TabIndex = 13
         Me.Label44.Text = "Application Materials Checklist:"
         '
+        'btnSubmit
+        '
+        Me.btnSubmit.Location = New System.Drawing.Point(487, 445)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(127, 23)
+        Me.btnSubmit.TabIndex = 26
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = True
+        '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(536, 445)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 123
+        Me.btnNext.Text = "Next Tab"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(539, 445)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 138
+        Me.Button1.Text = "Next Tab"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(539, 445)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 139
+        Me.Button2.Text = "Next Tab"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'btnPrevious
+        '
+        Me.btnPrevious.Location = New System.Drawing.Point(3, 445)
+        Me.btnPrevious.Name = "btnPrevious"
+        Me.btnPrevious.Size = New System.Drawing.Size(92, 23)
+        Me.btnPrevious.TabIndex = 139
+        Me.btnPrevious.Text = "Previous Tab"
+        Me.btnPrevious.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(3, 445)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(92, 23)
+        Me.Button3.TabIndex = 140
+        Me.Button3.Text = "Previous Tab"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(3, 445)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(92, 23)
+        Me.Button4.TabIndex = 140
+        Me.Button4.Text = "Previous Tab"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(3, 445)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(92, 23)
+        Me.Button5.TabIndex = 140
+        Me.Button5.Text = "Previous Tab"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'frmGradApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 668)
+        Me.ClientSize = New System.Drawing.Size(657, 544)
         Me.Controls.Add(Me.tabGradApp)
+        Me.Controls.Add(Me.Label2)
         Me.Name = "frmGradApp"
         Me.Text = "Application for Admission"
         Me.tabGradApp.ResumeLayout(False)
         Me.tab1.ResumeLayout(False)
         Me.tab1.PerformLayout()
-        Me.tab2.ResumeLayout(False)
-        Me.tab2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.tab2.ResumeLayout(False)
+        Me.tab2.PerformLayout()
         Me.tab3.ResumeLayout(False)
         Me.tab3.PerformLayout()
-        Me.tab4.ResumeLayout(False)
-        Me.tab4.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.tab4.ResumeLayout(False)
+        Me.tab4.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -2569,4 +2658,12 @@ Partial Class frmGradApp
     Friend WithEvents CheckBox42 As CheckBox
     Friend WithEvents Label43 As Label
     Friend WithEvents Label44 As Label
+    Friend WithEvents btnSubmit As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents btnNext As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents btnPrevious As Button
 End Class
