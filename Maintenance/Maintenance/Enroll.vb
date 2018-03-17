@@ -11,14 +11,14 @@ Public Class frmEnroll
         sid = id
     End Sub
     Protected Sub fillEnroll()
-        db.sql = "SELECT * FROM Enrollment Where SID = @id"
+        db.sql = "SELECT * FROM Enrollment Where StudentID = @id"
         db.bind("@id", sid)
         db.fill(dgvEnroll)
     End Sub
 
     Private Sub frmEnroll_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=arshephe; Trusted_Connection=yes"}
-        Dim command As New SqlCommand("Select * FROM Enrollment where SID = @id", connection)
+        Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+        Dim command As New SqlCommand("Select * FROM Enrollment where StudentID = @id", connection)
         command.Parameters.Add("@id", SqlDbType.VarChar).Value = sid
 
 
