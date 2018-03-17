@@ -224,6 +224,7 @@ Partial Class frmAdd
         Me.Label74 = New System.Windows.Forms.Label()
         Me.ckLocalNone = New System.Windows.Forms.CheckBox()
         Me.ckWorkNone = New System.Windows.Forms.CheckBox()
+        Me.btnContinue = New System.Windows.Forms.Button()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -245,6 +246,7 @@ Partial Class frmAdd
         '
         'tabPersonalInfo
         '
+        Me.tabPersonalInfo.Controls.Add(Me.btnContinue)
         Me.tabPersonalInfo.Controls.Add(Me.ckWorkNone)
         Me.tabPersonalInfo.Controls.Add(Me.ckLocalNone)
         Me.tabPersonalInfo.Controls.Add(Me.lblBirthdayFormat)
@@ -2221,6 +2223,15 @@ Partial Class frmAdd
         Me.ckWorkNone.Text = "No Work phone"
         Me.ckWorkNone.UseVisualStyleBackColor = True
         '
+        'btnContinue
+        '
+        Me.btnContinue.Location = New System.Drawing.Point(701, 420)
+        Me.btnContinue.Name = "btnContinue"
+        Me.btnContinue.Size = New System.Drawing.Size(75, 23)
+        Me.btnContinue.TabIndex = 319
+        Me.btnContinue.Text = "Continue"
+        Me.btnContinue.UseVisualStyleBackColor = True
+        '
         'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2444,4 +2455,5 @@ Partial Class frmAdd
     Friend WithEvents Label74 As Label
     Friend WithEvents ckWorkNone As CheckBox
     Friend WithEvents ckLocalNone As CheckBox
+    Friend WithEvents btnContinue As Button
 End Class
