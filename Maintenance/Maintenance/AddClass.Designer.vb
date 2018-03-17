@@ -37,7 +37,7 @@ Partial Class frmAddClass
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(116, 321)
+        Me.btnAdd.Location = New System.Drawing.Point(116, 320)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(201, 23)
         Me.btnAdd.TabIndex = 1
