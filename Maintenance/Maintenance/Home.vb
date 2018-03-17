@@ -26,4 +26,8 @@
         '------------------------------------------------------------------
         MessageBox.Show("You are not authorized to remove student records.")
     End Sub
+
+    Private Sub txtStudentID_TextChanged(sender As Object, e As EventArgs) Handles txtStudentID.TextChanged
+
+    End Sub
 End Class
