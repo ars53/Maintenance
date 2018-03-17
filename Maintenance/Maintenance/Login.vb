@@ -41,7 +41,12 @@ Public Class frmLogin
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         txtPassword.Clear()
         txtUser.Clear()
+
+        radFaculty.Checked = False
+        radStudent.Checked = False
+
         txtUser.Focus()
+
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -55,7 +60,11 @@ Public Class frmLogin
     End Sub
 
     Private Sub linkNewUser_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkNewUser.LinkClicked
-        frmAdd.Show()
+        'frmAdd.Show()
+        'below has been commented out as this form is not for new student account registration
+
+        MessageBox.Show("You must contact the University Offices of the Registrar to continue this.")
+
         Me.Dispose()
         Me.Close()
 
