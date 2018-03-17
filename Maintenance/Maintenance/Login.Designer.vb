@@ -32,6 +32,7 @@ Partial Class frmLogin
         Me.radStudent = New System.Windows.Forms.RadioButton()
         Me.linkNewUser = New System.Windows.Forms.LinkLabel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnLogin
@@ -46,17 +47,17 @@ Partial Class frmLogin
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(86, 17)
+        Me.txtUser.Location = New System.Drawing.Point(70, 17)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(100, 20)
+        Me.txtUser.Size = New System.Drawing.Size(116, 20)
         Me.txtUser.TabIndex = 1
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(86, 50)
+        Me.txtPassword.Location = New System.Drawing.Point(70, 50)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassword.Size = New System.Drawing.Size(116, 20)
         Me.txtPassword.TabIndex = 3
         '
         'Label1
@@ -64,7 +65,7 @@ Partial Class frmLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(14, 20)
+        Me.Label1.Location = New System.Drawing.Point(12, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 13)
         Me.Label1.TabIndex = 0
@@ -118,7 +119,7 @@ Partial Class frmLogin
         'linkNewUser
         '
         Me.linkNewUser.AutoSize = True
-        Me.linkNewUser.Location = New System.Drawing.Point(155, 171)
+        Me.linkNewUser.Location = New System.Drawing.Point(157, 176)
         Me.linkNewUser.Name = "linkNewUser"
         Me.linkNewUser.Size = New System.Drawing.Size(31, 13)
         Me.linkNewUser.TabIndex = 8
@@ -129,18 +130,29 @@ Partial Class frmLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(14, 171)
+        Me.Label3.Location = New System.Drawing.Point(16, 176)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(141, 13)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "New User? Apply for access"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.DimGray
+        Me.Label4.Location = New System.Drawing.Point(11, 160)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(181, 13)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "_____________________________"
         '
         'frmLogin
         '
         Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(204, 197)
+        Me.ClientSize = New System.Drawing.Size(204, 204)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.linkNewUser)
         Me.Controls.Add(Me.radStudent)
@@ -169,4 +181,5 @@ Partial Class frmLogin
     Friend WithEvents radStudent As RadioButton
     Friend WithEvents linkNewUser As LinkLabel
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

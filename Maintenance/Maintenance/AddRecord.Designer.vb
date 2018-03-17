@@ -222,6 +222,8 @@ Partial Class frmAdd
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
+        Me.ckLocalNone = New System.Windows.Forms.CheckBox()
+        Me.ckWorkNone = New System.Windows.Forms.CheckBox()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -235,7 +237,7 @@ Partial Class frmAdd
         Me.tabApplication.Controls.Add(Me.TabAdmission)
         Me.tabApplication.Controls.Add(Me.tabCredentials)
         Me.tabApplication.Controls.Add(Me.tabStudentStatus)
-        Me.tabApplication.Location = New System.Drawing.Point(12, 12)
+        Me.tabApplication.Location = New System.Drawing.Point(1, 181)
         Me.tabApplication.Name = "tabApplication"
         Me.tabApplication.SelectedIndex = 0
         Me.tabApplication.Size = New System.Drawing.Size(809, 478)
@@ -243,6 +245,8 @@ Partial Class frmAdd
         '
         'tabPersonalInfo
         '
+        Me.tabPersonalInfo.Controls.Add(Me.ckWorkNone)
+        Me.tabPersonalInfo.Controls.Add(Me.ckLocalNone)
         Me.tabPersonalInfo.Controls.Add(Me.lblBirthdayFormat)
         Me.tabPersonalInfo.Controls.Add(Me.cbxFState)
         Me.tabPersonalInfo.Controls.Add(Me.cbxLState)
@@ -486,7 +490,7 @@ Partial Class frmAdd
         'cbxGender
         '
         Me.cbxGender.FormattingEnabled = True
-        Me.cbxGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.cbxGender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.cbxGender.Location = New System.Drawing.Point(365, 105)
         Me.cbxGender.Name = "cbxGender"
         Me.cbxGender.Size = New System.Drawing.Size(121, 21)
@@ -2197,11 +2201,31 @@ Partial Class frmAdd
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
+        'ckLocalNone
+        '
+        Me.ckLocalNone.AutoSize = True
+        Me.ckLocalNone.Location = New System.Drawing.Point(634, 323)
+        Me.ckLocalNone.Name = "ckLocalNone"
+        Me.ckLocalNone.Size = New System.Drawing.Size(102, 17)
+        Me.ckLocalNone.TabIndex = 317
+        Me.ckLocalNone.Text = "No Local phone"
+        Me.ckLocalNone.UseVisualStyleBackColor = True
+        '
+        'ckWorkNone
+        '
+        Me.ckWorkNone.AutoSize = True
+        Me.ckWorkNone.Location = New System.Drawing.Point(634, 350)
+        Me.ckWorkNone.Name = "ckWorkNone"
+        Me.ckWorkNone.Size = New System.Drawing.Size(102, 17)
+        Me.ckWorkNone.TabIndex = 318
+        Me.ckWorkNone.Text = "No Work phone"
+        Me.ckWorkNone.UseVisualStyleBackColor = True
+        '
         'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(912, 671)
+        Me.ClientSize = New System.Drawing.Size(808, 671)
         Me.Controls.Add(Me.tabApplication)
         Me.Name = "frmAdd"
         Me.Text = "Add Record"
@@ -2418,4 +2442,6 @@ Partial Class frmAdd
     Friend WithEvents Label77 As Label
     Friend WithEvents Label75 As Label
     Friend WithEvents Label74 As Label
+    Friend WithEvents ckWorkNone As CheckBox
+    Friend WithEvents ckLocalNone As CheckBox
 End Class

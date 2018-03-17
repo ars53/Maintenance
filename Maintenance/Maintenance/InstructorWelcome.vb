@@ -1,4 +1,5 @@
-﻿Public Class frmWelcome
+﻿Public Class frmInstructorWelcome
+    Protected facID As Integer
     Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub

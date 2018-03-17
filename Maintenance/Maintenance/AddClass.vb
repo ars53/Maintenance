@@ -15,14 +15,20 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        db.sql = "INSERT INTO Enrollment values (@sid, @classname)"
+        db.sql = "INSERT INTO Enrollment (Classname, studentid, section, semy) values (@name, @sid, @sec, @semy)"
         db.bind("@sid", sid)
-        db.bind("@classname", getClassID())
+        db.bind("@name", getClassID())
+        db.bind("@sec", getClassValue("Section"))
+        db.bind("@semy", getClassValue("SemY"))
         db.execute()
         Me.Close()
+
+
+    End Sub
+    Public Sub FillClass()
     End Sub
     Public Function getClassID() As String
-        Return getClassValue("Name")
+        Return getClassValue("ClassName")
     End Function
     Public Function getClassValue(ByVal column As String)
         Return dgvClasses.Item(column, dgvClasses.CurrentRow.Index).Value

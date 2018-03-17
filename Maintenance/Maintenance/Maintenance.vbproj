@@ -119,15 +119,11 @@
     <Compile Include="Form10.Designer.vb">
       <DependentUpon>Form10.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form10.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Form10.vb" />
     <Compile Include="Form11.Designer.vb">
       <DependentUpon>Form11.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form11.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Form11.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -137,9 +133,7 @@
     <Compile Include="RecEdit.Designer.vb">
       <DependentUpon>RecEdit.vb</DependentUpon>
     </Compile>
-    <Compile Include="RecEdit.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="RecEdit.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

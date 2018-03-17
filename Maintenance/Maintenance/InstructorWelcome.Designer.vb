@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmWelcome
+Partial Class frmInstructorWelcome
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmWelcome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWelcome))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInstructorWelcome))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
@@ -79,7 +79,7 @@ Partial Class frmWelcome
         Me.btnAdvising.Text = "Advising Form"
         Me.btnAdvising.UseVisualStyleBackColor = True
         '
-        'frmWelcome
+        'frmInstructorWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -89,7 +89,7 @@ Partial Class frmWelcome
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "frmWelcome"
+        Me.Name = "frmInstructorWelcome"
         Me.Text = "Welcome"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
