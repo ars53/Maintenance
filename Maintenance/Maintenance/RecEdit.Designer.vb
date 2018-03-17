@@ -103,7 +103,7 @@ Partial Class RecEdit
         Me.TextBox1.Size = New System.Drawing.Size(116, 20)
         Me.TextBox1.TabIndex = 32
         '
-        'Form9
+        'RecEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -113,7 +113,7 @@ Partial Class RecEdit
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Name = "Form9"
+        Me.Name = "RecEdit"
         Me.Text = "Form9"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
