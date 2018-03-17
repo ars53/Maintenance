@@ -7,4 +7,10 @@
         frmLogin.Show()
         Me.Dispose()
     End Sub
+
+    Private Sub btnAdvising_Click(sender As Object, e As EventArgs) Handles btnAdvising.Click
+        frmAdvising.Show()
+        Me.Dispose()
+
+    End Sub
 End Class
