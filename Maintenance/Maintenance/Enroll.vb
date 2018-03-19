@@ -61,4 +61,14 @@ Public Class frmEnroll
     Public Function getEnrollValue(ByVal column As String)
         Return dgvEnroll.Item(column, dgvEnroll.CurrentRow.Index).Value
     End Function
+
+    Private Sub btnAdvising_Click(sender As Object, e As EventArgs) Handles btnAdvising.Click
+        Dim mydate As Date
+        mydate = InputBox("Please enter the date of your advising session")
+        If IsDate(mydate) = False Then
+            MsgBox("Invalid Date")
+        End If
+        Dim advisingenroll As New frmAdvisingEnroll(mydate, sid)
+
+    End Sub
 End Class

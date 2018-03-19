@@ -15,4 +15,19 @@
         frmLogin.Show()
         Me.Dispose()
     End Sub
+
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+
+    End Sub
+
+    Private Sub btnAdvising_Click(sender As Object, e As EventArgs) Handles btnAdvising.Click
+        Dim advise As New frmAdvisingp1(facID)
+        advise.Show()
+        Me.Close()
+
+    End Sub
 End Class

@@ -1,5 +1,15 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmAdvising
+    Protected db As New db
+    Protected tid As Integer
+    Public Sub New(ByVal ID As Integer)
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+        tid = ID
+    End Sub
     Private Sub frmAdvising_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 
@@ -27,30 +37,40 @@ Public Class frmAdvising
             Char_Term = "FL"
         ElseIf lstTerm.SelectedIndex = 4 Then
             Char_Term = "SP"
-        Else messagebox.Show("Please Select A Term")
+        Else MessageBox.Show("Please Select A Term")
         End If
 
 
         Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=ISYS4283F1759; Trusted_Connection=yes"}
         'Dim command As New SqlCommand("Select * FROM Logins_maint where USERNAME = @username AND Password = @password AND instructor = 1", connection)
-        Dim command As New SqlCommand("Insert Into advising values ( @FirstName, @MiddleName, @LastName, @IDNumber, @Major, @Term, @Year, @Classes, @Section, @Time, @Comments )", connection)
-
-        command.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = txtFName.Text
-        command.Parameters.Add("@LastName", SqlDbType.VarChar).Value = txtLName.Text
-        command.Parameters.Add("@MiddleName", SqlDbType.VarChar).Value = txtMName.Text
-        command.Parameters.Add("@IDNumber", SqlDbType.Int).Value = intIDNum
-        command.Parameters.Add("@Major", SqlDbType.VarChar).Value = txtMajor.Text
-        command.Parameters.Add("@Term", SqlDbType.Char).Value = Char_Term
-        command.Parameters.Add("@Year", SqlDbType.VarChar).Value = txtTermYear.Text
-        command.Parameters.Add("@Classes", SqlDbType.VarChar).Value = "test"
-        command.Parameters.Add("@Section", SqlDbType.Int).Value = 1
-        command.Parameters.Add("@Time", SqlDbType.VarChar).Value = "1111"
-        command.Parameters.Add("@Comments", SqlDbType.VarChar).Value = txtComments.Text
-
+        'Dim command As New SqlCommand("Insert Into advising values ( @FirstName, @MiddleName, @LastName, @IDNumber, @Major, @Term, @Year, @Classes, @Section, @Time, @Comments )", connection)
+        db.sql = "Insert Into advising values ( @FirstName, @MiddleName, @LastName, @IDNumber, @Major, @Term, @Year, @Classes, @Section, @Time, @Comments )"
+        'command.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = txtFName.Text
+        db.bind("@firstname", txtFName.Text)
+        'Command.Parameters.Add("@LastName", SqlDbType.VarChar).Value = txtLName.Text
+        db.bind("@LastName", txtLName.Text)
+        'Command.Parameters.Add("@MiddleName", SqlDbType.VarChar).Value = txtMName.Text
+        db.bind("@MiddleName", txtMName.Text)
+        'Command.Parameters.Add("@IDNumber", SqlDbType.Int).Value = intIDNum
+        db.bind("@IDNumber", intIDNum)
+        'Command.Parameters.Add("@Major", SqlDbType.VarChar).Value = txtMajor.Text
+        db.bind("@Major", txtMajor.Text)
+        'Command.Parameters.Add("@Term", SqlDbType.Char).Value = Char_Term
+        db.bind("@Term", Char_Term)
+        'Command.Parameters.Add("@Year", SqlDbType.VarChar).Value = txtTermYear.Text
+        db.bind("@Year", txtTermYear.Text)
+        'Command.Parameters.Add("@Classes", SqlDbType.VarChar).Value = "test"
+        db.bind("@Classes", "Test")
+        'Command.Parameters.Add("@Section", SqlDbType.Int).Value = 1
+        db.bind("@Section", 1)
+        'Command.Parameters.Add("@Time", SqlDbType.VarChar).Value = "1111"
+        db.bind("@Time", 1111)
+        'Command.Parameters.Add("@Comments", SqlDbType.VarChar).Value = txtComments.Text
+        db.bind("@Comments", txtComments.Text)
         'Need trycatch
-        connection.Open()
-        command.ExecuteNonQuery()
-        connection.Close()
+        'connection.Open()
+        'command.ExecuteNonQuery()
+        'connection.Close()
 
 
         'Dim adapter As New SqlDataAdapter(command)

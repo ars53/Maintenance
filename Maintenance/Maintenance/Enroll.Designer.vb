@@ -26,6 +26,7 @@ Partial Class frmEnroll
         Me.btnEnroll = New System.Windows.Forms.Button()
         Me.btnDel = New System.Windows.Forms.Button()
         Me.lblNoClass = New System.Windows.Forms.Label()
+        Me.btnAdvising = New System.Windows.Forms.Button()
         CType(Me.dgvEnroll, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class frmEnroll
         '
         'btnEnroll
         '
-        Me.btnEnroll.Location = New System.Drawing.Point(273, 272)
+        Me.btnEnroll.Location = New System.Drawing.Point(285, 277)
         Me.btnEnroll.Name = "btnEnroll"
         Me.btnEnroll.Size = New System.Drawing.Size(101, 23)
         Me.btnEnroll.TabIndex = 1
@@ -48,7 +49,7 @@ Partial Class frmEnroll
         '
         'btnDel
         '
-        Me.btnDel.Location = New System.Drawing.Point(46, 272)
+        Me.btnDel.Location = New System.Drawing.Point(52, 277)
         Me.btnDel.Name = "btnDel"
         Me.btnDel.Size = New System.Drawing.Size(75, 23)
         Me.btnDel.TabIndex = 2
@@ -65,11 +66,21 @@ Partial Class frmEnroll
         Me.lblNoClass.Text = "Not registered for classes, click enroll to begin"
         Me.lblNoClass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnAdvising
+        '
+        Me.btnAdvising.Location = New System.Drawing.Point(133, 277)
+        Me.btnAdvising.Name = "btnAdvising"
+        Me.btnAdvising.Size = New System.Drawing.Size(146, 23)
+        Me.btnAdvising.TabIndex = 4
+        Me.btnAdvising.Text = "Add Classes from Advising"
+        Me.btnAdvising.UseVisualStyleBackColor = True
+        '
         'frmEnroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(431, 323)
+        Me.Controls.Add(Me.btnAdvising)
         Me.Controls.Add(Me.lblNoClass)
         Me.Controls.Add(Me.btnDel)
         Me.Controls.Add(Me.btnEnroll)
@@ -85,4 +96,5 @@ Partial Class frmEnroll
     Friend WithEvents btnEnroll As Button
     Friend WithEvents btnDel As Button
     Friend WithEvents lblNoClass As Label
+    Friend WithEvents btnAdvising As Button
 End Class

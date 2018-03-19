@@ -90,6 +90,30 @@
     <Compile Include="Advising.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="advisingaddclass.Designer.vb">
+      <DependentUpon>advisingaddclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="advisingaddclass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvisingEnroll.Designer.vb">
+      <DependentUpon>AdvisingEnroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdvisingEnroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advisingp1.Designer.vb">
+      <DependentUpon>Advisingp1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advisingp1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advisingp2.Designer.vb">
+      <DependentUpon>advisingp2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="advisingp2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="db.vb" />
     <Compile Include="Enroll.Designer.vb">
       <DependentUpon>Enroll.vb</DependentUpon>
@@ -125,9 +149,7 @@
     <Compile Include="RecEdit.Designer.vb">
       <DependentUpon>RecEdit.vb</DependentUpon>
     </Compile>
-    <None Include="RecEdit.vb">
-      <SubType>Form</SubType>
-    </None>
+    <None Include="RecEdit.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -149,6 +171,12 @@
     <Compile Include="InstructorWelcome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SearchRecs.Designer.vb">
+      <DependentUpon>SearchRecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StudentWelcome.Designer.vb">
       <DependentUpon>StudentWelcome.vb</DependentUpon>
     </Compile>
@@ -165,6 +193,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Advising.resx">
       <DependentUpon>Advising.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advisingaddclass.resx">
+      <DependentUpon>advisingaddclass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvisingEnroll.resx">
+      <DependentUpon>AdvisingEnroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advisingp1.resx">
+      <DependentUpon>Advisingp1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advisingp2.resx">
+      <DependentUpon>advisingp2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Enroll.resx">
       <DependentUpon>Enroll.vb</DependentUpon>
@@ -192,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InstructorWelcome.resx">
       <DependentUpon>InstructorWelcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchRecs.resx">
+      <DependentUpon>SearchRecs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentWelcome.resx">
       <DependentUpon>StudentWelcome.vb</DependentUpon>
