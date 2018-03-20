@@ -74,8 +74,8 @@ Public Class frmAdd
         'command.Parameters.Add("@PermHomePhone", SqlDbType.VarChar).Value = txtPPhone.Text
         command.Parameters.Add("@Email1", SqlDbType.VarChar).Value = txtEmail.Text
 
-        'no second email field..
-        'command.Parameters.Add("@Email2", SqlDbType.VarChar).Value = 
+        'no second email field originally, has been added to form to fit DB
+        'command.Parameters.Add("@Email2", SqlDbType.VarChar).Value = txtEmail2.Text
 
         'command.Parameters.Add("@birthday", SqlDbType.VarChar).Value = txtBirthday1.Text
         'command.Parameters.Add("@ethnicity", SqlDbType.VarChar).Value = cbxEthnic.SelectedText
@@ -91,5 +91,41 @@ Public Class frmAdd
 
     Private Sub cbxCitizenship_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxCitizenship.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub btnConfirm2_Click(sender As Object, e As EventArgs) Handles btnConfirm2.Click
+        Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+        'below connection needs proper table name to insert into
+        'Dim command As New SqlCommand("INSERT  INTO Student_", con)
+
+        'need to fix the data types!
+        'need name of coulms in table to data entry
+        'command.Parameters.Add("@year", SqlDbType.VarChar).Value = txtRequestYear.Text
+        'command.Parameters.Add("@beforewhen", SqlDbType.VarChar).Value = txtBefore_when.Text
+        'command.Parameters.Add("@enrolledwhen", SqlDbType.VarChar).Value = txtEnrolled_When.Text
+        'command.Parameters.Add("@session", SqlDbType.VarChar).Value = cbxSession.SelectedText
+        'command.Parameters.Add("@standing", SqlDbType.VarChar).Value = cbxStanding.SelectedText
+    End Sub
+
+    Private Sub btnConfirm3_Click(sender As Object, e As EventArgs) Handles btnConfirm3.Click
+        Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+        'below connection needs proper table name to insert into
+        'Dim command As New SqlCommand("INSERT  INTO Student_", con)
+
+        'need to fix the data types!
+        'need name of coulms in table to data entry
+        'command.Parameters.Add("@GMATdate", SqlDbType.VarChar).Value = txtGMATDate.Text
+        'command.Parameters.Add("@TOEFLdate", SqlDbType.VarChar).Value = txtTOEFLDate.Text
+        'command.Parameters.Add("@TSEdate", SqlDbType.VarChar).Value = txtTSEDate.Text
+        'command.Parameters.Add("@GMATverbal", SqlDbType.VarChar).Value = txtGMATVerbal.Text
+        'command.Parameters.Add("@GMATquant", SqlDbType.VarChar).Value = txtGMATQuant.Text
+        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
+
+        'command.Parameters.Add("@underGPA", SqlDbType.VarChar).Value = txtUnderGPA.Text
+        'command.Parameters.Add("@GPAsenior", SqlDbType.VarChar).Value = txtGPASenior.Text
+
+        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
+        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
+        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
     End Sub
 End Class

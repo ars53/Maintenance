@@ -24,6 +24,9 @@ Partial Class frmAdd
     Private Sub InitializeComponent()
         Me.tabApplication = New System.Windows.Forms.TabControl()
         Me.tabPersonalInfo = New System.Windows.Forms.TabPage()
+        Me.btnContinue = New System.Windows.Forms.Button()
+        Me.ckWorkNone = New System.Windows.Forms.CheckBox()
+        Me.ckLocalNone = New System.Windows.Forms.CheckBox()
         Me.lblBirthdayFormat = New System.Windows.Forms.Label()
         Me.cbxFState = New System.Windows.Forms.ComboBox()
         Me.cbxLState = New System.Windows.Forms.ComboBox()
@@ -222,9 +225,10 @@ Partial Class frmAdd
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
-        Me.ckLocalNone = New System.Windows.Forms.CheckBox()
-        Me.ckWorkNone = New System.Windows.Forms.CheckBox()
-        Me.btnContinue = New System.Windows.Forms.Button()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.txtEmail2 = New System.Windows.Forms.TextBox()
+        Me.btnConfirm2 = New System.Windows.Forms.Button()
+        Me.btnConfirm3 = New System.Windows.Forms.Button()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -238,14 +242,17 @@ Partial Class frmAdd
         Me.tabApplication.Controls.Add(Me.TabAdmission)
         Me.tabApplication.Controls.Add(Me.tabCredentials)
         Me.tabApplication.Controls.Add(Me.tabStudentStatus)
-        Me.tabApplication.Location = New System.Drawing.Point(1, 181)
+        Me.tabApplication.Location = New System.Drawing.Point(1, 33)
         Me.tabApplication.Name = "tabApplication"
         Me.tabApplication.SelectedIndex = 0
-        Me.tabApplication.Size = New System.Drawing.Size(809, 478)
+        Me.tabApplication.Size = New System.Drawing.Size(809, 509)
+        Me.tabApplication.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.tabApplication.TabIndex = 509
         '
         'tabPersonalInfo
         '
+        Me.tabPersonalInfo.Controls.Add(Me.txtEmail2)
+        Me.tabPersonalInfo.Controls.Add(Me.Label52)
         Me.tabPersonalInfo.Controls.Add(Me.btnContinue)
         Me.tabPersonalInfo.Controls.Add(Me.ckWorkNone)
         Me.tabPersonalInfo.Controls.Add(Me.ckLocalNone)
@@ -321,10 +328,39 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Location = New System.Drawing.Point(4, 22)
         Me.tabPersonalInfo.Name = "tabPersonalInfo"
         Me.tabPersonalInfo.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPersonalInfo.Size = New System.Drawing.Size(801, 452)
+        Me.tabPersonalInfo.Size = New System.Drawing.Size(801, 483)
         Me.tabPersonalInfo.TabIndex = 0
         Me.tabPersonalInfo.Text = "Personal Information"
         Me.tabPersonalInfo.UseVisualStyleBackColor = True
+        '
+        'btnContinue
+        '
+        Me.btnContinue.Location = New System.Drawing.Point(701, 420)
+        Me.btnContinue.Name = "btnContinue"
+        Me.btnContinue.Size = New System.Drawing.Size(75, 23)
+        Me.btnContinue.TabIndex = 319
+        Me.btnContinue.Text = "Continue"
+        Me.btnContinue.UseVisualStyleBackColor = True
+        '
+        'ckWorkNone
+        '
+        Me.ckWorkNone.AutoSize = True
+        Me.ckWorkNone.Location = New System.Drawing.Point(634, 350)
+        Me.ckWorkNone.Name = "ckWorkNone"
+        Me.ckWorkNone.Size = New System.Drawing.Size(102, 17)
+        Me.ckWorkNone.TabIndex = 318
+        Me.ckWorkNone.Text = "No Work phone"
+        Me.ckWorkNone.UseVisualStyleBackColor = True
+        '
+        'ckLocalNone
+        '
+        Me.ckLocalNone.AutoSize = True
+        Me.ckLocalNone.Location = New System.Drawing.Point(634, 323)
+        Me.ckLocalNone.Name = "ckLocalNone"
+        Me.ckLocalNone.Size = New System.Drawing.Size(102, 17)
+        Me.ckLocalNone.TabIndex = 317
+        Me.ckLocalNone.Text = "No Local phone"
+        Me.ckLocalNone.UseVisualStyleBackColor = True
         '
         'lblBirthdayFormat
         '
@@ -466,7 +502,7 @@ Partial Class frmAdd
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(480, 420)
+        Me.txtEmail.Location = New System.Drawing.Point(480, 425)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(132, 20)
         Me.txtEmail.TabIndex = 31
@@ -474,7 +510,7 @@ Partial Class frmAdd
         'Label72
         '
         Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(394, 423)
+        Me.Label72.Location = New System.Drawing.Point(394, 428)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(80, 13)
         Me.Label72.TabIndex = 235
@@ -945,6 +981,7 @@ Partial Class frmAdd
         '
         'TabAdmission
         '
+        Me.TabAdmission.Controls.Add(Me.btnConfirm2)
         Me.TabAdmission.Controls.Add(Me.Label37)
         Me.TabAdmission.Controls.Add(Me.Label31)
         Me.TabAdmission.Controls.Add(Me.Label67)
@@ -965,7 +1002,7 @@ Partial Class frmAdd
         Me.TabAdmission.Location = New System.Drawing.Point(4, 22)
         Me.TabAdmission.Name = "TabAdmission"
         Me.TabAdmission.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabAdmission.Size = New System.Drawing.Size(801, 452)
+        Me.TabAdmission.Size = New System.Drawing.Size(801, 483)
         Me.TabAdmission.TabIndex = 1
         Me.TabAdmission.Text = "Admission Request"
         Me.TabAdmission.UseVisualStyleBackColor = True
@@ -1129,6 +1166,7 @@ Partial Class frmAdd
         '
         'tabCredentials
         '
+        Me.tabCredentials.Controls.Add(Me.btnConfirm3)
         Me.tabCredentials.Controls.Add(Me.Label45)
         Me.tabCredentials.Controls.Add(Me.Label39)
         Me.tabCredentials.Controls.Add(Me.Label38)
@@ -1207,7 +1245,7 @@ Partial Class frmAdd
         Me.tabCredentials.Location = New System.Drawing.Point(4, 22)
         Me.tabCredentials.Name = "tabCredentials"
         Me.tabCredentials.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabCredentials.Size = New System.Drawing.Size(801, 452)
+        Me.tabCredentials.Size = New System.Drawing.Size(801, 483)
         Me.tabCredentials.TabIndex = 2
         Me.tabCredentials.Text = "Credentials & Documents"
         Me.tabCredentials.UseVisualStyleBackColor = True
@@ -1891,7 +1929,7 @@ Partial Class frmAdd
         Me.tabStudentStatus.Location = New System.Drawing.Point(4, 22)
         Me.tabStudentStatus.Name = "tabStudentStatus"
         Me.tabStudentStatus.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabStudentStatus.Size = New System.Drawing.Size(801, 452)
+        Me.tabStudentStatus.Size = New System.Drawing.Size(801, 483)
         Me.tabStudentStatus.TabIndex = 3
         Me.tabStudentStatus.Text = "Student Status"
         Me.tabStudentStatus.UseVisualStyleBackColor = True
@@ -2203,40 +2241,45 @@ Partial Class frmAdd
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
-        'ckLocalNone
+        'Label52
         '
-        Me.ckLocalNone.AutoSize = True
-        Me.ckLocalNone.Location = New System.Drawing.Point(634, 323)
-        Me.ckLocalNone.Name = "ckLocalNone"
-        Me.ckLocalNone.Size = New System.Drawing.Size(102, 17)
-        Me.ckLocalNone.TabIndex = 317
-        Me.ckLocalNone.Text = "No Local phone"
-        Me.ckLocalNone.UseVisualStyleBackColor = True
+        Me.Label52.AutoSize = True
+        Me.Label52.Location = New System.Drawing.Point(381, 457)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(94, 13)
+        Me.Label52.TabIndex = 320
+        Me.Label52.Text = "Alt. Email Address:"
         '
-        'ckWorkNone
+        'txtEmail2
         '
-        Me.ckWorkNone.AutoSize = True
-        Me.ckWorkNone.Location = New System.Drawing.Point(634, 350)
-        Me.ckWorkNone.Name = "ckWorkNone"
-        Me.ckWorkNone.Size = New System.Drawing.Size(102, 17)
-        Me.ckWorkNone.TabIndex = 318
-        Me.ckWorkNone.Text = "No Work phone"
-        Me.ckWorkNone.UseVisualStyleBackColor = True
+        Me.txtEmail2.Location = New System.Drawing.Point(480, 454)
+        Me.txtEmail2.Name = "txtEmail2"
+        Me.txtEmail2.Size = New System.Drawing.Size(132, 20)
+        Me.txtEmail2.TabIndex = 321
         '
-        'btnContinue
+        'btnConfirm2
         '
-        Me.btnContinue.Location = New System.Drawing.Point(701, 420)
-        Me.btnContinue.Name = "btnContinue"
-        Me.btnContinue.Size = New System.Drawing.Size(75, 23)
-        Me.btnContinue.TabIndex = 319
-        Me.btnContinue.Text = "Continue"
-        Me.btnContinue.UseVisualStyleBackColor = True
+        Me.btnConfirm2.Location = New System.Drawing.Point(55, 245)
+        Me.btnConfirm2.Name = "btnConfirm2"
+        Me.btnConfirm2.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm2.TabIndex = 319
+        Me.btnConfirm2.Text = "Confirm"
+        Me.btnConfirm2.UseVisualStyleBackColor = True
+        '
+        'btnConfirm3
+        '
+        Me.btnConfirm3.Location = New System.Drawing.Point(595, 421)
+        Me.btnConfirm3.Name = "btnConfirm3"
+        Me.btnConfirm3.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm3.TabIndex = 394
+        Me.btnConfirm3.Text = "Confirm"
+        Me.btnConfirm3.UseVisualStyleBackColor = True
         '
         'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(808, 671)
+        Me.ClientSize = New System.Drawing.Size(808, 554)
         Me.Controls.Add(Me.tabApplication)
         Me.Name = "frmAdd"
         Me.Text = "Add Record"
@@ -2456,4 +2499,8 @@ Partial Class frmAdd
     Friend WithEvents ckWorkNone As CheckBox
     Friend WithEvents ckLocalNone As CheckBox
     Friend WithEvents btnContinue As Button
+    Friend WithEvents txtEmail2 As TextBox
+    Friend WithEvents Label52 As Label
+    Friend WithEvents btnConfirm2 As Button
+    Friend WithEvents btnConfirm3 As Button
 End Class
