@@ -120,12 +120,41 @@ Public Class frmAdd
         'command.Parameters.Add("@GMATverbal", SqlDbType.VarChar).Value = txtGMATVerbal.Text
         'command.Parameters.Add("@GMATquant", SqlDbType.VarChar).Value = txtGMATQuant.Text
         'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
-
         'command.Parameters.Add("@underGPA", SqlDbType.VarChar).Value = txtUnderGPA.Text
         'command.Parameters.Add("@GPAsenior", SqlDbType.VarChar).Value = txtGPASenior.Text
 
-        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
-        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
-        'command.Parameters.Add("@GMATtotal", SqlDbType.VarChar).Value = txtGMATTotal.Text
+        'command.Parameters.Add("@cname1", SqlDbType.VarChar).Value = txtCName1.Text
+        'command.Parameters.Add("@CName2", SqlDbType.VarChar).Value = txtCName2.Text
+
+        'command.Parameters.Add("@CTo1", SqlDbType.VarChar).Value = txtCTo1.Text
+        'command.Parameters.Add("@CTo2", SqlDbType.VarChar).Value = txtCTo2.Text
+
+        'command.Parameters.Add("@CFrom1", SqlDbType.VarChar).Value = txtCFrom1.Text
+        'command.Parameters.Add("@CFrom2", SqlDbType.VarChar).Value = txtCFrom2.Text
+
+        'command.Parameters.Add("@CGPA1", SqlDbType.VarChar).Value = txtCGPA1.Text
+        'command.Parameters.Add("@CGPA2", SqlDbType.VarChar).Value = txtCGPA2.Text
+
+        'command.Parameters.Add("@HoursEarned1", SqlDbType.VarChar).Value = txtHoursEarned1.Text
+        'command.Parameters.Add("@HoursEarned2", SqlDbType.VarChar).Value = txtHoursEarned2.Text
+
+        'command.Parameters.Add("@Degree1", SqlDbType.VarChar).Value = txtDegree1.Text
+        'command.Parameters.Add("@Degree2", SqlDbType.VarChar).Value = txtDegree2.Text
+
+        'command.Parameters.Add("@Major1", SqlDbType.VarChar).Value = txtMajor1.Text
+        'command.Parameters.Add("@Major2", SqlDbType.VarChar).Value = txtMajor2.Text
+
+        'command.Parameters.Add("@DegreeDate1", SqlDbType.VarChar).Value = txtDegreeDate1.Text
+        'command.Parameters.Add("@DegreeDate2", SqlDbType.VarChar).Value = txtDegreeDate2.Text
+
+        'command.Parameters.Add("@CurrentHours1", SqlDbType.VarChar).Value = txtCurrentHours1.Text
+        'command.Parameters.Add("@CurrentHours2", SqlDbType.VarChar).Value = txtCurrentHours2.Text
+
+
+
+    End Sub
+
+    Private Sub tabCredentials_Click(sender As Object, e As EventArgs) Handles tabCredentials.Click
+
     End Sub
 End Class

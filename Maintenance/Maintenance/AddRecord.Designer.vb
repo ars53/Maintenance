@@ -229,6 +229,7 @@ Partial Class frmAdd
         Me.txtEmail2 = New System.Windows.Forms.TextBox()
         Me.btnConfirm2 = New System.Windows.Forms.Button()
         Me.btnConfirm3 = New System.Windows.Forms.Button()
+        Me.btnConfirm4 = New System.Windows.Forms.Button()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -1892,6 +1893,7 @@ Partial Class frmAdd
         '
         'tabStudentStatus
         '
+        Me.tabStudentStatus.Controls.Add(Me.btnConfirm4)
         Me.tabStudentStatus.Controls.Add(Me.Label79)
         Me.tabStudentStatus.Controls.Add(Me.Label78)
         Me.tabStudentStatus.Controls.Add(Me.Label76)
@@ -2275,6 +2277,15 @@ Partial Class frmAdd
         Me.btnConfirm3.Text = "Confirm"
         Me.btnConfirm3.UseVisualStyleBackColor = True
         '
+        'btnConfirm4
+        '
+        Me.btnConfirm4.Location = New System.Drawing.Point(512, 431)
+        Me.btnConfirm4.Name = "btnConfirm4"
+        Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm4.TabIndex = 395
+        Me.btnConfirm4.Text = "Confirm"
+        Me.btnConfirm4.UseVisualStyleBackColor = True
+        '
         'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2503,4 +2514,5 @@ Partial Class frmAdd
     Friend WithEvents Label52 As Label
     Friend WithEvents btnConfirm2 As Button
     Friend WithEvents btnConfirm3 As Button
+    Friend WithEvents btnConfirm4 As Button
 End Class
