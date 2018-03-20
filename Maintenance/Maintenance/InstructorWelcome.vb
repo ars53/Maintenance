@@ -30,4 +30,10 @@
         Me.Close()
 
     End Sub
+
+    Private Sub btnAccept_Click(sender As Object, e As EventArgs) Handles btnAccept.Click
+        Dim accept As New frmAcceptDecline(facID)
+        accept.ShowDialog()
+
+    End Sub
 End Class

@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcceptDecline.Designer.vb">
+      <DependentUpon>AcceptDecline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptDecline.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddClass.Designer.vb">
       <DependentUpon>AddClass.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AcceptDecline.resx">
+      <DependentUpon>AcceptDecline.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.vb</DependentUpon>
     </EmbeddedResource>

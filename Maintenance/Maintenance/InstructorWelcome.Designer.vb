@@ -28,6 +28,7 @@ Partial Class frmInstructorWelcome
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnAdvising = New System.Windows.Forms.Button()
+        Me.btnAccept = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,11 +80,21 @@ Partial Class frmInstructorWelcome
         Me.btnAdvising.Text = "Advising Form"
         Me.btnAdvising.UseVisualStyleBackColor = True
         '
+        'btnAccept
+        '
+        Me.btnAccept.Location = New System.Drawing.Point(130, 288)
+        Me.btnAccept.Name = "btnAccept"
+        Me.btnAccept.Size = New System.Drawing.Size(107, 23)
+        Me.btnAccept.TabIndex = 6
+        Me.btnAccept.Text = "Accept Candidates"
+        Me.btnAccept.UseVisualStyleBackColor = True
+        '
         'frmInstructorWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(365, 296)
+        Me.ClientSize = New System.Drawing.Size(365, 323)
+        Me.Controls.Add(Me.btnAccept)
         Me.Controls.Add(Me.btnAdvising)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnAdd)
@@ -102,4 +113,5 @@ Partial Class frmInstructorWelcome
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnAdvising As Button
+    Friend WithEvents btnAccept As Button
 End Class
