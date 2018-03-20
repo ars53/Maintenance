@@ -2279,7 +2279,7 @@ Partial Class frmAdd
         '
         'btnConfirm4
         '
-        Me.btnConfirm4.Location = New System.Drawing.Point(512, 431)
+        Me.btnConfirm4.Location = New System.Drawing.Point(614, 414)
         Me.btnConfirm4.Name = "btnConfirm4"
         Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
         Me.btnConfirm4.TabIndex = 395
