@@ -63,12 +63,9 @@ Public Class frmEnroll
     End Function
 
     Private Sub btnAdvising_Click(sender As Object, e As EventArgs) Handles btnAdvising.Click
-        Dim mydate As Date
-        mydate = InputBox("Please enter the date of your advising session")
-        If IsDate(mydate) = False Then
-            MsgBox("Invalid Date")
-        End If
-        Dim advisingenroll As New frmAdvisingEnroll(mydate, sid)
+        Dim advisingenroll As New frmAdvisingEnroll(sid)
+        advisingenroll.ShowDialog()
+        fillEnroll()
 
     End Sub
 End Class
