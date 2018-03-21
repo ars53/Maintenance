@@ -163,25 +163,31 @@ Public Class frmAdd
     Private Sub btnConfirm4_Click(sender As Object, e As EventArgs) Handles btnConfirm4.Click
         Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
         'below connection needs proper table name to insert into
-        'Dim command As New SqlCommand("INSERT  INTO StudentApp", con)
+        'Dim command As New SqlCommand("INSERT DateApplied = @DateApplied, DateAccepted = @DateAccepted, DateEnrolled = @DEnrolled, DateDeclined = @DDate, ... INTO StudentApp", con)
 
         'need to fix the data types!
-        'need name of coulms in table to data entry
+        'the data from this table is split onto another tab
+
+        'command.Parameters.Add("@DateApplied", SqlDbType.DateTime).Value = txtDateApplied.Text
+        'command.Parameters.Add("@DateAccepted", SqlDbType.DateTime).Value = txtDateAccepted.Text
+        'command.Parameters.Add("@DEnrolled", SqlDbType.VarChar).Value = txtDEnrolled.Text
+        'command.Parameters.Add("@DDate", SqlDbType.DateTime).Value = txtDDate.Text
+
         'command.Parameters.Add("@Status", SqlDbType.VarChar).Value = txtStatus.Text
 
-        'command.Parameters.Add("@DateApplied", SqlDbType.VarChar).Value = txtDateApplied.Text
+
         'command.Parameters.Add("@AStatus", SqlDbType.VarChar).Value = txtAStatus.Text
         'command.Parameters.Add("@FeePaid", SqlDbType.VarChar).Value = txtFeePaid.Text
 
         'command.Parameters.Add("@SEnrolled", SqlDbType.VarChar).Value = txtSEnrolled.Text
-        'command.Parameters.Add("@DEnrolled", SqlDbType.VarChar).Value = txtDEnrolled.Text
+
 
 
         'command.Parameters.Add("@Declined", SqlDbType.VarChar).Value = txtDeclined.Text
-        'command.Parameters.Add("@DDate", SqlDbType.VarChar).Value = txtDDate.Text
+
 
         'command.Parameters.Add("@AcceptedOffer", SqlDbType.VarChar).Value = txtAcceptedOffer.Text
-        'command.Parameters.Add("@DateAccepted", SqlDbType.VarChar).Value = txtDateAccepted.Text
+
 
     End Sub
 End Class
