@@ -29,13 +29,17 @@ Partial Class frmInstructorWelcome
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnAdvising = New System.Windows.Forms.Button()
         Me.btnAccept = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 33)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(338, 187)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -46,7 +50,7 @@ Partial Class frmInstructorWelcome
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(67, 202)
+        Me.Label1.Location = New System.Drawing.Point(67, 223)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(232, 40)
         Me.Label1.TabIndex = 1
@@ -55,7 +59,7 @@ Partial Class frmInstructorWelcome
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(12, 259)
+        Me.btnAdd.Location = New System.Drawing.Point(12, 309)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(107, 23)
         Me.btnAdd.TabIndex = 2
@@ -64,7 +68,7 @@ Partial Class frmInstructorWelcome
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(130, 259)
+        Me.btnSearch.Location = New System.Drawing.Point(130, 280)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(107, 23)
         Me.btnSearch.TabIndex = 3
@@ -73,7 +77,7 @@ Partial Class frmInstructorWelcome
         '
         'btnAdvising
         '
-        Me.btnAdvising.Location = New System.Drawing.Point(246, 259)
+        Me.btnAdvising.Location = New System.Drawing.Point(246, 280)
         Me.btnAdvising.Name = "btnAdvising"
         Me.btnAdvising.Size = New System.Drawing.Size(107, 23)
         Me.btnAdvising.TabIndex = 5
@@ -82,27 +86,53 @@ Partial Class frmInstructorWelcome
         '
         'btnAccept
         '
-        Me.btnAccept.Location = New System.Drawing.Point(130, 288)
+        Me.btnAccept.Location = New System.Drawing.Point(17, 280)
         Me.btnAccept.Name = "btnAccept"
         Me.btnAccept.Size = New System.Drawing.Size(107, 23)
         Me.btnAccept.TabIndex = 6
         Me.btnAccept.Text = "Accept Candidates"
         Me.btnAccept.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(365, 24)
+        Me.MenuStrip1.TabIndex = 7
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoutToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
         'frmInstructorWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(365, 323)
+        Me.ClientSize = New System.Drawing.Size(365, 354)
         Me.Controls.Add(Me.btnAccept)
         Me.Controls.Add(Me.btnAdvising)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmInstructorWelcome"
         Me.Text = "Welcome"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -114,4 +144,7 @@ Partial Class frmInstructorWelcome
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnAdvising As Button
     Friend WithEvents btnAccept As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
 End Class

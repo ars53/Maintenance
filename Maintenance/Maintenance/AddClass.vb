@@ -10,7 +10,8 @@
         sid = id
     End Sub
     Private Sub AddClass_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        db.sql = "SELECT * FROM Classes"
+        db.sql = "SELECT * FROM Classes where classname not in (SELECT Classname from enrollment where studentid = @sid)"
+        db.bind("@sid", sid)
         db.fill(dgvClasses)
     End Sub
 

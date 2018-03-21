@@ -27,6 +27,7 @@ Partial Class frmEnroll
         Me.btnDel = New System.Windows.Forms.Button()
         Me.lblNoClass = New System.Windows.Forms.Label()
         Me.btnAdvising = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         CType(Me.dgvEnroll, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -40,7 +41,7 @@ Partial Class frmEnroll
         '
         'btnEnroll
         '
-        Me.btnEnroll.Location = New System.Drawing.Point(285, 277)
+        Me.btnEnroll.Location = New System.Drawing.Point(318, 267)
         Me.btnEnroll.Name = "btnEnroll"
         Me.btnEnroll.Size = New System.Drawing.Size(101, 23)
         Me.btnEnroll.TabIndex = 1
@@ -49,7 +50,7 @@ Partial Class frmEnroll
         '
         'btnDel
         '
-        Me.btnDel.Location = New System.Drawing.Point(52, 277)
+        Me.btnDel.Location = New System.Drawing.Point(85, 267)
         Me.btnDel.Name = "btnDel"
         Me.btnDel.Size = New System.Drawing.Size(75, 23)
         Me.btnDel.TabIndex = 2
@@ -68,18 +69,28 @@ Partial Class frmEnroll
         '
         'btnAdvising
         '
-        Me.btnAdvising.Location = New System.Drawing.Point(133, 277)
+        Me.btnAdvising.Location = New System.Drawing.Point(166, 267)
         Me.btnAdvising.Name = "btnAdvising"
         Me.btnAdvising.Size = New System.Drawing.Size(146, 23)
         Me.btnAdvising.TabIndex = 4
         Me.btnAdvising.Text = "Add Classes from Advising"
         Me.btnAdvising.UseVisualStyleBackColor = True
         '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(4, 267)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBack.TabIndex = 5
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'frmEnroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(431, 323)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnAdvising)
         Me.Controls.Add(Me.lblNoClass)
         Me.Controls.Add(Me.btnDel)
@@ -97,4 +108,5 @@ Partial Class frmEnroll
     Friend WithEvents btnDel As Button
     Friend WithEvents lblNoClass As Label
     Friend WithEvents btnAdvising As Button
+    Friend WithEvents btnBack As Button
 End Class

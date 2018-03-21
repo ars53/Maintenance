@@ -37,6 +37,15 @@ Public Class frmLogin
                 'Me.Dispose()
                 Me.Close()
             End If
+        ElseIf (radFaculty.Checked = False And radStudent.Checked = False) Or (txtUser.Text.Length = 0 Or txtPassword.Text.Length = 0) Then
+            If txtUser.Text.Length = 0 Then
+                MsgBox("Please enter a username")
+            ElseIf txtPassword.Text.Length = 0 Then
+                MsgBox("Please enter a password")
+            Else
+                MsgBox("Please select either faculty or student option")
+            End If
+        ElseIf txtPassword.Text.Length = 0 Or txtUser.Text.Length = 0 Then
 
         End If
 

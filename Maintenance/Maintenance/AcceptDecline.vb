@@ -39,7 +39,7 @@ Public Class frmAcceptDecline
 
     End Sub
     Private Sub filldgv()
-        db.sql = "SELECT s.StudentID, s.DateApplied, s.GMATVerbal, s.GMATQuant, s.GMATTotal, s.LOR1, s.LOR2, s.LOR3 FROM Studentapp s join status t on s.StudentID = t.StudentID Where t.AdmittedYN is not null"
+        db.sql = "SELECT s.StudentID, s.DateApplied, s.GMATVerbal, s.GMATQuant, s.GMATTotal, s.LOR1, s.LOR2, s.LOR3 FROM Studentapp s join status t on s.StudentID = t.StudentID Where t.AdmittedYN is null"
         db.fill(dgvAccept)
     End Sub
 
@@ -50,6 +50,8 @@ Public Class frmAcceptDecline
         db.bind("@sid", getStudentID())
         db.execute()
         filldgv()
+        filldgv()
+
 
     End Sub
     Public Function getStudentID() As String

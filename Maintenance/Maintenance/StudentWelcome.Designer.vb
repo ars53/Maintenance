@@ -28,12 +28,16 @@ Partial Class frmStudentWelcome
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblGreeting = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnView
         '
-        Me.btnView.Location = New System.Drawing.Point(192, 245)
+        Me.btnView.Location = New System.Drawing.Point(191, 257)
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(107, 23)
         Me.btnView.TabIndex = 9
@@ -42,7 +46,7 @@ Partial Class frmStudentWelcome
         '
         'btnEnroll
         '
-        Me.btnEnroll.Location = New System.Drawing.Point(71, 245)
+        Me.btnEnroll.Location = New System.Drawing.Point(70, 257)
         Me.btnEnroll.Name = "btnEnroll"
         Me.btnEnroll.Size = New System.Drawing.Size(107, 23)
         Me.btnEnroll.TabIndex = 8
@@ -53,7 +57,7 @@ Partial Class frmStudentWelcome
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(67, 202)
+        Me.Label1.Location = New System.Drawing.Point(66, 214)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(232, 40)
         Me.Label1.TabIndex = 7
@@ -63,7 +67,7 @@ Partial Class frmStudentWelcome
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 24)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(338, 187)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -78,19 +82,46 @@ Partial Class frmStudentWelcome
         Me.lblGreeting.Size = New System.Drawing.Size(0, 13)
         Me.lblGreeting.TabIndex = 10
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(370, 24)
+        Me.MenuStrip1.TabIndex = 11
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoutToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
         'frmStudentWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 277)
+        Me.ClientSize = New System.Drawing.Size(370, 303)
+        Me.ControlBox = False
         Me.Controls.Add(Me.lblGreeting)
         Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.btnEnroll)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmStudentWelcome"
         Me.Text = "Welcome"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -100,4 +131,7 @@ Partial Class frmStudentWelcome
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblGreeting As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
 End Class

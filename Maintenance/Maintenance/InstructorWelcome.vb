@@ -36,4 +36,10 @@
         accept.ShowDialog()
 
     End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        frmLogin.Show()
+        Me.Close()
+
+    End Sub
 End Class

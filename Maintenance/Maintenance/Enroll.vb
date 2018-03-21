@@ -68,4 +68,10 @@ Public Class frmEnroll
         fillEnroll()
 
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Dim main As New frmStudentWelcome(sid)
+        main.Show()
+        Me.Close()
+    End Sub
 End Class

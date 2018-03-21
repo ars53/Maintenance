@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub frmAdvisingEnroll_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        db.sql = "SELECT a.ClassName, a.Section, a.semy FROM adv_cls_asc a join advising b on a.advisingid = b.advisingid WHERE b.advisingid = (SELECT MAX(advisingID) FROM Advising where studentid = @sid)"
+        db.sql = "SELECT a.ClassName, a.Section, a.semy FROM adv_cls_asc a join advising b on a.advisingid = b.advisingid WHERE b.advisingid = (SELECT MAX(advisingID) FROM Advising where studentid = @sid) AND  ClassName not in (Select ClassName from enrollment where studentid = @sid)"
         db.bind("@sid", id)
         db.fill(dgvAdEnroll)
     End Sub

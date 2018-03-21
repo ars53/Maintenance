@@ -32,4 +32,17 @@ Public Class frmStudentWelcome
         enroll.Show()
         Me.Close()
     End Sub
+
+    Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
+        Dim view As New frmStudentViewRec(stud)
+        view.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        frmLogin.Show()
+        Me.Close()
+
+    End Sub
 End Class

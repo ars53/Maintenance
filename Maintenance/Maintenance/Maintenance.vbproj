@@ -183,6 +183,12 @@
     <Compile Include="SearchRecs.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudentViewRec.Designer.vb">
+      <DependentUpon>StudentViewRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentViewRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StudentWelcome.Designer.vb">
       <DependentUpon>StudentWelcome.vb</DependentUpon>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchRecs.resx">
       <DependentUpon>SearchRecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentViewRec.resx">
+      <DependentUpon>StudentViewRec.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentWelcome.resx">
       <DependentUpon>StudentWelcome.vb</DependentUpon>

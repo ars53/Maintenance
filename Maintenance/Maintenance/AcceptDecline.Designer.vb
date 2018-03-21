@@ -34,7 +34,7 @@ Partial Class frmAcceptDecline
         Me.dgvAccept.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAccept.Location = New System.Drawing.Point(2, 0)
         Me.dgvAccept.Name = "dgvAccept"
-        Me.dgvAccept.Size = New System.Drawing.Size(381, 297)
+        Me.dgvAccept.Size = New System.Drawing.Size(448, 297)
         Me.dgvAccept.TabIndex = 0
         '
         'btnBack
@@ -68,7 +68,7 @@ Partial Class frmAcceptDecline
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 400)
+        Me.ClientSize = New System.Drawing.Size(451, 400)
         Me.Controls.Add(Me.btnAccept)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnBack)
