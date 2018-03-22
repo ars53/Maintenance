@@ -107,7 +107,6 @@ Partial Class frmAdd
         Me.chkBefore = New System.Windows.Forms.CheckBox()
         Me.txtRequestYear = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
         Me.tabCredentials = New System.Windows.Forms.TabPage()
         Me.btnConfirm3 = New System.Windows.Forms.Button()
         Me.Label45 = New System.Windows.Forms.Label()
@@ -221,6 +220,8 @@ Partial Class frmAdd
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -360,7 +361,7 @@ Partial Class frmAdd
         '
         'txtpadr2
         '
-        Me.txtpadr2.Location = New System.Drawing.Point(59, 188)
+        Me.txtpadr2.Location = New System.Drawing.Point(77, 188)
         Me.txtpadr2.Name = "txtpadr2"
         Me.txtpadr2.Size = New System.Drawing.Size(273, 20)
         Me.txtpadr2.TabIndex = 325
@@ -368,15 +369,15 @@ Partial Class frmAdd
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(2, 191)
+        Me.Label12.Location = New System.Drawing.Point(20, 191)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(51, 13)
+        Me.Label12.Size = New System.Drawing.Size(54, 13)
         Me.Label12.TabIndex = 324
-        Me.Label12.Text = "Address2"
+        Me.Label12.Text = "Address 2"
         '
         'txtLADR2
         '
-        Me.txtLADR2.Location = New System.Drawing.Point(399, 193)
+        Me.txtLADR2.Location = New System.Drawing.Point(488, 193)
         Me.txtLADR2.Name = "txtLADR2"
         Me.txtLADR2.Size = New System.Drawing.Size(273, 20)
         Me.txtLADR2.TabIndex = 323
@@ -384,11 +385,11 @@ Partial Class frmAdd
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(342, 196)
+        Me.Label11.Location = New System.Drawing.Point(431, 196)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(51, 13)
+        Me.Label11.Size = New System.Drawing.Size(57, 13)
         Me.Label11.TabIndex = 322
-        Me.Label11.Text = "Address2"
+        Me.Label11.Text = "Address  2"
         '
         'txtEmail2
         '
@@ -408,7 +409,7 @@ Partial Class frmAdd
         '
         'btnContinue
         '
-        Me.btnContinue.Location = New System.Drawing.Point(302, 431)
+        Me.btnContinue.Location = New System.Drawing.Point(699, 444)
         Me.btnContinue.Name = "btnContinue"
         Me.btnContinue.Size = New System.Drawing.Size(75, 23)
         Me.btnContinue.TabIndex = 319
@@ -418,7 +419,7 @@ Partial Class frmAdd
         'ckWorkNone
         '
         Me.ckWorkNone.AutoSize = True
-        Me.ckWorkNone.Location = New System.Drawing.Point(672, 395)
+        Me.ckWorkNone.Location = New System.Drawing.Point(278, 401)
         Me.ckWorkNone.Name = "ckWorkNone"
         Me.ckWorkNone.Size = New System.Drawing.Size(102, 17)
         Me.ckWorkNone.TabIndex = 318
@@ -428,7 +429,7 @@ Partial Class frmAdd
         'ckLocalNone
         '
         Me.ckLocalNone.AutoSize = True
-        Me.ckLocalNone.Location = New System.Drawing.Point(672, 368)
+        Me.ckLocalNone.Location = New System.Drawing.Point(278, 374)
         Me.ckLocalNone.Name = "ckLocalNone"
         Me.ckLocalNone.Size = New System.Drawing.Size(102, 17)
         Me.ckLocalNone.TabIndex = 317
@@ -440,7 +441,7 @@ Partial Class frmAdd
         Me.lblBirthdayFormat.AutoSize = True
         Me.lblBirthdayFormat.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBirthdayFormat.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lblBirthdayFormat.Location = New System.Drawing.Point(220, 129)
+        Me.lblBirthdayFormat.Location = New System.Drawing.Point(210, 129)
         Me.lblBirthdayFormat.Name = "lblBirthdayFormat"
         Me.lblBirthdayFormat.Size = New System.Drawing.Size(60, 10)
         Me.lblBirthdayFormat.TabIndex = 316
@@ -450,7 +451,7 @@ Partial Class frmAdd
         '
         Me.cbxLState.FormattingEnabled = True
         Me.cbxLState.Items.AddRange(New Object() {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"})
-        Me.cbxLState.Location = New System.Drawing.Point(399, 242)
+        Me.cbxLState.Location = New System.Drawing.Point(488, 242)
         Me.cbxLState.Name = "cbxLState"
         Me.cbxLState.Size = New System.Drawing.Size(121, 21)
         Me.cbxLState.TabIndex = 19
@@ -459,14 +460,14 @@ Partial Class frmAdd
         '
         Me.cbxPState.FormattingEnabled = True
         Me.cbxPState.Items.AddRange(New Object() {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"})
-        Me.cbxPState.Location = New System.Drawing.Point(58, 240)
+        Me.cbxPState.Location = New System.Drawing.Point(76, 240)
         Me.cbxPState.Name = "cbxPState"
         Me.cbxPState.Size = New System.Drawing.Size(121, 21)
         Me.cbxPState.TabIndex = 14
         '
         'txtPZipCode
         '
-        Me.txtPZipCode.Location = New System.Drawing.Point(57, 267)
+        Me.txtPZipCode.Location = New System.Drawing.Point(75, 267)
         Me.txtPZipCode.Name = "txtPZipCode"
         Me.txtPZipCode.Size = New System.Drawing.Size(75, 20)
         Me.txtPZipCode.TabIndex = 15
@@ -474,7 +475,7 @@ Partial Class frmAdd
         '
         'txtLZipCode
         '
-        Me.txtLZipCode.Location = New System.Drawing.Point(399, 269)
+        Me.txtLZipCode.Location = New System.Drawing.Point(488, 269)
         Me.txtLZipCode.Name = "txtLZipCode"
         Me.txtLZipCode.Size = New System.Drawing.Size(75, 20)
         Me.txtLZipCode.TabIndex = 20
@@ -482,21 +483,21 @@ Partial Class frmAdd
         '
         'txtLphone
         '
-        Me.txtLphone.Location = New System.Drawing.Point(399, 298)
+        Me.txtLphone.Location = New System.Drawing.Point(575, 299)
         Me.txtLphone.Name = "txtLphone"
         Me.txtLphone.Size = New System.Drawing.Size(100, 20)
         Me.txtLphone.TabIndex = 29
         '
         'txtpPhone
         '
-        Me.txtpPhone.Location = New System.Drawing.Point(79, 301)
+        Me.txtpPhone.Location = New System.Drawing.Point(158, 300)
         Me.txtpPhone.Name = "txtpPhone"
         Me.txtpPhone.Size = New System.Drawing.Size(100, 20)
         Me.txtpPhone.TabIndex = 28
         '
         'txtCurrentPhone
         '
-        Me.txtCurrentPhone.Location = New System.Drawing.Point(558, 372)
+        Me.txtCurrentPhone.Location = New System.Drawing.Point(165, 373)
         Me.txtCurrentPhone.Mask = "(999) 000-0000"
         Me.txtCurrentPhone.Name = "txtCurrentPhone"
         Me.txtCurrentPhone.Size = New System.Drawing.Size(100, 20)
@@ -504,14 +505,14 @@ Partial Class frmAdd
         '
         'txtBirthday1
         '
-        Me.txtBirthday1.Location = New System.Drawing.Point(222, 103)
+        Me.txtBirthday1.Location = New System.Drawing.Point(212, 103)
         Me.txtBirthday1.Name = "txtBirthday1"
         Me.txtBirthday1.Size = New System.Drawing.Size(71, 20)
         Me.txtBirthday1.TabIndex = 7
         '
         'txtSSN
         '
-        Me.txtSSN.Location = New System.Drawing.Point(222, 75)
+        Me.txtSSN.Location = New System.Drawing.Point(212, 75)
         Me.txtSSN.Name = "txtSSN"
         Me.txtSSN.Size = New System.Drawing.Size(71, 20)
         Me.txtSSN.TabIndex = 6
@@ -544,16 +545,17 @@ Partial Class frmAdd
         'Label66
         '
         Me.Label66.AutoSize = True
-        Me.Label66.Location = New System.Drawing.Point(345, 321)
+        Me.Label66.Location = New System.Drawing.Point(18, 326)
         Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(439, 13)
+        Me.Label66.Size = New System.Drawing.Size(757, 13)
         Me.Label66.TabIndex = 315
-        Me.Label66.Text = "________________________________________________________________________"
+        Me.Label66.Text = "_________________________________________________________________________________" &
+    "____________________________________________"
         '
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(439, 431)
+        Me.Label47.Location = New System.Drawing.Point(59, 403)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(94, 13)
         Me.Label47.TabIndex = 234
@@ -563,7 +565,7 @@ Partial Class frmAdd
         '
         Me.cbxPrimaryContactNumber.FormattingEnabled = True
         Me.cbxPrimaryContactNumber.Items.AddRange(New Object() {"Local", "Work", "Permanent"})
-        Me.cbxPrimaryContactNumber.Location = New System.Drawing.Point(559, 428)
+        Me.cbxPrimaryContactNumber.Location = New System.Drawing.Point(165, 399)
         Me.cbxPrimaryContactNumber.Name = "cbxPrimaryContactNumber"
         Me.cbxPrimaryContactNumber.Size = New System.Drawing.Size(99, 21)
         Me.cbxPrimaryContactNumber.TabIndex = 30
@@ -571,7 +573,7 @@ Partial Class frmAdd
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 305)
+        Me.Label3.Location = New System.Drawing.Point(86, 304)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 13)
         Me.Label3.TabIndex = 232
@@ -580,16 +582,16 @@ Partial Class frmAdd
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(324, 301)
+        Me.Label2.Location = New System.Drawing.Point(500, 302)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 13)
+        Me.Label2.Size = New System.Drawing.Size(72, 13)
         Me.Label2.TabIndex = 233
-        Me.Label2.Text = "Home Phone"
+        Me.Label2.Text = "Home Phone:"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(449, 372)
+        Me.Label21.Location = New System.Drawing.Point(64, 374)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(90, 13)
         Me.Label21.TabIndex = 231
@@ -608,7 +610,7 @@ Partial Class frmAdd
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(404, 350)
+        Me.Label46.Location = New System.Drawing.Point(19, 352)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(102, 13)
         Me.Label46.TabIndex = 230
@@ -617,7 +619,7 @@ Partial Class frmAdd
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(345, 272)
+        Me.Label16.Location = New System.Drawing.Point(434, 272)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(22, 13)
         Me.Label16.TabIndex = 222
@@ -626,7 +628,7 @@ Partial Class frmAdd
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(343, 245)
+        Me.Label17.Location = New System.Drawing.Point(432, 245)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(32, 13)
         Me.Label17.TabIndex = 221
@@ -634,7 +636,7 @@ Partial Class frmAdd
         '
         'txtLCity
         '
-        Me.txtLCity.Location = New System.Drawing.Point(399, 216)
+        Me.txtLCity.Location = New System.Drawing.Point(488, 216)
         Me.txtLCity.Name = "txtLCity"
         Me.txtLCity.Size = New System.Drawing.Size(273, 20)
         Me.txtLCity.TabIndex = 18
@@ -642,7 +644,7 @@ Partial Class frmAdd
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(343, 217)
+        Me.Label18.Location = New System.Drawing.Point(432, 217)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(24, 13)
         Me.Label18.TabIndex = 220
@@ -651,7 +653,7 @@ Partial Class frmAdd
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(342, 166)
+        Me.Label19.Location = New System.Drawing.Point(431, 166)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(35, 13)
         Me.Label19.TabIndex = 219
@@ -660,7 +662,7 @@ Partial Class frmAdd
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(342, 149)
+        Me.Label20.Location = New System.Drawing.Point(431, 149)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(77, 13)
         Me.Label20.TabIndex = 218
@@ -668,14 +670,14 @@ Partial Class frmAdd
         '
         'txtLAddress
         '
-        Me.txtLAddress.Location = New System.Drawing.Point(399, 163)
+        Me.txtLAddress.Location = New System.Drawing.Point(488, 163)
         Me.txtLAddress.Name = "txtLAddress"
         Me.txtLAddress.Size = New System.Drawing.Size(273, 20)
         Me.txtLAddress.TabIndex = 17
         '
         'txtPYears
         '
-        Me.txtPYears.Location = New System.Drawing.Point(411, 372)
+        Me.txtPYears.Location = New System.Drawing.Point(316, 271)
         Me.txtPYears.Name = "txtPYears"
         Me.txtPYears.Size = New System.Drawing.Size(22, 20)
         Me.txtPYears.TabIndex = 16
@@ -683,7 +685,7 @@ Partial Class frmAdd
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(268, 375)
+        Me.Label10.Location = New System.Drawing.Point(183, 274)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(137, 13)
         Me.Label10.TabIndex = 217
@@ -692,7 +694,7 @@ Partial Class frmAdd
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(20, 270)
+        Me.Label9.Location = New System.Drawing.Point(38, 270)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(22, 13)
         Me.Label9.TabIndex = 216
@@ -701,7 +703,7 @@ Partial Class frmAdd
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(18, 243)
+        Me.Label8.Location = New System.Drawing.Point(36, 243)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(32, 13)
         Me.Label8.TabIndex = 215
@@ -709,7 +711,7 @@ Partial Class frmAdd
         '
         'txtPCity
         '
-        Me.txtPCity.Location = New System.Drawing.Point(58, 214)
+        Me.txtPCity.Location = New System.Drawing.Point(76, 214)
         Me.txtPCity.Name = "txtPCity"
         Me.txtPCity.Size = New System.Drawing.Size(273, 20)
         Me.txtPCity.TabIndex = 13
@@ -717,7 +719,7 @@ Partial Class frmAdd
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(18, 215)
+        Me.Label7.Location = New System.Drawing.Point(36, 215)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(24, 13)
         Me.Label7.TabIndex = 214
@@ -726,7 +728,7 @@ Partial Class frmAdd
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(17, 166)
+        Me.Label6.Location = New System.Drawing.Point(35, 166)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(35, 13)
         Me.Label6.TabIndex = 213
@@ -735,7 +737,7 @@ Partial Class frmAdd
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 149)
+        Me.Label5.Location = New System.Drawing.Point(24, 149)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(102, 13)
         Me.Label5.TabIndex = 212
@@ -743,7 +745,7 @@ Partial Class frmAdd
         '
         'txtPAddress
         '
-        Me.txtPAddress.Location = New System.Drawing.Point(58, 164)
+        Me.txtPAddress.Location = New System.Drawing.Point(76, 164)
         Me.txtPAddress.Name = "txtPAddress"
         Me.txtPAddress.Size = New System.Drawing.Size(273, 20)
         Me.txtPAddress.TabIndex = 12
@@ -778,7 +780,7 @@ Partial Class frmAdd
         'lblDOB
         '
         Me.lblDOB.AutoSize = True
-        Me.lblDOB.Location = New System.Drawing.Point(177, 105)
+        Me.lblDOB.Location = New System.Drawing.Point(173, 105)
         Me.lblDOB.Name = "lblDOB"
         Me.lblDOB.Size = New System.Drawing.Size(30, 13)
         Me.lblDOB.TabIndex = 207
@@ -787,7 +789,7 @@ Partial Class frmAdd
         'lblSSN
         '
         Me.lblSSN.AutoSize = True
-        Me.lblSSN.Location = New System.Drawing.Point(177, 78)
+        Me.lblSSN.Location = New System.Drawing.Point(173, 78)
         Me.lblSSN.Name = "lblSSN"
         Me.lblSSN.Size = New System.Drawing.Size(33, 13)
         Me.lblSSN.TabIndex = 206
@@ -885,7 +887,6 @@ Partial Class frmAdd
         Me.TabAdmission.Controls.Add(Me.chkBefore)
         Me.TabAdmission.Controls.Add(Me.txtRequestYear)
         Me.TabAdmission.Controls.Add(Me.Label23)
-        Me.TabAdmission.Controls.Add(Me.Label22)
         Me.TabAdmission.Location = New System.Drawing.Point(4, 22)
         Me.TabAdmission.Name = "TabAdmission"
         Me.TabAdmission.Padding = New System.Windows.Forms.Padding(3)
@@ -896,11 +897,11 @@ Partial Class frmAdd
         '
         'btnConfirm2
         '
-        Me.btnConfirm2.Location = New System.Drawing.Point(55, 245)
+        Me.btnConfirm2.Location = New System.Drawing.Point(705, 441)
         Me.btnConfirm2.Name = "btnConfirm2"
         Me.btnConfirm2.Size = New System.Drawing.Size(75, 23)
         Me.btnConfirm2.TabIndex = 319
-        Me.btnConfirm2.Text = "Confirm"
+        Me.btnConfirm2.Text = "Continue"
         Me.btnConfirm2.UseVisualStyleBackColor = True
         '
         'Label37
@@ -908,7 +909,7 @@ Partial Class frmAdd
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label37.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label37.Location = New System.Drawing.Point(209, 138)
+        Me.Label37.Location = New System.Drawing.Point(219, 138)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(60, 10)
         Me.Label37.TabIndex = 318
@@ -919,7 +920,7 @@ Partial Class frmAdd
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label31.Location = New System.Drawing.Point(301, 116)
+        Me.Label31.Location = New System.Drawing.Point(311, 116)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(60, 10)
         Me.Label31.TabIndex = 317
@@ -928,7 +929,7 @@ Partial Class frmAdd
         'Label67
         '
         Me.Label67.AutoSize = True
-        Me.Label67.Location = New System.Drawing.Point(9, 86)
+        Me.Label67.Location = New System.Drawing.Point(19, 86)
         Me.Label67.Name = "Label67"
         Me.Label67.Size = New System.Drawing.Size(775, 13)
         Me.Label67.TabIndex = 313
@@ -939,7 +940,7 @@ Partial Class frmAdd
         '
         Me.cbxStanding.FormattingEnabled = True
         Me.cbxStanding.Items.AddRange(New Object() {"Graduate", "Undergraduate", "Other"})
-        Me.cbxStanding.Location = New System.Drawing.Point(12, 170)
+        Me.cbxStanding.Location = New System.Drawing.Point(22, 170)
         Me.cbxStanding.Name = "cbxStanding"
         Me.cbxStanding.Size = New System.Drawing.Size(133, 21)
         Me.cbxStanding.TabIndex = 39
@@ -947,7 +948,7 @@ Partial Class frmAdd
         'lblSession
         '
         Me.lblSession.AutoSize = True
-        Me.lblSession.Location = New System.Drawing.Point(6, 43)
+        Me.lblSession.Location = New System.Drawing.Point(16, 43)
         Me.lblSession.Name = "lblSession"
         Me.lblSession.Size = New System.Drawing.Size(47, 13)
         Me.lblSession.TabIndex = 238
@@ -957,7 +958,7 @@ Partial Class frmAdd
         '
         Me.cbxSession.FormattingEnabled = True
         Me.cbxSession.Items.AddRange(New Object() {"Spring", "Fall"})
-        Me.cbxSession.Location = New System.Drawing.Point(9, 59)
+        Me.cbxSession.Location = New System.Drawing.Point(19, 59)
         Me.cbxSession.Name = "cbxSession"
         Me.cbxSession.Size = New System.Drawing.Size(133, 21)
         Me.cbxSession.TabIndex = 34
@@ -965,7 +966,7 @@ Partial Class frmAdd
         'chkRequested
         '
         Me.chkRequested.AutoSize = True
-        Me.chkRequested.Location = New System.Drawing.Point(12, 197)
+        Me.chkRequested.Location = New System.Drawing.Point(22, 197)
         Me.chkRequested.Name = "chkRequested"
         Me.chkRequested.Size = New System.Drawing.Size(214, 17)
         Me.chkRequested.TabIndex = 244
@@ -974,7 +975,7 @@ Partial Class frmAdd
         '
         'txtEnrolled_When
         '
-        Me.txtEnrolled_When.Location = New System.Drawing.Point(133, 132)
+        Me.txtEnrolled_When.Location = New System.Drawing.Point(143, 132)
         Me.txtEnrolled_When.Name = "txtEnrolled_When"
         Me.txtEnrolled_When.Size = New System.Drawing.Size(70, 20)
         Me.txtEnrolled_When.TabIndex = 38
@@ -982,7 +983,7 @@ Partial Class frmAdd
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(88, 135)
+        Me.Label27.Location = New System.Drawing.Point(98, 135)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(42, 13)
         Me.Label27.TabIndex = 242
@@ -991,7 +992,7 @@ Partial Class frmAdd
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(9, 154)
+        Me.Label26.Location = New System.Drawing.Point(19, 154)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(56, 13)
         Me.Label26.TabIndex = 243
@@ -1001,7 +1002,7 @@ Partial Class frmAdd
         '
         Me.chkEnrolled.AutoSize = True
         Me.chkEnrolled.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkEnrolled.Location = New System.Drawing.Point(9, 134)
+        Me.chkEnrolled.Location = New System.Drawing.Point(19, 134)
         Me.chkEnrolled.Name = "chkEnrolled"
         Me.chkEnrolled.Size = New System.Drawing.Size(70, 17)
         Me.chkEnrolled.TabIndex = 241
@@ -1010,7 +1011,7 @@ Partial Class frmAdd
         '
         'txtBefore_when
         '
-        Me.txtBefore_when.Location = New System.Drawing.Point(225, 110)
+        Me.txtBefore_when.Location = New System.Drawing.Point(235, 110)
         Me.txtBefore_when.Name = "txtBefore_when"
         Me.txtBefore_when.Size = New System.Drawing.Size(70, 20)
         Me.txtBefore_when.TabIndex = 36
@@ -1018,7 +1019,7 @@ Partial Class frmAdd
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(180, 113)
+        Me.Label25.Location = New System.Drawing.Point(190, 113)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(42, 13)
         Me.Label25.TabIndex = 240
@@ -1028,7 +1029,7 @@ Partial Class frmAdd
         '
         Me.chkBefore.AutoSize = True
         Me.chkBefore.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkBefore.Location = New System.Drawing.Point(9, 111)
+        Me.chkBefore.Location = New System.Drawing.Point(19, 111)
         Me.chkBefore.Name = "chkBefore"
         Me.chkBefore.Size = New System.Drawing.Size(163, 17)
         Me.chkBefore.TabIndex = 239
@@ -1037,7 +1038,7 @@ Partial Class frmAdd
         '
         'txtRequestYear
         '
-        Me.txtRequestYear.Location = New System.Drawing.Point(45, 21)
+        Me.txtRequestYear.Location = New System.Drawing.Point(55, 21)
         Me.txtRequestYear.Name = "txtRequestYear"
         Me.txtRequestYear.Size = New System.Drawing.Size(48, 20)
         Me.txtRequestYear.TabIndex = 33
@@ -1045,23 +1046,15 @@ Partial Class frmAdd
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(6, 23)
+        Me.Label23.Location = New System.Drawing.Point(16, 23)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(32, 13)
         Me.Label23.TabIndex = 237
         Me.Label23.Text = "Year:"
         '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(4, 4)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(126, 13)
-        Me.Label22.TabIndex = 236
-        Me.Label22.Text = "Adminission Request For:"
-        '
         'tabCredentials
         '
+        Me.tabCredentials.Controls.Add(Me.Label14)
         Me.tabCredentials.Controls.Add(Me.btnConfirm3)
         Me.tabCredentials.Controls.Add(Me.Label45)
         Me.tabCredentials.Controls.Add(Me.Label39)
@@ -1101,7 +1094,6 @@ Partial Class frmAdd
         Me.tabCredentials.Controls.Add(Me.txtGREDate)
         Me.tabCredentials.Controls.Add(Me.txtTOEFLDate)
         Me.tabCredentials.Controls.Add(Me.Label70)
-        Me.tabCredentials.Controls.Add(Me.Label69)
         Me.tabCredentials.Controls.Add(Me.Label68)
         Me.tabCredentials.Controls.Add(Me.chkTSE)
         Me.tabCredentials.Controls.Add(Me.chkTOEFL)
@@ -1138,6 +1130,7 @@ Partial Class frmAdd
         Me.tabCredentials.Controls.Add(Me.Label32)
         Me.tabCredentials.Controls.Add(Me.txtGMATDate)
         Me.tabCredentials.Controls.Add(Me.Label28)
+        Me.tabCredentials.Controls.Add(Me.Label69)
         Me.tabCredentials.Location = New System.Drawing.Point(4, 22)
         Me.tabCredentials.Name = "tabCredentials"
         Me.tabCredentials.Padding = New System.Windows.Forms.Padding(3)
@@ -1148,11 +1141,11 @@ Partial Class frmAdd
         '
         'btnConfirm3
         '
-        Me.btnConfirm3.Location = New System.Drawing.Point(595, 421)
+        Me.btnConfirm3.Location = New System.Drawing.Point(706, 445)
         Me.btnConfirm3.Name = "btnConfirm3"
         Me.btnConfirm3.Size = New System.Drawing.Size(75, 23)
         Me.btnConfirm3.TabIndex = 394
-        Me.btnConfirm3.Text = "Confirm"
+        Me.btnConfirm3.Text = "Continue"
         Me.btnConfirm3.UseVisualStyleBackColor = True
         '
         'Label45
@@ -1160,7 +1153,7 @@ Partial Class frmAdd
         Me.Label45.AutoSize = True
         Me.Label45.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label45.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label45.Location = New System.Drawing.Point(618, 329)
+        Me.Label45.Location = New System.Drawing.Point(618, 343)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(60, 10)
         Me.Label45.TabIndex = 393
@@ -1171,7 +1164,7 @@ Partial Class frmAdd
         Me.Label39.AutoSize = True
         Me.Label39.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label39.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label39.Location = New System.Drawing.Point(280, 329)
+        Me.Label39.Location = New System.Drawing.Point(280, 343)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(60, 10)
         Me.Label39.TabIndex = 392
@@ -1182,7 +1175,7 @@ Partial Class frmAdd
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label38.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label38.Location = New System.Drawing.Point(200, 329)
+        Me.Label38.Location = New System.Drawing.Point(200, 343)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(60, 10)
         Me.Label38.TabIndex = 391
@@ -1190,28 +1183,28 @@ Partial Class frmAdd
         '
         'txtCFrom1
         '
-        Me.txtCFrom1.Location = New System.Drawing.Point(282, 280)
+        Me.txtCFrom1.Location = New System.Drawing.Point(282, 294)
         Me.txtCFrom1.Name = "txtCFrom1"
         Me.txtCFrom1.Size = New System.Drawing.Size(70, 20)
         Me.txtCFrom1.TabIndex = 362
         '
         'txtCFrom2
         '
-        Me.txtCFrom2.Location = New System.Drawing.Point(282, 306)
+        Me.txtCFrom2.Location = New System.Drawing.Point(282, 320)
         Me.txtCFrom2.Name = "txtCFrom2"
         Me.txtCFrom2.Size = New System.Drawing.Size(70, 20)
         Me.txtCFrom2.TabIndex = 371
         '
         'txtCTo1
         '
-        Me.txtCTo1.Location = New System.Drawing.Point(202, 280)
+        Me.txtCTo1.Location = New System.Drawing.Point(202, 294)
         Me.txtCTo1.Name = "txtCTo1"
         Me.txtCTo1.Size = New System.Drawing.Size(70, 20)
         Me.txtCTo1.TabIndex = 361
         '
         'txtCTo2
         '
-        Me.txtCTo2.Location = New System.Drawing.Point(202, 306)
+        Me.txtCTo2.Location = New System.Drawing.Point(202, 320)
         Me.txtCTo2.Name = "txtCTo2"
         Me.txtCTo2.Size = New System.Drawing.Size(70, 20)
         Me.txtCTo2.TabIndex = 370
@@ -1219,7 +1212,7 @@ Partial Class frmAdd
         'Label95
         '
         Me.Label95.AutoSize = True
-        Me.Label95.Location = New System.Drawing.Point(617, 263)
+        Me.Label95.Location = New System.Drawing.Point(617, 277)
         Me.Label95.Name = "Label95"
         Me.Label95.Size = New System.Drawing.Size(33, 13)
         Me.Label95.TabIndex = 388
@@ -1228,7 +1221,7 @@ Partial Class frmAdd
         'Label94
         '
         Me.Label94.AutoSize = True
-        Me.Label94.Location = New System.Drawing.Point(617, 249)
+        Me.Label94.Location = New System.Drawing.Point(617, 263)
         Me.Label94.Name = "Label94"
         Me.Label94.Size = New System.Drawing.Size(42, 13)
         Me.Label94.TabIndex = 387
@@ -1236,14 +1229,14 @@ Partial Class frmAdd
         '
         'txtDegreeDate2
         '
-        Me.txtDegreeDate2.Location = New System.Drawing.Point(620, 305)
+        Me.txtDegreeDate2.Location = New System.Drawing.Point(620, 319)
         Me.txtDegreeDate2.Name = "txtDegreeDate2"
         Me.txtDegreeDate2.Size = New System.Drawing.Size(70, 20)
         Me.txtDegreeDate2.TabIndex = 376
         '
         'txtDegreeDate1
         '
-        Me.txtDegreeDate1.Location = New System.Drawing.Point(620, 280)
+        Me.txtDegreeDate1.Location = New System.Drawing.Point(620, 294)
         Me.txtDegreeDate1.Name = "txtDegreeDate1"
         Me.txtDegreeDate1.Size = New System.Drawing.Size(70, 20)
         Me.txtDegreeDate1.TabIndex = 367
@@ -1251,7 +1244,7 @@ Partial Class frmAdd
         'Label93
         '
         Me.Label93.AutoSize = True
-        Me.Label93.Location = New System.Drawing.Point(556, 263)
+        Me.Label93.Location = New System.Drawing.Point(556, 277)
         Me.Label93.Name = "Label93"
         Me.Label93.Size = New System.Drawing.Size(36, 13)
         Me.Label93.TabIndex = 386
@@ -1259,14 +1252,14 @@ Partial Class frmAdd
         '
         'txtMajor2
         '
-        Me.txtMajor2.Location = New System.Drawing.Point(559, 305)
+        Me.txtMajor2.Location = New System.Drawing.Point(559, 319)
         Me.txtMajor2.Name = "txtMajor2"
         Me.txtMajor2.Size = New System.Drawing.Size(55, 20)
         Me.txtMajor2.TabIndex = 375
         '
         'txtMajor1
         '
-        Me.txtMajor1.Location = New System.Drawing.Point(559, 280)
+        Me.txtMajor1.Location = New System.Drawing.Point(559, 294)
         Me.txtMajor1.Name = "txtMajor1"
         Me.txtMajor1.Size = New System.Drawing.Size(55, 20)
         Me.txtMajor1.TabIndex = 366
@@ -1274,7 +1267,7 @@ Partial Class frmAdd
         'Label61
         '
         Me.Label61.AutoSize = True
-        Me.Label61.Location = New System.Drawing.Point(694, 264)
+        Me.Label61.Location = New System.Drawing.Point(694, 278)
         Me.Label61.Name = "Label61"
         Me.Label61.Size = New System.Drawing.Size(96, 13)
         Me.Label61.TabIndex = 390
@@ -1283,7 +1276,7 @@ Partial Class frmAdd
         'Label62
         '
         Me.Label62.AutoSize = True
-        Me.Label62.Location = New System.Drawing.Point(694, 251)
+        Me.Label62.Location = New System.Drawing.Point(694, 265)
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(47, 13)
         Me.Label62.TabIndex = 389
@@ -1291,14 +1284,14 @@ Partial Class frmAdd
         '
         'txtCurrentHours2
         '
-        Me.txtCurrentHours2.Location = New System.Drawing.Point(697, 306)
+        Me.txtCurrentHours2.Location = New System.Drawing.Point(697, 320)
         Me.txtCurrentHours2.Name = "txtCurrentHours2"
         Me.txtCurrentHours2.Size = New System.Drawing.Size(50, 20)
         Me.txtCurrentHours2.TabIndex = 377
         '
         'txtCurrentHours1
         '
-        Me.txtCurrentHours1.Location = New System.Drawing.Point(697, 280)
+        Me.txtCurrentHours1.Location = New System.Drawing.Point(697, 294)
         Me.txtCurrentHours1.Name = "txtCurrentHours1"
         Me.txtCurrentHours1.Size = New System.Drawing.Size(50, 20)
         Me.txtCurrentHours1.TabIndex = 368
@@ -1306,7 +1299,7 @@ Partial Class frmAdd
         'Label60
         '
         Me.Label60.AutoSize = True
-        Me.Label60.Location = New System.Drawing.Point(495, 264)
+        Me.Label60.Location = New System.Drawing.Point(495, 278)
         Me.Label60.Name = "Label60"
         Me.Label60.Size = New System.Drawing.Size(45, 13)
         Me.Label60.TabIndex = 385
@@ -1314,14 +1307,14 @@ Partial Class frmAdd
         '
         'txtDegree2
         '
-        Me.txtDegree2.Location = New System.Drawing.Point(498, 305)
+        Me.txtDegree2.Location = New System.Drawing.Point(498, 319)
         Me.txtDegree2.Name = "txtDegree2"
         Me.txtDegree2.Size = New System.Drawing.Size(55, 20)
         Me.txtDegree2.TabIndex = 374
         '
         'txtDegree1
         '
-        Me.txtDegree1.Location = New System.Drawing.Point(498, 280)
+        Me.txtDegree1.Location = New System.Drawing.Point(498, 294)
         Me.txtDegree1.Name = "txtDegree1"
         Me.txtDegree1.Size = New System.Drawing.Size(55, 20)
         Me.txtDegree1.TabIndex = 365
@@ -1329,7 +1322,7 @@ Partial Class frmAdd
         'Label59
         '
         Me.Label59.AutoSize = True
-        Me.Label59.Location = New System.Drawing.Point(411, 264)
+        Me.Label59.Location = New System.Drawing.Point(411, 278)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(75, 13)
         Me.Label59.TabIndex = 384
@@ -1338,7 +1331,7 @@ Partial Class frmAdd
         'Label58
         '
         Me.Label58.AutoSize = True
-        Me.Label58.Location = New System.Drawing.Point(419, 251)
+        Me.Label58.Location = New System.Drawing.Point(419, 265)
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(51, 13)
         Me.Label58.TabIndex = 383
@@ -1346,14 +1339,14 @@ Partial Class frmAdd
         '
         'txtHoursEarned2
         '
-        Me.txtHoursEarned2.Location = New System.Drawing.Point(428, 305)
+        Me.txtHoursEarned2.Location = New System.Drawing.Point(428, 319)
         Me.txtHoursEarned2.Name = "txtHoursEarned2"
         Me.txtHoursEarned2.Size = New System.Drawing.Size(50, 20)
         Me.txtHoursEarned2.TabIndex = 373
         '
         'txtHoursEarned1
         '
-        Me.txtHoursEarned1.Location = New System.Drawing.Point(428, 279)
+        Me.txtHoursEarned1.Location = New System.Drawing.Point(428, 293)
         Me.txtHoursEarned1.Name = "txtHoursEarned1"
         Me.txtHoursEarned1.Size = New System.Drawing.Size(50, 20)
         Me.txtHoursEarned1.TabIndex = 364
@@ -1361,7 +1354,7 @@ Partial Class frmAdd
         'Label57
         '
         Me.Label57.AutoSize = True
-        Me.Label57.Location = New System.Drawing.Point(355, 264)
+        Me.Label57.Location = New System.Drawing.Point(355, 278)
         Me.Label57.Name = "Label57"
         Me.Label57.Size = New System.Drawing.Size(32, 13)
         Me.Label57.TabIndex = 382
@@ -1369,14 +1362,14 @@ Partial Class frmAdd
         '
         'txtCGPA2
         '
-        Me.txtCGPA2.Location = New System.Drawing.Point(358, 305)
+        Me.txtCGPA2.Location = New System.Drawing.Point(358, 319)
         Me.txtCGPA2.Name = "txtCGPA2"
         Me.txtCGPA2.Size = New System.Drawing.Size(50, 20)
         Me.txtCGPA2.TabIndex = 372
         '
         'txtCGPA1
         '
-        Me.txtCGPA1.Location = New System.Drawing.Point(358, 280)
+        Me.txtCGPA1.Location = New System.Drawing.Point(358, 294)
         Me.txtCGPA1.Name = "txtCGPA1"
         Me.txtCGPA1.Size = New System.Drawing.Size(50, 20)
         Me.txtCGPA1.TabIndex = 363
@@ -1384,7 +1377,7 @@ Partial Class frmAdd
         'Label56
         '
         Me.Label56.AutoSize = True
-        Me.Label56.Location = New System.Drawing.Point(199, 251)
+        Me.Label56.Location = New System.Drawing.Point(199, 265)
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(84, 13)
         Me.Label56.TabIndex = 379
@@ -1393,7 +1386,7 @@ Partial Class frmAdd
         'Label55
         '
         Me.Label55.AutoSize = True
-        Me.Label55.Location = New System.Drawing.Point(279, 264)
+        Me.Label55.Location = New System.Drawing.Point(279, 278)
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(33, 13)
         Me.Label55.TabIndex = 381
@@ -1402,7 +1395,7 @@ Partial Class frmAdd
         'Label54
         '
         Me.Label54.AutoSize = True
-        Me.Label54.Location = New System.Drawing.Point(199, 264)
+        Me.Label54.Location = New System.Drawing.Point(199, 278)
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(23, 13)
         Me.Label54.TabIndex = 380
@@ -1411,7 +1404,7 @@ Partial Class frmAdd
         'Label53
         '
         Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(9, 264)
+        Me.Label53.Location = New System.Drawing.Point(9, 278)
         Me.Label53.Name = "Label53"
         Me.Label53.Size = New System.Drawing.Size(76, 13)
         Me.Label53.TabIndex = 378
@@ -1419,14 +1412,14 @@ Partial Class frmAdd
         '
         'txtCName2
         '
-        Me.txtCName2.Location = New System.Drawing.Point(12, 306)
+        Me.txtCName2.Location = New System.Drawing.Point(12, 320)
         Me.txtCName2.Name = "txtCName2"
         Me.txtCName2.Size = New System.Drawing.Size(182, 20)
         Me.txtCName2.TabIndex = 369
         '
         'txtCName1
         '
-        Me.txtCName1.Location = New System.Drawing.Point(12, 280)
+        Me.txtCName1.Location = New System.Drawing.Point(12, 294)
         Me.txtCName1.Name = "txtCName1"
         Me.txtCName1.Size = New System.Drawing.Size(182, 20)
         Me.txtCName1.TabIndex = 360
@@ -1434,7 +1427,7 @@ Partial Class frmAdd
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(6, 26)
+        Me.Label24.Location = New System.Drawing.Point(12, 26)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(120, 13)
         Me.Label24.TabIndex = 246
@@ -1442,14 +1435,14 @@ Partial Class frmAdd
         '
         'txtGREDate
         '
-        Me.txtGREDate.Location = New System.Drawing.Point(6, 114)
+        Me.txtGREDate.Location = New System.Drawing.Point(12, 114)
         Me.txtGREDate.Name = "txtGREDate"
         Me.txtGREDate.Size = New System.Drawing.Size(70, 20)
         Me.txtGREDate.TabIndex = 51
         '
         'txtTOEFLDate
         '
-        Me.txtTOEFLDate.Location = New System.Drawing.Point(6, 81)
+        Me.txtTOEFLDate.Location = New System.Drawing.Point(12, 81)
         Me.txtTOEFLDate.Name = "txtTOEFLDate"
         Me.txtTOEFLDate.Size = New System.Drawing.Size(70, 20)
         Me.txtTOEFLDate.TabIndex = 49
@@ -1457,21 +1450,21 @@ Partial Class frmAdd
         'Label70
         '
         Me.Label70.AutoSize = True
-        Me.Label70.Location = New System.Drawing.Point(-9, 232)
+        Me.Label70.Location = New System.Drawing.Point(12, 236)
         Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(793, 13)
+        Me.Label70.Size = New System.Drawing.Size(769, 13)
         Me.Label70.TabIndex = 312
         Me.Label70.Text = "_________________________________________________________________________________" &
-    "__________________________________________________"
+    "______________________________________________"
         '
         'Label69
         '
         Me.Label69.AutoSize = True
-        Me.Label69.Location = New System.Drawing.Point(411, 32)
+        Me.Label69.Location = New System.Drawing.Point(413, 27)
         Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(379, 13)
+        Me.Label69.Size = New System.Drawing.Size(361, 13)
         Me.Label69.TabIndex = 311
-        Me.Label69.Text = "______________________________________________________________"
+        Me.Label69.Text = "___________________________________________________________"
         '
         'Label68
         '
@@ -1485,7 +1478,7 @@ Partial Class frmAdd
         'chkTSE
         '
         Me.chkTSE.AutoSize = True
-        Me.chkTSE.Location = New System.Drawing.Point(413, 216)
+        Me.chkTSE.Location = New System.Drawing.Point(417, 216)
         Me.chkTSE.Name = "chkTSE"
         Me.chkTSE.Size = New System.Drawing.Size(210, 17)
         Me.chkTSE.TabIndex = 275
@@ -1495,7 +1488,7 @@ Partial Class frmAdd
         'chkTOEFL
         '
         Me.chkTOEFL.AutoSize = True
-        Me.chkTOEFL.Location = New System.Drawing.Point(413, 201)
+        Me.chkTOEFL.Location = New System.Drawing.Point(417, 201)
         Me.chkTOEFL.Name = "chkTOEFL"
         Me.chkTOEFL.Size = New System.Drawing.Size(194, 17)
         Me.chkTOEFL.TabIndex = 274
@@ -1504,7 +1497,7 @@ Partial Class frmAdd
         '
         'txtGMATTotal
         '
-        Me.txtGMATTotal.Location = New System.Drawing.Point(307, 43)
+        Me.txtGMATTotal.Location = New System.Drawing.Point(313, 43)
         Me.txtGMATTotal.Name = "txtGMATTotal"
         Me.txtGMATTotal.Size = New System.Drawing.Size(31, 20)
         Me.txtGMATTotal.TabIndex = 44
@@ -1512,7 +1505,7 @@ Partial Class frmAdd
         'chkFinancial
         '
         Me.chkFinancial.AutoSize = True
-        Me.chkFinancial.Location = New System.Drawing.Point(413, 185)
+        Me.chkFinancial.Location = New System.Drawing.Point(417, 185)
         Me.chkFinancial.Name = "chkFinancial"
         Me.chkFinancial.Size = New System.Drawing.Size(371, 17)
         Me.chkFinancial.TabIndex = 273
@@ -1522,7 +1515,7 @@ Partial Class frmAdd
         'chkEducation
         '
         Me.chkEducation.AutoSize = True
-        Me.chkEducation.Location = New System.Drawing.Point(413, 169)
+        Me.chkEducation.Location = New System.Drawing.Point(417, 169)
         Me.chkEducation.Name = "chkEducation"
         Me.chkEducation.Size = New System.Drawing.Size(328, 17)
         Me.chkEducation.TabIndex = 272
@@ -1532,7 +1525,7 @@ Partial Class frmAdd
         'chkGREScore
         '
         Me.chkGREScore.AutoSize = True
-        Me.chkGREScore.Location = New System.Drawing.Point(518, 81)
+        Me.chkGREScore.Location = New System.Drawing.Point(522, 81)
         Me.chkGREScore.Name = "chkGREScore"
         Me.chkGREScore.Size = New System.Drawing.Size(80, 17)
         Me.chkGREScore.TabIndex = 277
@@ -1542,7 +1535,7 @@ Partial Class frmAdd
         'chkGMATScore
         '
         Me.chkGMATScore.AutoSize = True
-        Me.chkGMATScore.Location = New System.Drawing.Point(518, 63)
+        Me.chkGMATScore.Location = New System.Drawing.Point(522, 63)
         Me.chkGMATScore.Name = "chkGMATScore"
         Me.chkGMATScore.Size = New System.Drawing.Size(88, 17)
         Me.chkGMATScore.TabIndex = 276
@@ -1552,7 +1545,7 @@ Partial Class frmAdd
         'chkEssay
         '
         Me.chkEssay.AutoSize = True
-        Me.chkEssay.Location = New System.Drawing.Point(413, 98)
+        Me.chkEssay.Location = New System.Drawing.Point(417, 98)
         Me.chkEssay.Name = "chkEssay"
         Me.chkEssay.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.chkEssay.Size = New System.Drawing.Size(104, 17)
@@ -1563,7 +1556,7 @@ Partial Class frmAdd
         'chkTranscript
         '
         Me.chkTranscript.AutoSize = True
-        Me.chkTranscript.Location = New System.Drawing.Point(413, 151)
+        Me.chkTranscript.Location = New System.Drawing.Point(417, 151)
         Me.chkTranscript.Name = "chkTranscript"
         Me.chkTranscript.Size = New System.Drawing.Size(257, 17)
         Me.chkTranscript.TabIndex = 271
@@ -1573,7 +1566,7 @@ Partial Class frmAdd
         'chkLOR
         '
         Me.chkLOR.AutoSize = True
-        Me.chkLOR.Location = New System.Drawing.Point(413, 134)
+        Me.chkLOR.Location = New System.Drawing.Point(417, 134)
         Me.chkLOR.Name = "chkLOR"
         Me.chkLOR.Size = New System.Drawing.Size(187, 17)
         Me.chkLOR.TabIndex = 270
@@ -1583,7 +1576,7 @@ Partial Class frmAdd
         'chkResume
         '
         Me.chkResume.AutoSize = True
-        Me.chkResume.Location = New System.Drawing.Point(413, 80)
+        Me.chkResume.Location = New System.Drawing.Point(417, 80)
         Me.chkResume.Name = "chkResume"
         Me.chkResume.Size = New System.Drawing.Size(65, 17)
         Me.chkResume.TabIndex = 267
@@ -1593,7 +1586,7 @@ Partial Class frmAdd
         'chkAppForm
         '
         Me.chkAppForm.AutoSize = True
-        Me.chkAppForm.Location = New System.Drawing.Point(413, 116)
+        Me.chkAppForm.Location = New System.Drawing.Point(417, 116)
         Me.chkAppForm.Name = "chkAppForm"
         Me.chkAppForm.Size = New System.Drawing.Size(176, 17)
         Me.chkAppForm.TabIndex = 269
@@ -1603,7 +1596,7 @@ Partial Class frmAdd
         'chkAppFeePaid
         '
         Me.chkAppFeePaid.AutoSize = True
-        Me.chkAppFeePaid.Location = New System.Drawing.Point(413, 63)
+        Me.chkAppFeePaid.Location = New System.Drawing.Point(417, 63)
         Me.chkAppFeePaid.Name = "chkAppFeePaid"
         Me.chkAppFeePaid.Size = New System.Drawing.Size(99, 17)
         Me.chkAppFeePaid.TabIndex = 266
@@ -1623,7 +1616,7 @@ Partial Class frmAdd
         '
         Me.Label63.AutoSize = True
         Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.Location = New System.Drawing.Point(410, 46)
+        Me.Label63.Location = New System.Drawing.Point(407, 45)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(60, 13)
         Me.Label63.TabIndex = 265
@@ -1632,7 +1625,7 @@ Partial Class frmAdd
         'Label43
         '
         Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(57, 200)
+        Me.Label43.Location = New System.Drawing.Point(67, 200)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(102, 13)
         Me.Label43.TabIndex = 262
@@ -1640,7 +1633,7 @@ Partial Class frmAdd
         '
         'txtGPASenior
         '
-        Me.txtGPASenior.Location = New System.Drawing.Point(6, 197)
+        Me.txtGPASenior.Location = New System.Drawing.Point(16, 197)
         Me.txtGPASenior.Name = "txtGPASenior"
         Me.txtGPASenior.Size = New System.Drawing.Size(50, 20)
         Me.txtGPASenior.TabIndex = 54
@@ -1648,7 +1641,7 @@ Partial Class frmAdd
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(57, 174)
+        Me.Label44.Location = New System.Drawing.Point(67, 174)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(82, 13)
         Me.Label44.TabIndex = 261
@@ -1656,7 +1649,7 @@ Partial Class frmAdd
         '
         'txtUnderGPA
         '
-        Me.txtUnderGPA.Location = New System.Drawing.Point(6, 171)
+        Me.txtUnderGPA.Location = New System.Drawing.Point(16, 171)
         Me.txtUnderGPA.Name = "txtUnderGPA"
         Me.txtUnderGPA.Size = New System.Drawing.Size(50, 20)
         Me.txtUnderGPA.TabIndex = 53
@@ -1664,7 +1657,7 @@ Partial Class frmAdd
         'Label42
         '
         Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(3, 155)
+        Me.Label42.Location = New System.Drawing.Point(13, 155)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(58, 13)
         Me.Label42.TabIndex = 260
@@ -1673,7 +1666,7 @@ Partial Class frmAdd
         'Label41
         '
         Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(197, 117)
+        Me.Label41.Location = New System.Drawing.Point(203, 117)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(57, 13)
         Me.Label41.TabIndex = 259
@@ -1681,7 +1674,7 @@ Partial Class frmAdd
         '
         'txtGRETotal
         '
-        Me.txtGRETotal.Location = New System.Drawing.Point(160, 114)
+        Me.txtGRETotal.Location = New System.Drawing.Point(166, 114)
         Me.txtGRETotal.Name = "txtGRETotal"
         Me.txtGRETotal.Size = New System.Drawing.Size(34, 20)
         Me.txtGRETotal.TabIndex = 52
@@ -1689,7 +1682,7 @@ Partial Class frmAdd
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(197, 85)
+        Me.Label40.Location = New System.Drawing.Point(203, 85)
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(68, 13)
         Me.Label40.TabIndex = 257
@@ -1697,7 +1690,7 @@ Partial Class frmAdd
         '
         'txtTOEFLTotal
         '
-        Me.txtTOEFLTotal.Location = New System.Drawing.Point(160, 81)
+        Me.txtTOEFLTotal.Location = New System.Drawing.Point(166, 81)
         Me.txtTOEFLTotal.Name = "txtTOEFLTotal"
         Me.txtTOEFLTotal.Size = New System.Drawing.Size(34, 20)
         Me.txtTOEFLTotal.TabIndex = 50
@@ -1705,7 +1698,7 @@ Partial Class frmAdd
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(338, 46)
+        Me.Label36.Location = New System.Drawing.Point(344, 46)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(31, 13)
         Me.Label36.TabIndex = 251
@@ -1714,7 +1707,7 @@ Partial Class frmAdd
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(267, 46)
+        Me.Label35.Location = New System.Drawing.Point(273, 46)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(39, 13)
         Me.Label35.TabIndex = 250
@@ -1722,7 +1715,7 @@ Partial Class frmAdd
         '
         'txtGMATQuant
         '
-        Me.txtGMATQuant.Location = New System.Drawing.Point(236, 43)
+        Me.txtGMATQuant.Location = New System.Drawing.Point(242, 43)
         Me.txtGMATQuant.Name = "txtGMATQuant"
         Me.txtGMATQuant.Size = New System.Drawing.Size(31, 20)
         Me.txtGMATQuant.TabIndex = 43
@@ -1730,7 +1723,7 @@ Partial Class frmAdd
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(197, 46)
+        Me.Label34.Location = New System.Drawing.Point(203, 46)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(37, 13)
         Me.Label34.TabIndex = 249
@@ -1738,7 +1731,7 @@ Partial Class frmAdd
         '
         'txtGMATVerbal
         '
-        Me.txtGMATVerbal.Location = New System.Drawing.Point(160, 43)
+        Me.txtGMATVerbal.Location = New System.Drawing.Point(166, 43)
         Me.txtGMATVerbal.Name = "txtGMATVerbal"
         Me.txtGMATVerbal.Size = New System.Drawing.Size(34, 20)
         Me.txtGMATVerbal.TabIndex = 42
@@ -1746,7 +1739,7 @@ Partial Class frmAdd
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(156, 21)
+        Me.Label33.Location = New System.Drawing.Point(162, 21)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(43, 13)
         Me.Label33.TabIndex = 247
@@ -1755,7 +1748,7 @@ Partial Class frmAdd
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(82, 117)
+        Me.Label30.Location = New System.Drawing.Point(88, 117)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(30, 13)
         Me.Label30.TabIndex = 258
@@ -1764,7 +1757,7 @@ Partial Class frmAdd
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(82, 84)
+        Me.Label29.Location = New System.Drawing.Point(88, 84)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(41, 13)
         Me.Label29.TabIndex = 256
@@ -1773,15 +1766,15 @@ Partial Class frmAdd
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(9, 13)
+        Me.Label32.Location = New System.Drawing.Point(9, 8)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(59, 13)
+        Me.Label32.Size = New System.Drawing.Size(62, 13)
         Me.Label32.TabIndex = 245
-        Me.Label32.Text = "Test Dates"
+        Me.Label32.Text = "Test Dates:"
         '
         'txtGMATDate
         '
-        Me.txtGMATDate.Location = New System.Drawing.Point(6, 46)
+        Me.txtGMATDate.Location = New System.Drawing.Point(12, 46)
         Me.txtGMATDate.Name = "txtGMATDate"
         Me.txtGMATDate.Size = New System.Drawing.Size(70, 20)
         Me.txtGMATDate.TabIndex = 41
@@ -1789,7 +1782,7 @@ Partial Class frmAdd
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(82, 50)
+        Me.Label28.Location = New System.Drawing.Point(88, 50)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(38, 13)
         Me.Label28.TabIndex = 248
@@ -1797,6 +1790,7 @@ Partial Class frmAdd
         '
         'tabStudentStatus
         '
+        Me.tabStudentStatus.Controls.Add(Me.Label15)
         Me.tabStudentStatus.Controls.Add(Me.btnConfirm4)
         Me.tabStudentStatus.Controls.Add(Me.Label79)
         Me.tabStudentStatus.Controls.Add(Me.Label78)
@@ -1842,7 +1836,7 @@ Partial Class frmAdd
         '
         'btnConfirm4
         '
-        Me.btnConfirm4.Location = New System.Drawing.Point(614, 414)
+        Me.btnConfirm4.Location = New System.Drawing.Point(720, 454)
         Me.btnConfirm4.Name = "btnConfirm4"
         Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
         Me.btnConfirm4.TabIndex = 395
@@ -1854,7 +1848,7 @@ Partial Class frmAdd
         Me.Label79.AutoSize = True
         Me.Label79.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label79.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label79.Location = New System.Drawing.Point(170, 359)
+        Me.Label79.Location = New System.Drawing.Point(170, 373)
         Me.Label79.Name = "Label79"
         Me.Label79.Size = New System.Drawing.Size(60, 10)
         Me.Label79.TabIndex = 320
@@ -1865,7 +1859,7 @@ Partial Class frmAdd
         Me.Label78.AutoSize = True
         Me.Label78.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label78.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label78.Location = New System.Drawing.Point(170, 315)
+        Me.Label78.Location = New System.Drawing.Point(170, 329)
         Me.Label78.Name = "Label78"
         Me.Label78.Size = New System.Drawing.Size(60, 10)
         Me.Label78.TabIndex = 319
@@ -1876,7 +1870,7 @@ Partial Class frmAdd
         Me.Label76.AutoSize = True
         Me.Label76.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label76.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label76.Location = New System.Drawing.Point(170, 273)
+        Me.Label76.Location = New System.Drawing.Point(170, 287)
         Me.Label76.Name = "Label76"
         Me.Label76.Size = New System.Drawing.Size(60, 10)
         Me.Label76.TabIndex = 318
@@ -1887,7 +1881,7 @@ Partial Class frmAdd
         Me.Label73.AutoSize = True
         Me.Label73.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label73.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label73.Location = New System.Drawing.Point(116, 143)
+        Me.Label73.Location = New System.Drawing.Point(116, 157)
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(60, 10)
         Me.Label73.TabIndex = 317
@@ -1897,7 +1891,7 @@ Partial Class frmAdd
         '
         Me.Label51.AutoSize = True
         Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.Location = New System.Drawing.Point(308, 68)
+        Me.Label51.Location = New System.Drawing.Point(308, 80)
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(38, 13)
         Me.Label51.TabIndex = 310
@@ -1905,15 +1899,15 @@ Partial Class frmAdd
         '
         'txtNotes
         '
-        Me.txtNotes.Location = New System.Drawing.Point(311, 84)
+        Me.txtNotes.Location = New System.Drawing.Point(311, 96)
         Me.txtNotes.Multiline = True
         Me.txtNotes.Name = "txtNotes"
-        Me.txtNotes.Size = New System.Drawing.Size(465, 289)
+        Me.txtNotes.Size = New System.Drawing.Size(465, 318)
         Me.txtNotes.TabIndex = 131
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(321, 74)
+        Me.TextBox1.Location = New System.Drawing.Point(321, 86)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(30, 0)
@@ -1921,70 +1915,70 @@ Partial Class frmAdd
         '
         'txtDateAccepted
         '
-        Me.txtDateAccepted.Location = New System.Drawing.Point(94, 353)
+        Me.txtDateAccepted.Location = New System.Drawing.Point(94, 367)
         Me.txtDateAccepted.Name = "txtDateAccepted"
         Me.txtDateAccepted.Size = New System.Drawing.Size(70, 20)
         Me.txtDateAccepted.TabIndex = 130
         '
         'txtAcceptedOffer
         '
-        Me.txtAcceptedOffer.Location = New System.Drawing.Point(6, 353)
+        Me.txtAcceptedOffer.Location = New System.Drawing.Point(6, 367)
         Me.txtAcceptedOffer.Name = "txtAcceptedOffer"
         Me.txtAcceptedOffer.Size = New System.Drawing.Size(51, 20)
         Me.txtAcceptedOffer.TabIndex = 129
         '
         'txtDDate
         '
-        Me.txtDDate.Location = New System.Drawing.Point(94, 309)
+        Me.txtDDate.Location = New System.Drawing.Point(94, 323)
         Me.txtDDate.Name = "txtDDate"
         Me.txtDDate.Size = New System.Drawing.Size(70, 20)
         Me.txtDDate.TabIndex = 128
         '
         'txtDeclined
         '
-        Me.txtDeclined.Location = New System.Drawing.Point(6, 309)
+        Me.txtDeclined.Location = New System.Drawing.Point(6, 323)
         Me.txtDeclined.Name = "txtDeclined"
         Me.txtDeclined.Size = New System.Drawing.Size(51, 20)
         Me.txtDeclined.TabIndex = 127
         '
         'txtDEnrolled
         '
-        Me.txtDEnrolled.Location = New System.Drawing.Point(94, 267)
+        Me.txtDEnrolled.Location = New System.Drawing.Point(94, 281)
         Me.txtDEnrolled.Name = "txtDEnrolled"
         Me.txtDEnrolled.Size = New System.Drawing.Size(70, 20)
         Me.txtDEnrolled.TabIndex = 126
         '
         'txtSEnrolled
         '
-        Me.txtSEnrolled.Location = New System.Drawing.Point(6, 267)
+        Me.txtSEnrolled.Location = New System.Drawing.Point(6, 281)
         Me.txtSEnrolled.Name = "txtSEnrolled"
         Me.txtSEnrolled.Size = New System.Drawing.Size(51, 20)
         Me.txtSEnrolled.TabIndex = 125
         '
         'txtDateApplied
         '
-        Me.txtDateApplied.Location = New System.Drawing.Point(10, 137)
+        Me.txtDateApplied.Location = New System.Drawing.Point(10, 151)
         Me.txtDateApplied.Name = "txtDateApplied"
         Me.txtDateApplied.Size = New System.Drawing.Size(100, 20)
         Me.txtDateApplied.TabIndex = 122
         '
         'txtAStatus
         '
-        Me.txtAStatus.Location = New System.Drawing.Point(7, 179)
+        Me.txtAStatus.Location = New System.Drawing.Point(7, 197)
         Me.txtAStatus.Name = "txtAStatus"
         Me.txtAStatus.Size = New System.Drawing.Size(100, 20)
         Me.txtAStatus.TabIndex = 123
         '
         'txtFeePaid
         '
-        Me.txtFeePaid.Location = New System.Drawing.Point(7, 217)
+        Me.txtFeePaid.Location = New System.Drawing.Point(7, 235)
         Me.txtFeePaid.Name = "txtFeePaid"
         Me.txtFeePaid.Size = New System.Drawing.Size(100, 20)
         Me.txtFeePaid.TabIndex = 124
         '
         'txtStatus
         '
-        Me.txtStatus.Location = New System.Drawing.Point(9, 100)
+        Me.txtStatus.Location = New System.Drawing.Point(9, 114)
         Me.txtStatus.Name = "txtStatus"
         Me.txtStatus.Size = New System.Drawing.Size(100, 20)
         Me.txtStatus.TabIndex = 121
@@ -1992,7 +1986,7 @@ Partial Class frmAdd
         'Label102
         '
         Me.Label102.AutoSize = True
-        Me.Label102.Location = New System.Drawing.Point(3, 238)
+        Me.Label102.Location = New System.Drawing.Point(3, 252)
         Me.Label102.Name = "Label102"
         Me.Label102.Size = New System.Drawing.Size(289, 13)
         Me.Label102.TabIndex = 302
@@ -2001,7 +1995,7 @@ Partial Class frmAdd
         'Label101
         '
         Me.Label101.AutoSize = True
-        Me.Label101.Location = New System.Drawing.Point(6, 151)
+        Me.Label101.Location = New System.Drawing.Point(6, 165)
         Me.Label101.Name = "Label101"
         Me.Label101.Size = New System.Drawing.Size(289, 13)
         Me.Label101.TabIndex = 299
@@ -2010,7 +2004,7 @@ Partial Class frmAdd
         'Label100
         '
         Me.Label100.AutoSize = True
-        Me.Label100.Location = New System.Drawing.Point(6, 71)
+        Me.Label100.Location = New System.Drawing.Point(6, 84)
         Me.Label100.Name = "Label100"
         Me.Label100.Size = New System.Drawing.Size(289, 13)
         Me.Label100.TabIndex = 296
@@ -2060,7 +2054,7 @@ Partial Class frmAdd
         '
         Me.Label92.AutoSize = True
         Me.Label92.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label92.Location = New System.Drawing.Point(7, 121)
+        Me.Label92.Location = New System.Drawing.Point(7, 135)
         Me.Label92.Name = "Label92"
         Me.Label92.Size = New System.Drawing.Size(70, 13)
         Me.Label92.TabIndex = 298
@@ -2070,7 +2064,7 @@ Partial Class frmAdd
         '
         Me.Label89.AutoSize = True
         Me.Label89.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label89.Location = New System.Drawing.Point(6, 84)
+        Me.Label89.Location = New System.Drawing.Point(6, 98)
         Me.Label89.Name = "Label89"
         Me.Label89.Size = New System.Drawing.Size(80, 13)
         Me.Label89.TabIndex = 297
@@ -2080,7 +2074,7 @@ Partial Class frmAdd
         '
         Me.Label88.AutoSize = True
         Me.Label88.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label88.Location = New System.Drawing.Point(91, 337)
+        Me.Label88.Location = New System.Drawing.Point(91, 351)
         Me.Label88.Name = "Label88"
         Me.Label88.Size = New System.Drawing.Size(81, 13)
         Me.Label88.TabIndex = 309
@@ -2090,7 +2084,7 @@ Partial Class frmAdd
         '
         Me.Label86.AutoSize = True
         Me.Label86.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label86.Location = New System.Drawing.Point(6, 251)
+        Me.Label86.Location = New System.Drawing.Point(6, 265)
         Me.Label86.Name = "Label86"
         Me.Label86.Size = New System.Drawing.Size(51, 13)
         Me.Label86.TabIndex = 304
@@ -2100,7 +2094,7 @@ Partial Class frmAdd
         '
         Me.Label84.AutoSize = True
         Me.Label84.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label84.Location = New System.Drawing.Point(6, 293)
+        Me.Label84.Location = New System.Drawing.Point(6, 307)
         Me.Label84.Name = "Label84"
         Me.Label84.Size = New System.Drawing.Size(79, 13)
         Me.Label84.TabIndex = 306
@@ -2110,7 +2104,7 @@ Partial Class frmAdd
         '
         Me.Label82.AutoSize = True
         Me.Label82.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label82.Location = New System.Drawing.Point(6, 337)
+        Me.Label82.Location = New System.Drawing.Point(6, 351)
         Me.Label82.Name = "Label82"
         Me.Label82.Size = New System.Drawing.Size(83, 13)
         Me.Label82.TabIndex = 308
@@ -2120,7 +2114,7 @@ Partial Class frmAdd
         '
         Me.Label80.AutoSize = True
         Me.Label80.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label80.Location = New System.Drawing.Point(91, 293)
+        Me.Label80.Location = New System.Drawing.Point(91, 307)
         Me.Label80.Name = "Label80"
         Me.Label80.Size = New System.Drawing.Size(76, 13)
         Me.Label80.TabIndex = 307
@@ -2130,7 +2124,7 @@ Partial Class frmAdd
         '
         Me.Label77.AutoSize = True
         Me.Label77.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label77.Location = New System.Drawing.Point(91, 251)
+        Me.Label77.Location = New System.Drawing.Point(91, 265)
         Me.Label77.Name = "Label77"
         Me.Label77.Size = New System.Drawing.Size(73, 13)
         Me.Label77.TabIndex = 305
@@ -2140,7 +2134,7 @@ Partial Class frmAdd
         '
         Me.Label75.AutoSize = True
         Me.Label75.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label75.Location = New System.Drawing.Point(6, 201)
+        Me.Label75.Location = New System.Drawing.Point(6, 219)
         Me.Label75.Name = "Label75"
         Me.Label75.Size = New System.Drawing.Size(105, 13)
         Me.Label75.TabIndex = 301
@@ -2150,17 +2144,38 @@ Partial Class frmAdd
         '
         Me.Label74.AutoSize = True
         Me.Label74.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label74.Location = New System.Drawing.Point(6, 163)
+        Me.Label74.Location = New System.Drawing.Point(6, 181)
         Me.Label74.Name = "Label74"
         Me.Label74.Size = New System.Drawing.Size(104, 13)
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(15, 384)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(769, 13)
+        Me.Label14.TabIndex = 395
+        Me.Label14.Text = "_________________________________________________________________________________" &
+    "______________________________________________"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Times New Roman", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label15.Location = New System.Drawing.Point(116, 241)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(19, 10)
+        Me.Label15.TabIndex = 396
+        Me.Label15.Text = "Y/N"
+        '
         'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(808, 554)
+        Me.ClientSize = New System.Drawing.Size(808, 538)
         Me.Controls.Add(Me.tabApplication)
         Me.Name = "frmAdd"
         Me.Text = "Add Record"
@@ -2247,7 +2262,6 @@ Partial Class frmAdd
     Friend WithEvents chkBefore As CheckBox
     Friend WithEvents txtRequestYear As TextBox
     Friend WithEvents Label23 As Label
-    Friend WithEvents Label22 As Label
     Friend WithEvents tabCredentials As TabPage
     Friend WithEvents Label45 As Label
     Friend WithEvents Label39 As Label
@@ -2376,4 +2390,6 @@ Partial Class frmAdd
     Friend WithEvents Label4 As Label
     Friend WithEvents txtCellPhone As MaskedTextBox
     Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
 End Class

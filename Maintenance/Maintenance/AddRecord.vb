@@ -109,6 +109,10 @@ Public Class frmAdd
         db.execute()
         MsgBox("Your user name is" & username & "and your password is " & password)
 
+        'perhaps nest this information?
+        If txtLastName.Text = "" Or txtSSN.Text = "" Or txtEmail.Text = "" Then
+            MessageBox.Show("One of  the  required fields is empty.  Please enteerr  tthee  quireedd  information  to  continue.")
+        End If
 
 
     End Sub
@@ -204,6 +208,7 @@ Public Class frmAdd
 
         'command.Parameters.Add("@AcceptedOffer", SqlDbType.VarChar).Value = txtAcceptedOffer.Text
 
+        MessageBox.Show("Data entry saved.")
 
     End Sub
 

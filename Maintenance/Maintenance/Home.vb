@@ -7,7 +7,7 @@
         'code below to comit chnages to the DB  vvvvvvvv
 
         '----------------------------------
-        MessageBox.Show("Data entry saved.")
+
     End Sub
 
     Private Sub btnAddRecord_Click(sender As Object, e As EventArgs) Handles btnAddRecord.Click
