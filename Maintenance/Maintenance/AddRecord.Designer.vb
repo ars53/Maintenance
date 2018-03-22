@@ -24,28 +24,33 @@ Partial Class frmAdd
     Private Sub InitializeComponent()
         Me.tabApplication = New System.Windows.Forms.TabControl()
         Me.tabPersonalInfo = New System.Windows.Forms.TabPage()
+        Me.txtCellPhone = New System.Windows.Forms.MaskedTextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtOCountry = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.chkHispanic = New System.Windows.Forms.CheckBox()
+        Me.txtpadr2 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtLADR2 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtEmail2 = New System.Windows.Forms.TextBox()
+        Me.Label52 = New System.Windows.Forms.Label()
         Me.btnContinue = New System.Windows.Forms.Button()
         Me.ckWorkNone = New System.Windows.Forms.CheckBox()
         Me.ckLocalNone = New System.Windows.Forms.CheckBox()
         Me.lblBirthdayFormat = New System.Windows.Forms.Label()
-        Me.cbxFState = New System.Windows.Forms.ComboBox()
         Me.cbxLState = New System.Windows.Forms.ComboBox()
         Me.cbxPState = New System.Windows.Forms.ComboBox()
         Me.txtPZipCode = New System.Windows.Forms.MaskedTextBox()
         Me.txtLZipCode = New System.Windows.Forms.MaskedTextBox()
-        Me.txtFZipCode = New System.Windows.Forms.MaskedTextBox()
-        Me.txtPPhone = New System.Windows.Forms.MaskedTextBox()
-        Me.txtWorkPhone = New System.Windows.Forms.MaskedTextBox()
+        Me.txtLphone = New System.Windows.Forms.MaskedTextBox()
+        Me.txtpPhone = New System.Windows.Forms.MaskedTextBox()
         Me.txtCurrentPhone = New System.Windows.Forms.MaskedTextBox()
         Me.txtBirthday1 = New System.Windows.Forms.MaskedTextBox()
         Me.txtSSN = New System.Windows.Forms.MaskedTextBox()
-        Me.cbxOrigin = New System.Windows.Forms.ComboBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label72 = New System.Windows.Forms.Label()
-        Me.cbxCitizenship = New System.Windows.Forms.ComboBox()
         Me.cbxGender = New System.Windows.Forms.ComboBox()
-        Me.txtStudentID = New System.Windows.Forms.TextBox()
-        Me.Label71 = New System.Windows.Forms.Label()
         Me.Label66 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.cbxPrimaryContactNumber = New System.Windows.Forms.ComboBox()
@@ -53,8 +58,6 @@ Partial Class frmAdd
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label65 = New System.Windows.Forms.Label()
-        Me.txtFYears = New System.Windows.Forms.TextBox()
-        Me.Label50 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -63,14 +66,6 @@ Partial Class frmAdd
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.txtLAddress = New System.Windows.Forms.TextBox()
-        Me.chkResident = New System.Windows.Forms.CheckBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.txtFCity = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtFAddress = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.txtPYears = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -80,11 +75,9 @@ Partial Class frmAdd
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtPAddress = New System.Windows.Forms.TextBox()
-        Me.Label49 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.cbxEthnic = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.lblDOB = New System.Windows.Forms.Label()
         Me.lblSSN = New System.Windows.Forms.Label()
         Me.txtPreferred = New System.Windows.Forms.TextBox()
@@ -97,6 +90,7 @@ Partial Class frmAdd
         Me.lblFirstName = New System.Windows.Forms.Label()
         Me.lblLastName = New System.Windows.Forms.Label()
         Me.TabAdmission = New System.Windows.Forms.TabPage()
+        Me.btnConfirm2 = New System.Windows.Forms.Button()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label67 = New System.Windows.Forms.Label()
@@ -115,6 +109,7 @@ Partial Class frmAdd
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.tabCredentials = New System.Windows.Forms.TabPage()
+        Me.btnConfirm3 = New System.Windows.Forms.Button()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
@@ -150,7 +145,7 @@ Partial Class frmAdd
         Me.txtCName2 = New System.Windows.Forms.TextBox()
         Me.txtCName1 = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.txtTSEDate = New System.Windows.Forms.TextBox()
+        Me.txtGREDate = New System.Windows.Forms.TextBox()
         Me.txtTOEFLDate = New System.Windows.Forms.TextBox()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.Label69 = New System.Windows.Forms.Label()
@@ -176,7 +171,7 @@ Partial Class frmAdd
         Me.txtUnderGPA = New System.Windows.Forms.TextBox()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
-        Me.txtTSETotal = New System.Windows.Forms.TextBox()
+        Me.txtGRETotal = New System.Windows.Forms.TextBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.txtTOEFLTotal = New System.Windows.Forms.TextBox()
         Me.Label36 = New System.Windows.Forms.Label()
@@ -191,6 +186,7 @@ Partial Class frmAdd
         Me.txtGMATDate = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.tabStudentStatus = New System.Windows.Forms.TabPage()
+        Me.btnConfirm4 = New System.Windows.Forms.Button()
         Me.Label79 = New System.Windows.Forms.Label()
         Me.Label78 = New System.Windows.Forms.Label()
         Me.Label76 = New System.Windows.Forms.Label()
@@ -225,11 +221,6 @@ Partial Class frmAdd
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.txtEmail2 = New System.Windows.Forms.TextBox()
-        Me.btnConfirm2 = New System.Windows.Forms.Button()
-        Me.btnConfirm3 = New System.Windows.Forms.Button()
-        Me.btnConfirm4 = New System.Windows.Forms.Button()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -252,30 +243,33 @@ Partial Class frmAdd
         '
         'tabPersonalInfo
         '
+        Me.tabPersonalInfo.Controls.Add(Me.txtCellPhone)
+        Me.tabPersonalInfo.Controls.Add(Me.Label13)
+        Me.tabPersonalInfo.Controls.Add(Me.txtOCountry)
+        Me.tabPersonalInfo.Controls.Add(Me.Label4)
+        Me.tabPersonalInfo.Controls.Add(Me.chkHispanic)
+        Me.tabPersonalInfo.Controls.Add(Me.txtpadr2)
+        Me.tabPersonalInfo.Controls.Add(Me.Label12)
+        Me.tabPersonalInfo.Controls.Add(Me.txtLADR2)
+        Me.tabPersonalInfo.Controls.Add(Me.Label11)
         Me.tabPersonalInfo.Controls.Add(Me.txtEmail2)
         Me.tabPersonalInfo.Controls.Add(Me.Label52)
         Me.tabPersonalInfo.Controls.Add(Me.btnContinue)
         Me.tabPersonalInfo.Controls.Add(Me.ckWorkNone)
         Me.tabPersonalInfo.Controls.Add(Me.ckLocalNone)
         Me.tabPersonalInfo.Controls.Add(Me.lblBirthdayFormat)
-        Me.tabPersonalInfo.Controls.Add(Me.cbxFState)
         Me.tabPersonalInfo.Controls.Add(Me.cbxLState)
         Me.tabPersonalInfo.Controls.Add(Me.cbxPState)
         Me.tabPersonalInfo.Controls.Add(Me.txtPZipCode)
         Me.tabPersonalInfo.Controls.Add(Me.txtLZipCode)
-        Me.tabPersonalInfo.Controls.Add(Me.txtFZipCode)
-        Me.tabPersonalInfo.Controls.Add(Me.txtPPhone)
-        Me.tabPersonalInfo.Controls.Add(Me.txtWorkPhone)
+        Me.tabPersonalInfo.Controls.Add(Me.txtLphone)
+        Me.tabPersonalInfo.Controls.Add(Me.txtpPhone)
         Me.tabPersonalInfo.Controls.Add(Me.txtCurrentPhone)
         Me.tabPersonalInfo.Controls.Add(Me.txtBirthday1)
         Me.tabPersonalInfo.Controls.Add(Me.txtSSN)
-        Me.tabPersonalInfo.Controls.Add(Me.cbxOrigin)
         Me.tabPersonalInfo.Controls.Add(Me.txtEmail)
         Me.tabPersonalInfo.Controls.Add(Me.Label72)
-        Me.tabPersonalInfo.Controls.Add(Me.cbxCitizenship)
         Me.tabPersonalInfo.Controls.Add(Me.cbxGender)
-        Me.tabPersonalInfo.Controls.Add(Me.txtStudentID)
-        Me.tabPersonalInfo.Controls.Add(Me.Label71)
         Me.tabPersonalInfo.Controls.Add(Me.Label66)
         Me.tabPersonalInfo.Controls.Add(Me.Label47)
         Me.tabPersonalInfo.Controls.Add(Me.cbxPrimaryContactNumber)
@@ -283,8 +277,6 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Controls.Add(Me.Label2)
         Me.tabPersonalInfo.Controls.Add(Me.Label21)
         Me.tabPersonalInfo.Controls.Add(Me.Label65)
-        Me.tabPersonalInfo.Controls.Add(Me.txtFYears)
-        Me.tabPersonalInfo.Controls.Add(Me.Label50)
         Me.tabPersonalInfo.Controls.Add(Me.Label46)
         Me.tabPersonalInfo.Controls.Add(Me.Label16)
         Me.tabPersonalInfo.Controls.Add(Me.Label17)
@@ -293,14 +285,6 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Controls.Add(Me.Label19)
         Me.tabPersonalInfo.Controls.Add(Me.Label20)
         Me.tabPersonalInfo.Controls.Add(Me.txtLAddress)
-        Me.tabPersonalInfo.Controls.Add(Me.chkResident)
-        Me.tabPersonalInfo.Controls.Add(Me.Label12)
-        Me.tabPersonalInfo.Controls.Add(Me.Label13)
-        Me.tabPersonalInfo.Controls.Add(Me.txtFCity)
-        Me.tabPersonalInfo.Controls.Add(Me.Label14)
-        Me.tabPersonalInfo.Controls.Add(Me.Label15)
-        Me.tabPersonalInfo.Controls.Add(Me.txtFAddress)
-        Me.tabPersonalInfo.Controls.Add(Me.Label11)
         Me.tabPersonalInfo.Controls.Add(Me.txtPYears)
         Me.tabPersonalInfo.Controls.Add(Me.Label10)
         Me.tabPersonalInfo.Controls.Add(Me.Label9)
@@ -310,11 +294,9 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Controls.Add(Me.Label6)
         Me.tabPersonalInfo.Controls.Add(Me.Label5)
         Me.tabPersonalInfo.Controls.Add(Me.txtPAddress)
-        Me.tabPersonalInfo.Controls.Add(Me.Label49)
         Me.tabPersonalInfo.Controls.Add(Me.Label48)
         Me.tabPersonalInfo.Controls.Add(Me.cbxEthnic)
         Me.tabPersonalInfo.Controls.Add(Me.Label1)
-        Me.tabPersonalInfo.Controls.Add(Me.Label4)
         Me.tabPersonalInfo.Controls.Add(Me.lblDOB)
         Me.tabPersonalInfo.Controls.Add(Me.lblSSN)
         Me.tabPersonalInfo.Controls.Add(Me.txtPreferred)
@@ -334,9 +316,99 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Text = "Personal Information"
         Me.tabPersonalInfo.UseVisualStyleBackColor = True
         '
+        'txtCellPhone
+        '
+        Me.txtCellPhone.Location = New System.Drawing.Point(594, 108)
+        Me.txtCellPhone.Name = "txtCellPhone"
+        Me.txtCellPhone.Size = New System.Drawing.Size(100, 20)
+        Me.txtCellPhone.TabIndex = 330
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(519, 111)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(58, 13)
+        Me.Label13.TabIndex = 331
+        Me.Label13.Text = "Cell Phone"
+        '
+        'txtOCountry
+        '
+        Me.txtOCountry.Location = New System.Drawing.Point(594, 18)
+        Me.txtOCountry.Name = "txtOCountry"
+        Me.txtOCountry.Size = New System.Drawing.Size(100, 20)
+        Me.txtOCountry.TabIndex = 329
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(508, 18)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.TabIndex = 328
+        Me.Label4.Text = "Origin Country"
+        '
+        'chkHispanic
+        '
+        Me.chkHispanic.AutoSize = True
+        Me.chkHispanic.Location = New System.Drawing.Point(365, 68)
+        Me.chkHispanic.Name = "chkHispanic"
+        Me.chkHispanic.Size = New System.Drawing.Size(101, 17)
+        Me.chkHispanic.TabIndex = 327
+        Me.chkHispanic.Text = "Hispanic/Latino"
+        Me.chkHispanic.UseVisualStyleBackColor = True
+        '
+        'txtpadr2
+        '
+        Me.txtpadr2.Location = New System.Drawing.Point(59, 188)
+        Me.txtpadr2.Name = "txtpadr2"
+        Me.txtpadr2.Size = New System.Drawing.Size(273, 20)
+        Me.txtpadr2.TabIndex = 325
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(2, 191)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(51, 13)
+        Me.Label12.TabIndex = 324
+        Me.Label12.Text = "Address2"
+        '
+        'txtLADR2
+        '
+        Me.txtLADR2.Location = New System.Drawing.Point(399, 193)
+        Me.txtLADR2.Name = "txtLADR2"
+        Me.txtLADR2.Size = New System.Drawing.Size(273, 20)
+        Me.txtLADR2.TabIndex = 323
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(342, 196)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(51, 13)
+        Me.Label11.TabIndex = 322
+        Me.Label11.Text = "Address2"
+        '
+        'txtEmail2
+        '
+        Me.txtEmail2.Location = New System.Drawing.Point(594, 82)
+        Me.txtEmail2.Name = "txtEmail2"
+        Me.txtEmail2.Size = New System.Drawing.Size(132, 20)
+        Me.txtEmail2.TabIndex = 321
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Location = New System.Drawing.Point(495, 85)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(94, 13)
+        Me.Label52.TabIndex = 320
+        Me.Label52.Text = "Alt. Email Address:"
+        '
         'btnContinue
         '
-        Me.btnContinue.Location = New System.Drawing.Point(701, 420)
+        Me.btnContinue.Location = New System.Drawing.Point(302, 431)
         Me.btnContinue.Name = "btnContinue"
         Me.btnContinue.Size = New System.Drawing.Size(75, 23)
         Me.btnContinue.TabIndex = 319
@@ -346,7 +418,7 @@ Partial Class frmAdd
         'ckWorkNone
         '
         Me.ckWorkNone.AutoSize = True
-        Me.ckWorkNone.Location = New System.Drawing.Point(634, 350)
+        Me.ckWorkNone.Location = New System.Drawing.Point(672, 395)
         Me.ckWorkNone.Name = "ckWorkNone"
         Me.ckWorkNone.Size = New System.Drawing.Size(102, 17)
         Me.ckWorkNone.TabIndex = 318
@@ -356,7 +428,7 @@ Partial Class frmAdd
         'ckLocalNone
         '
         Me.ckLocalNone.AutoSize = True
-        Me.ckLocalNone.Location = New System.Drawing.Point(634, 323)
+        Me.ckLocalNone.Location = New System.Drawing.Point(672, 368)
         Me.ckLocalNone.Name = "ckLocalNone"
         Me.ckLocalNone.Size = New System.Drawing.Size(102, 17)
         Me.ckLocalNone.TabIndex = 317
@@ -374,20 +446,11 @@ Partial Class frmAdd
         Me.lblBirthdayFormat.TabIndex = 316
         Me.lblBirthdayFormat.Text = "YYYY-MM-DD"
         '
-        'cbxFState
-        '
-        Me.cbxFState.FormattingEnabled = True
-        Me.cbxFState.Items.AddRange(New Object() {"ALABAMA", "ALASKA", "AMERICAN SAMOA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "DISTRICT OF COLUMBIA", "FEDERATED STATES OF MICRONESIA", "FLORIDA", "GEORGIA", "GUAM", "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARSHALL ISLANDS", "MARYLAND", "MASSACHUSETTS", "MICHIGAN", "MINNESOTA", "MISSISSIPPI", "MISSOURI", "MONTANA", "NEBRASKA", "NEVADA", "NEW HAMPSHIRE", "NEW JERSEY", "NEW MEXICO", "NEW YORK", "NORTH CAROLINA", "NORTH DAKOTA", "NORTHERN MARIANA ISLANDS", "OHIO", "OKLAHOMA", "OREGON", "PALAU", "PENNSYLVANIA", "PUERTO RICO", "RHODE ISLAND", "SOUTH CAROLINA", "SOUTH DAKOTA", "TENNESSEE", "TEXAS", "UTAH", "VERMONT", "VIRGIN ISLANDS", "VIRGINIA", "WASHINGTON", "WEST VIRGINIA", "WISCONSIN", "WYOMING"})
-        Me.cbxFState.Location = New System.Drawing.Point(51, 369)
-        Me.cbxFState.Name = "cbxFState"
-        Me.cbxFState.Size = New System.Drawing.Size(121, 21)
-        Me.cbxFState.TabIndex = 23
-        '
         'cbxLState
         '
         Me.cbxLState.FormattingEnabled = True
-        Me.cbxLState.Items.AddRange(New Object() {"ALABAMA", "ALASKA", "AMERICAN SAMOA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "DISTRICT OF COLUMBIA", "FEDERATED STATES OF MICRONESIA", "FLORIDA", "GEORGIA", "GUAM", "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARSHALL ISLANDS", "MARYLAND", "MASSACHUSETTS", "MICHIGAN", "MINNESOTA", "MISSISSIPPI", "MISSOURI", "MONTANA", "NEBRASKA", "NEVADA", "NEW HAMPSHIRE", "NEW JERSEY", "NEW MEXICO", "NEW YORK", "NORTH CAROLINA", "NORTH DAKOTA", "NORTHERN MARIANA ISLANDS", "OHIO", "OKLAHOMA", "OREGON", "PALAU", "PENNSYLVANIA", "PUERTO RICO", "RHODE ISLAND", "SOUTH CAROLINA", "SOUTH DAKOTA", "TENNESSEE", "TEXAS", "UTAH", "VERMONT", "VIRGIN ISLANDS", "VIRGINIA", "WASHINGTON", "WEST VIRGINIA", "WISCONSIN", "WYOMING"})
-        Me.cbxLState.Location = New System.Drawing.Point(369, 216)
+        Me.cbxLState.Items.AddRange(New Object() {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"})
+        Me.cbxLState.Location = New System.Drawing.Point(399, 242)
         Me.cbxLState.Name = "cbxLState"
         Me.cbxLState.Size = New System.Drawing.Size(121, 21)
         Me.cbxLState.TabIndex = 19
@@ -395,16 +458,15 @@ Partial Class frmAdd
         'cbxPState
         '
         Me.cbxPState.FormattingEnabled = True
-        Me.cbxPState.Items.AddRange(New Object() {"ALABAMA", "ALASKA", "AMERICAN SAMOA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "DISTRICT OF COLUMBIA", "FEDERATED STATES OF MICRONESIA", "FLORIDA", "GEORGIA", "GUAM", "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARSHALL ISLANDS", "MARYLAND", "MASSACHUSETTS", "MICHIGAN", "MINNESOTA", "MISSISSIPPI", "MISSOURI", "MONTANA", "NEBRASKA", "NEVADA", "NEW HAMPSHIRE", "NEW JERSEY", "NEW MEXICO", "NEW YORK", "NORTH CAROLINA", "NORTH DAKOTA", "NORTHERN MARIANA ISLANDS", "OHIO", "OKLAHOMA", "OREGON", "PALAU", "PENNSYLVANIA", "PUERTO RICO", "RHODE ISLAND", "SOUTH CAROLINA", "SOUTH DAKOTA", "TENNESSEE", "TEXAS", "UTAH", "VERMONT", "VIRGIN ISLANDS", "VIRGINIA", "WASHINGTON", "WEST VIRGINIA", "WISCONSIN", "WYOMING"})
-        Me.cbxPState.Location = New System.Drawing.Point(48, 216)
+        Me.cbxPState.Items.AddRange(New Object() {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"})
+        Me.cbxPState.Location = New System.Drawing.Point(58, 240)
         Me.cbxPState.Name = "cbxPState"
         Me.cbxPState.Size = New System.Drawing.Size(121, 21)
         Me.cbxPState.TabIndex = 14
         '
         'txtPZipCode
         '
-        Me.txtPZipCode.Location = New System.Drawing.Point(47, 243)
-        Me.txtPZipCode.Mask = "00000-0000"
+        Me.txtPZipCode.Location = New System.Drawing.Point(57, 267)
         Me.txtPZipCode.Name = "txtPZipCode"
         Me.txtPZipCode.Size = New System.Drawing.Size(75, 20)
         Me.txtPZipCode.TabIndex = 15
@@ -412,41 +474,29 @@ Partial Class frmAdd
         '
         'txtLZipCode
         '
-        Me.txtLZipCode.Location = New System.Drawing.Point(370, 243)
-        Me.txtLZipCode.Mask = "00000-0000"
+        Me.txtLZipCode.Location = New System.Drawing.Point(399, 269)
         Me.txtLZipCode.Name = "txtLZipCode"
         Me.txtLZipCode.Size = New System.Drawing.Size(75, 20)
         Me.txtLZipCode.TabIndex = 20
         Me.txtLZipCode.ValidatingType = GetType(Integer)
         '
-        'txtFZipCode
+        'txtLphone
         '
-        Me.txtFZipCode.Location = New System.Drawing.Point(51, 396)
-        Me.txtFZipCode.Mask = "00000-0000"
-        Me.txtFZipCode.Name = "txtFZipCode"
-        Me.txtFZipCode.Size = New System.Drawing.Size(75, 20)
-        Me.txtFZipCode.TabIndex = 24
-        Me.txtFZipCode.ValidatingType = GetType(Integer)
+        Me.txtLphone.Location = New System.Drawing.Point(399, 298)
+        Me.txtLphone.Name = "txtLphone"
+        Me.txtLphone.Size = New System.Drawing.Size(100, 20)
+        Me.txtLphone.TabIndex = 29
         '
-        'txtPPhone
+        'txtpPhone
         '
-        Me.txtPPhone.Location = New System.Drawing.Point(512, 369)
-        Me.txtPPhone.Mask = "(999) 000-0000"
-        Me.txtPPhone.Name = "txtPPhone"
-        Me.txtPPhone.Size = New System.Drawing.Size(100, 20)
-        Me.txtPPhone.TabIndex = 29
-        '
-        'txtWorkPhone
-        '
-        Me.txtWorkPhone.Location = New System.Drawing.Point(512, 347)
-        Me.txtWorkPhone.Mask = "(999) 000-0000"
-        Me.txtWorkPhone.Name = "txtWorkPhone"
-        Me.txtWorkPhone.Size = New System.Drawing.Size(100, 20)
-        Me.txtWorkPhone.TabIndex = 28
+        Me.txtpPhone.Location = New System.Drawing.Point(79, 301)
+        Me.txtpPhone.Name = "txtpPhone"
+        Me.txtpPhone.Size = New System.Drawing.Size(100, 20)
+        Me.txtpPhone.TabIndex = 28
         '
         'txtCurrentPhone
         '
-        Me.txtCurrentPhone.Location = New System.Drawing.Point(512, 321)
+        Me.txtCurrentPhone.Location = New System.Drawing.Point(558, 372)
         Me.txtCurrentPhone.Mask = "(999) 000-0000"
         Me.txtCurrentPhone.Name = "txtCurrentPhone"
         Me.txtCurrentPhone.Size = New System.Drawing.Size(100, 20)
@@ -466,44 +516,9 @@ Partial Class frmAdd
         Me.txtSSN.Size = New System.Drawing.Size(71, 20)
         Me.txtSSN.TabIndex = 6
         '
-        'cbxOrigin
-        '
-        Me.cbxOrigin.FormattingEnabled = True
-        Me.cbxOrigin.Items.AddRange(New Object() {"Abkhazia – Republic of Abkhazia[5]", "Afghanistan Afghanistan – Islamic Republic of Afghanistan", "the United Kingdom Akrotiri and Dhekelia – Sovereign Base Areas of Akrotiri and D" &
-                "hekelia (UK overseas territory)", "Åland Islands Åland – Åland Islands (Autonomous province of Finland)", "Albania Albania – Republic of Albania", "Algeria Algeria – People's Democratic Republic of Algeria", "American Samoa American Samoa – Territory of American Samoa (US territory)", "Andorra Andorra – Principality of Andorra", "Angola Angola – Republic of Angola", "Anguilla Anguilla (UK overseas territory)", "Antigua and Barbuda Antigua and Barbuda", "Argentina Argentina – Argentine Republic[11]", "Armenia Armenia – Republic of Armenia", "Aruba Aruba (Self-governing country in the Kingdom of the Netherlands)", "the United Kingdom Ascension Island (Dependency of the UK overseas territory of S" &
-                "aint Helena)", "Australia Australia – Commonwealth of Australia", "Austria Austria – Republic of Austria", "Azerbaijan Azerbaijan – Republic of Azerbaijan[12]", "the Bahamas Bahamas, The – Commonwealth of The Bahamas", "Bahrain Bahrain – Kingdom of Bahrain", "Bangladesh Bangladesh – People's Republic of Bangladesh", "Barbados Barbados", "Belarus Belarus – Republic of Belarus", "Belgium Belgium – Kingdom of Belgium", "Belize Belize", "Benin Benin – Republic of Benin", "Bermuda Bermuda (UK overseas territory)", "Bhutan Bhutan – Kingdom of Bhutan", "Bolivia Bolivia – Republic of Bolivia", "Bosnia and Herzegovina Bosnia and Herzegovina[13]", "Botswana Botswana – Republic of Botswana", "Brazil Brazil – Federative Republic of Brazil", "Brunei Brunei – Negara Brunei Darussalam", "Bulgaria Bulgaria – Republic of Bulgaria", "Burkina Faso Burkina Faso", """Burma"", see Myanmar", "Burundi Burundi – Republic of Burundi", "Cambodia Cambodia – Kingdom of Cambodia", "Cameroon Cameroon – Republic of Cameroon", "Canada Canada[14]", "Cape Verde Cape Verde – Republic of Cape Verde", "Cayman Islands Cayman Islands (UK overseas territory)", "the Central African Republic Central African Republic[15]", "Chad Chad – Republic of Chad", "Chile Chile – Republic of Chile", "the People's Republic of China China, People's Republic of – People's Republic of" &
-                " China[16]", "the Republic of China China, Republic of – Republic of China [17]", "Christmas Island Christmas Island – Territory of Christmas Island (Australian ove" &
-                "rseas territory)", "the Cocos (Keeling) Islands Cocos (Keeling) Islands – Territory of Cocos (Keeling" &
-                ") Islands (Australian overseas territory)", "Colombia Colombia – Republic of Colombia", "the Comoros Comoros – Union of the Comoros", "the Democratic Republic of the Congo Congo – Democratic Republic of the Congo[18]" &
-                "", "the Republic of the Congo Congo – Republic of the Congo[19]", "the Cook Islands Cook Islands (Associated state of New Zealand)", "Costa Rica Costa Rica – Republic of Costa Rica", "Côte d'Ivoire Côte d'Ivoire – Republic of Côte d'Ivoire", "Croatia Croatia – Republic of Croatia", "Cuba Cuba – Republic of Cuba", "Cyprus Cyprus – Republic of Cyprus[20]", "the Czech Republic Czech Republic[21]", "Denmark Denmark – Kingdom of Denmark", """Dhekelia"", see Akrotiri and Dhekelia", "Djibouti Djibouti – Republic of Djibouti", "Dominica Dominica – Commonwealth of Dominica", "the Dominican Republic Dominican Republic", "East Timor East Timor – Democratic Republic of Timor-Leste", "Ecuador Ecuador – Republic of Ecuador", "Egypt Egypt – Arab Republic of Egypt", "El Salvador El Salvador – Republic of El Salvador", "Equatorial Guinea Equatorial Guinea – Republic of Equatorial Guinea", "Eritrea Eritrea – State of Eritrea", "Estonia Estonia – Republic of Estonia", "Ethiopia Ethiopia – Federal Democratic Republic of Ethiopia", "the Falkland Islands Falkland Islands (UK overseas territory)[22]", "the Faroe Islands Faroe Islands (Self-governing country in the Kingdom of Denmark" &
-                ")", "Fiji Fiji – Republic of the Fiji Islands", "Finland Finland – Republic of Finland", "France France – French Republic", "French Polynesia French Polynesia (French overseas collectivity)", "Gabon Gabon – Gabonese Republic", "The Gambia Gambia, The – Republic of The Gambia", "Georgia (country) Georgia[23]", "Germany Germany – Federal Republic of Germany", "Ghana Ghana – Republic of Ghana", "Gibraltar Gibraltar (UK overseas territory)", "Greece Greece – Hellenic Republic", "Greenland Greenland (Self-governing country in the Kingdom of Denmark)", "Grenada Grenada", "Guam Guam – Territory of Guam (US organized territory)", "Guatemala Guatemala – Republic of Guatemala", "Guernsey Guernsey – Bailiwick of Guernsey (British Crown dependency)[24]", "Guinea Guinea – Republic of Guinea", "Guinea-Bissau Guinea-Bissau – Republic of Guinea-Bissau", "Guyana Guyana – Co-operative Republic of Guyana", "Haiti Haiti – Republic of Haiti", "Honduras Honduras – Republic of Honduras", "Hong Kong Hong Kong – Hong Kong Special Administrative Region of the People's Rep" &
-                "ublic of China (Area of special sovereignty)[25]", "Hungary Hungary – Republic of Hungary", "Iceland Iceland – Republic of Iceland", "India India – Republic of India", "Indonesia Indonesia – Republic of Indonesia", "Iran Iran – Islamic Republic of Iran", "Iraq Iraq – Republic of Iraq", "Ireland Ireland - Republic of Ireland[26]", "the Isle of Man Isle of Man (British Crown dependency)", "Israel Israel – State of Israel", "Italy Italy – Italian Republic", """Ivory Coast"", see Côte d'Ivoire", "Jamaica Jamaica", "Japan Japan", "Jersey Jersey – Bailiwick of Jersey (British Crown dependency)", "Jordan Jordan – Hashemite Kingdom of Jordan", "Kazakhstan Kazakhstan – Republic of Kazakhstan", "Kenya Kenya – Republic of Kenya", "Kiribati Kiribati – Republic of Kiribati", "North Korea Korea, North – Democratic People's Republic of Korea[27]", "South Korea Korea, South – Republic of Korea[28]", "Kosovo Kosovo – Republic of Kosovo[3]", "Kuwait Kuwait – State of Kuwait", "Kyrgyzstan Kyrgyzstan – Kyrgyz Republic[29]", "Laos Laos – Lao People's Democratic Republic", "Latvia Latvia – Republic of Latvia", "Lebanon Lebanon – Republic of Lebanon", "Lesotho Lesotho – Kingdom of Lesotho", "Liberia Liberia – Republic of Liberia", "Libya Libya – Great Socialist People's Libyan Arab Jamahiriya", "Liechtenstein Liechtenstein – Principality of Liechtenstein", "Lithuania Lithuania – Republic of Lithuania", "Luxembourg Luxembourg – Grand Duchy of Luxembourg", "Macau Macao – Macao Special Administrative Region of the People's Republic of Chi" &
-                "na (Area of special sovereignty)[30]", "the Republic of Macedonia Macedonia – Republic of Macedonia[31]", "Madagascar Madagascar – Republic of Madagascar", "Malawi Malawi – Republic of Malawi", "Malaysia Malaysia", "the Maldives Maldives – Republic of Maldives", "Mali Mali – Republic of Mali", "Malta Malta – Republic of Malta", "the Marshall Islands Marshall Islands – Republic of the Marshall Islands", "Mauritania Mauritania – Islamic Republic of Mauritania", "Mauritius Mauritius – Republic of Mauritius", "Mayotte Mayotte – Departmental Collectivity of Mayotte (French overseas collectiv" &
-                "ity)", "Mexico Mexico – United Mexican States", "the Federated States of Micronesia Micronesia – Federated States of Micronesia", "Moldova Moldova – Republic of Moldova[32]", "Monaco Monaco – Principality of Monaco", "Mongolia Mongolia", "Montenegro Montenegro – Republic of Montenegro", "Montserrat Montserrat (UK overseas territory)", "Morocco Morocco – Kingdom of Morocco[33]", "Mozambique Mozambique – Republic of Mozambique", "Burma Myanmar – Union of Myanmar", "Nagorno-Karabakh Republic Nagorno-Karabakh – Nagorno-Karabakh Republic[6]", "Namibia Namibia – Republic of Namibia", "Nauru Nauru – Republic of Nauru", "Nepal Nepal – State of Nepal", "the Netherlands Netherlands – Kingdom of the Netherlands[34]", "the Netherlands Antilles Netherlands Antilles (Self-governing country in the King" &
-                "dom of the Netherlands)", "New Caledonia New Caledonia – Territory of New Caledonia and Dependencies (French" &
-                " community sui generis)", "New Zealand New Zealand", "Nicaragua Nicaragua – Republic of Nicaragua", "Niger Niger – Republic of Niger", "Nigeria Nigeria – Federal Republic of Nigeria", "Niue Niue (Associated state of New Zealand)", "Norfolk Island Norfolk Island – Territory of Norfolk Island (Australian overseas " &
-                "territory)", "the Turkish Republic of Northern Cyprus Northern Cyprus – Turkish Republic of Nor" &
-                "thern Cyprus[4]", "the Northern Mariana Islands Northern Mariana Islands – Commonwealth of the North" &
-                "ern Mariana Islands (US commonwealth)", """North Korea"", see Korea, North", "Norway Norway – Kingdom of Norway", "Oman Oman – Sultanate of Oman", "Pakistan Pakistan – Islamic Republic of Pakistan", "Palau Palau – Republic of Palau", "Palestinian flag Palestine – Occupied Palestinian Territories[35]", "Panama Panama – Republic of Panama", "Papua New Guinea Papua New Guinea – Independent State of Papua New Guinea", "Paraguay Paraguay – Republic of Paraguay", """People's Republic of China"", see China, People's Republic of", "Peru Peru – Republic of Peru", "the Philippines Philippines – Republic of the Philippines", "the Pitcairn Islands Pitcairn Islands – Pitcairn, Henderson, Ducie, and Oeno Isla" &
-                "nds (UK overseas territory)", "Poland Poland – Republic of Poland", "Portugal Portugal – Portuguese Republic", """Pridnestrovie"", see Transnistria", "Puerto Rico Puerto Rico – Commonwealth of Puerto Rico (US commonwealth)", "Qatar Qatar – State of Qatar", """Republic of China"", see China, Republic of", "Romania Romania", "Russia Russia – Russian Federation", "Rwanda Rwanda – Republic of Rwanda", "Saint Barthélemy Saint Barthélemy – Collectivity of Saint Barthélemy (French over" &
-                "seas collectivity)", "Saint Helena Saint Helena (UK overseas territory)", "Saint Kitts and Nevis Saint Kitts and Nevis – Federation of Saint Christopher and" &
-                " Nevis", "Saint Lucia Saint Lucia", "Saint Martin (France) Saint Martin – Collectivity of Saint Martin (French oversea" &
-                "s collectivity)", "Saint Pierre and Miquelon Saint Pierre and Miquelon – Territorial Collectivity of" &
-                " Saint Pierre and Miquelon (French overseas collectivity)", "Saint Vincent and the Grenadines Saint Vincent and the Grenadines", "Samoa Samoa – Independent State of Samoa", "San Marino San Marino – Most Serene Republic of San Marino", "São Tomé and Príncipe São Tomé and Príncipe – Democratic Republic of São Tomé and" &
-                " Príncipe", "Saudi Arabia Saudi Arabia – Kingdom of Saudi Arabia", "Senegal Senegal – Republic of Senegal", "Serbia Serbia – Republic of Serbia[36]", "the Seychelles Seychelles – Republic of Seychelles", "Sierra Leone Sierra Leone – Republic of Sierra Leone", "Singapore Singapore – Republic of Singapore", "Slovakia Slovakia – Slovak Republic", "Slovenia Slovenia – Republic of Slovenia", "the Solomon Islands Solomon Islands", "Somalia Somalia[37]", "Somaliland Somaliland – Republic of Somaliland[8]", "South Africa South Africa – Republic of South Africa", """South Korea"", see Korea, South", "South Ossetia South Ossetia – Republic of South Ossetia[9]", "Spain Spain – Kingdom of Spain", "Sri Lanka Sri Lanka – Democratic Socialist Republic of Sri Lanka", "Sudan Sudan – Republic of the Sudan", "Suriname Suriname – Republic of Suriname", "Svalbard Svalbard (Territory of Norway)[38]", "Swaziland Swaziland – Kingdom of Swaziland", "Sweden Sweden – Kingdom of Sweden", "Switzerland Switzerland – Swiss Confederation", "Syria Syria – Syrian Arab Republic", """Taiwan"", see China, Republic of", "Tajikistan Tajikistan – Republic of Tajikistan", "Tanzania Tanzania – United Republic of Tanzania", "Thailand Thailand – Kingdom of Thailand", """Timor-Leste"", see East Timor", "Togo Togo – Togolese Republic", "Tokelau Tokelau (Overseas territory of New Zealand)", "Tonga Tonga – Kingdom of Tonga", "Transnistria Transnistria – Transnistrian Moldovan Republic[7]", "Trinidad and Tobago Trinidad and Tobago – Republic of Trinidad and Tobago", "Tristan da Cunha Tristan da Cunha (Dependency of the UK overseas territory of Sai" &
-                "nt Helena)", "Tunisia Tunisia – Tunisian Republic", "Turkey Turkey – Republic of Turkey", "Turkmenistan Turkmenistan", "the Turks and Caicos Islands Turks and Caicos Islands (UK overseas territory)", "Tuvalu Tuvalu", "Uganda Uganda – Republic of Uganda", "Ukraine Ukraine", "the United Arab Emirates United Arab Emirates", "the United Kingdom United Kingdom – United Kingdom of Great Britain and Northern " &
-                "Ireland", "the United States United States – United States of America", "Uruguay Uruguay – Eastern Republic of Uruguay", "Uzbekistan Uzbekistan – Republic of Uzbekistan", "Vanuatu Vanuatu – Republic of Vanuatu", "the Vatican City Vatican City – State of the Vatican City[39]", "Venezuela Venezuela – Bolivarian Republic of Venezuela", "Vietnam Vietnam – Socialist Republic of Vietnam", "the British Virgin Islands Virgin Islands, British – British Virgin Islands (UK o" &
-                "verseas territory)", "the United States Virgin Islands Virgin Islands, United States – United States Vi" &
-                "rgin Islands (US organized territory)", "Wallis and Futuna Wallis and Futuna – Territory of Wallis and Futuna Islands (Fre" &
-                "nch overseas collectivity)", "Western Sahara Western Sahara[40]", "Yemen Yemen – Republic of Yemen", """Zaire"", see Democratic Republic of the Congo", "Zambia Zambia – Republic of Zambia", "Zimbabwe Zimbabwe – Republic of Zimbabwe"})
-        Me.cbxOrigin.Location = New System.Drawing.Point(365, 24)
-        Me.cbxOrigin.Name = "cbxOrigin"
-        Me.cbxOrigin.Size = New System.Drawing.Size(121, 21)
-        Me.cbxOrigin.TabIndex = 8
-        '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(480, 425)
+        Me.txtEmail.Location = New System.Drawing.Point(594, 53)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(132, 20)
         Me.txtEmail.TabIndex = 31
@@ -511,20 +526,11 @@ Partial Class frmAdd
         'Label72
         '
         Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(394, 428)
+        Me.Label72.Location = New System.Drawing.Point(508, 56)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(80, 13)
         Me.Label72.TabIndex = 235
         Me.Label72.Text = "Email Address*:"
-        '
-        'cbxCitizenship
-        '
-        Me.cbxCitizenship.FormattingEnabled = True
-        Me.cbxCitizenship.Items.AddRange(New Object() {"U.S. Citizen", "Resident Alien", "Non-Resident Alien"})
-        Me.cbxCitizenship.Location = New System.Drawing.Point(503, 24)
-        Me.cbxCitizenship.Name = "cbxCitizenship"
-        Me.cbxCitizenship.Size = New System.Drawing.Size(121, 21)
-        Me.cbxCitizenship.TabIndex = 11
         '
         'cbxGender
         '
@@ -535,26 +541,10 @@ Partial Class frmAdd
         Me.cbxGender.Size = New System.Drawing.Size(121, 21)
         Me.cbxGender.TabIndex = 10
         '
-        'txtStudentID
-        '
-        Me.txtStudentID.Location = New System.Drawing.Point(222, 25)
-        Me.txtStudentID.Name = "txtStudentID"
-        Me.txtStudentID.Size = New System.Drawing.Size(128, 20)
-        Me.txtStudentID.TabIndex = 5
-        '
-        'Label71
-        '
-        Me.Label71.AutoSize = True
-        Me.Label71.Location = New System.Drawing.Point(219, 7)
-        Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(62, 13)
-        Me.Label71.TabIndex = 205
-        Me.Label71.Text = "Student ID*"
-        '
         'Label66
         '
         Me.Label66.AutoSize = True
-        Me.Label66.Location = New System.Drawing.Point(331, 275)
+        Me.Label66.Location = New System.Drawing.Point(345, 321)
         Me.Label66.Name = "Label66"
         Me.Label66.Size = New System.Drawing.Size(439, 13)
         Me.Label66.TabIndex = 315
@@ -563,7 +553,7 @@ Partial Class frmAdd
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(393, 398)
+        Me.Label47.Location = New System.Drawing.Point(439, 431)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(94, 13)
         Me.Label47.TabIndex = 234
@@ -573,7 +563,7 @@ Partial Class frmAdd
         '
         Me.cbxPrimaryContactNumber.FormattingEnabled = True
         Me.cbxPrimaryContactNumber.Items.AddRange(New Object() {"Local", "Work", "Permanent"})
-        Me.cbxPrimaryContactNumber.Location = New System.Drawing.Point(513, 395)
+        Me.cbxPrimaryContactNumber.Location = New System.Drawing.Point(559, 428)
         Me.cbxPrimaryContactNumber.Name = "cbxPrimaryContactNumber"
         Me.cbxPrimaryContactNumber.Size = New System.Drawing.Size(99, 21)
         Me.cbxPrimaryContactNumber.TabIndex = 30
@@ -581,25 +571,25 @@ Partial Class frmAdd
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(393, 347)
+        Me.Label3.Location = New System.Drawing.Point(10, 305)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 13)
+        Me.Label3.Size = New System.Drawing.Size(72, 13)
         Me.Label3.TabIndex = 232
-        Me.Label3.Text = "Work Phone:"
+        Me.Label3.Text = "Home Phone:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(393, 372)
+        Me.Label2.Location = New System.Drawing.Point(324, 301)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 13)
+        Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 233
-        Me.Label2.Text = "Permanent Telephone:"
+        Me.Label2.Text = "Home Phone"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(393, 321)
+        Me.Label21.Location = New System.Drawing.Point(449, 372)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(90, 13)
         Me.Label21.TabIndex = 231
@@ -608,33 +598,17 @@ Partial Class frmAdd
         'Label65
         '
         Me.Label65.AutoSize = True
-        Me.Label65.Location = New System.Drawing.Point(5, 129)
+        Me.Label65.Location = New System.Drawing.Point(5, 131)
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(769, 13)
         Me.Label65.TabIndex = 314
         Me.Label65.Text = "_________________________________________________________________________________" &
     "______________________________________________"
         '
-        'txtFYears
-        '
-        Me.txtFYears.Location = New System.Drawing.Point(156, 421)
-        Me.txtFYears.Name = "txtFYears"
-        Me.txtFYears.Size = New System.Drawing.Size(22, 20)
-        Me.txtFYears.TabIndex = 25
-        '
-        'Label50
-        '
-        Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(13, 424)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(137, 13)
-        Me.Label50.TabIndex = 228
-        Me.Label50.Text = "Years at the above address"
-        '
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(388, 301)
+        Me.Label46.Location = New System.Drawing.Point(404, 350)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(102, 13)
         Me.Label46.TabIndex = 230
@@ -643,7 +617,7 @@ Partial Class frmAdd
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(331, 246)
+        Me.Label16.Location = New System.Drawing.Point(345, 272)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(22, 13)
         Me.Label16.TabIndex = 222
@@ -652,7 +626,7 @@ Partial Class frmAdd
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(329, 219)
+        Me.Label17.Location = New System.Drawing.Point(343, 245)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(32, 13)
         Me.Label17.TabIndex = 221
@@ -660,7 +634,7 @@ Partial Class frmAdd
         '
         'txtLCity
         '
-        Me.txtLCity.Location = New System.Drawing.Point(369, 190)
+        Me.txtLCity.Location = New System.Drawing.Point(399, 216)
         Me.txtLCity.Name = "txtLCity"
         Me.txtLCity.Size = New System.Drawing.Size(273, 20)
         Me.txtLCity.TabIndex = 18
@@ -668,7 +642,7 @@ Partial Class frmAdd
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(329, 191)
+        Me.Label18.Location = New System.Drawing.Point(343, 217)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(24, 13)
         Me.Label18.TabIndex = 220
@@ -677,7 +651,7 @@ Partial Class frmAdd
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(328, 166)
+        Me.Label19.Location = New System.Drawing.Point(342, 166)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(35, 13)
         Me.Label19.TabIndex = 219
@@ -686,92 +660,22 @@ Partial Class frmAdd
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(328, 149)
+        Me.Label20.Location = New System.Drawing.Point(342, 149)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(84, 13)
+        Me.Label20.Size = New System.Drawing.Size(77, 13)
         Me.Label20.TabIndex = 218
-        Me.Label20.Text = "Mailing Address:"
+        Me.Label20.Text = "Local Address:"
         '
         'txtLAddress
         '
-        Me.txtLAddress.Location = New System.Drawing.Point(369, 164)
+        Me.txtLAddress.Location = New System.Drawing.Point(399, 163)
         Me.txtLAddress.Name = "txtLAddress"
         Me.txtLAddress.Size = New System.Drawing.Size(273, 20)
         Me.txtLAddress.TabIndex = 17
         '
-        'chkResident
-        '
-        Me.chkResident.AutoSize = True
-        Me.chkResident.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkResident.Location = New System.Drawing.Point(208, 424)
-        Me.chkResident.Name = "chkResident"
-        Me.chkResident.Size = New System.Drawing.Size(115, 17)
-        Me.chkResident.TabIndex = 26
-        Me.chkResident.Text = "Arkansas Resident"
-        Me.chkResident.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(13, 399)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(22, 13)
-        Me.Label12.TabIndex = 227
-        Me.Label12.Text = "Zip"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(11, 372)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(32, 13)
-        Me.Label13.TabIndex = 226
-        Me.Label13.Text = "State"
-        '
-        'txtFCity
-        '
-        Me.txtFCity.Location = New System.Drawing.Point(51, 343)
-        Me.txtFCity.Name = "txtFCity"
-        Me.txtFCity.Size = New System.Drawing.Size(273, 20)
-        Me.txtFCity.TabIndex = 22
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(11, 344)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(24, 13)
-        Me.Label14.TabIndex = 225
-        Me.Label14.Text = "City"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(10, 319)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(35, 13)
-        Me.Label15.TabIndex = 224
-        Me.Label15.Text = "Street"
-        '
-        'txtFAddress
-        '
-        Me.txtFAddress.Location = New System.Drawing.Point(51, 317)
-        Me.txtFAddress.Name = "txtFAddress"
-        Me.txtFAddress.Size = New System.Drawing.Size(273, 20)
-        Me.txtFAddress.TabIndex = 21
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(10, 301)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 13)
-        Me.Label11.TabIndex = 223
-        Me.Label11.Text = "Former Address:"
-        '
         'txtPYears
         '
-        Me.txtPYears.Location = New System.Drawing.Point(153, 272)
+        Me.txtPYears.Location = New System.Drawing.Point(411, 372)
         Me.txtPYears.Name = "txtPYears"
         Me.txtPYears.Size = New System.Drawing.Size(22, 20)
         Me.txtPYears.TabIndex = 16
@@ -779,7 +683,7 @@ Partial Class frmAdd
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(10, 275)
+        Me.Label10.Location = New System.Drawing.Point(268, 375)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(137, 13)
         Me.Label10.TabIndex = 217
@@ -788,7 +692,7 @@ Partial Class frmAdd
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 246)
+        Me.Label9.Location = New System.Drawing.Point(20, 270)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(22, 13)
         Me.Label9.TabIndex = 216
@@ -797,7 +701,7 @@ Partial Class frmAdd
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 219)
+        Me.Label8.Location = New System.Drawing.Point(18, 243)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(32, 13)
         Me.Label8.TabIndex = 215
@@ -805,7 +709,7 @@ Partial Class frmAdd
         '
         'txtPCity
         '
-        Me.txtPCity.Location = New System.Drawing.Point(48, 190)
+        Me.txtPCity.Location = New System.Drawing.Point(58, 214)
         Me.txtPCity.Name = "txtPCity"
         Me.txtPCity.Size = New System.Drawing.Size(273, 20)
         Me.txtPCity.TabIndex = 13
@@ -813,7 +717,7 @@ Partial Class frmAdd
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(8, 191)
+        Me.Label7.Location = New System.Drawing.Point(18, 215)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(24, 13)
         Me.Label7.TabIndex = 214
@@ -822,7 +726,7 @@ Partial Class frmAdd
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 166)
+        Me.Label6.Location = New System.Drawing.Point(17, 166)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(35, 13)
         Me.Label6.TabIndex = 213
@@ -839,19 +743,10 @@ Partial Class frmAdd
         '
         'txtPAddress
         '
-        Me.txtPAddress.Location = New System.Drawing.Point(48, 164)
+        Me.txtPAddress.Location = New System.Drawing.Point(58, 164)
         Me.txtPAddress.Name = "txtPAddress"
         Me.txtPAddress.Size = New System.Drawing.Size(273, 20)
         Me.txtPAddress.TabIndex = 12
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(500, 7)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(60, 13)
-        Me.Label49.TabIndex = 211
-        Me.Label49.Text = "Citizenship:"
         '
         'Label48
         '
@@ -865,8 +760,8 @@ Partial Class frmAdd
         'cbxEthnic
         '
         Me.cbxEthnic.FormattingEnabled = True
-        Me.cbxEthnic.Items.AddRange(New Object() {"Alaskan Native or American Indian", "Black, Non-Hispanic", "Asian or Pacific Islander", "White, Non-Hispanic", "Hispanic"})
-        Me.cbxEthnic.Location = New System.Drawing.Point(365, 65)
+        Me.cbxEthnic.Items.AddRange(New Object() {"Alaskan Native or American Indian", "Black, Non-Hispanic", "Asian or Pacific Islander", "White, Non-Hispanic"})
+        Me.cbxEthnic.Location = New System.Drawing.Point(365, 26)
         Me.cbxEthnic.Name = "cbxEthnic"
         Me.cbxEthnic.Size = New System.Drawing.Size(121, 21)
         Me.cbxEthnic.TabIndex = 9
@@ -874,20 +769,11 @@ Partial Class frmAdd
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(362, 49)
+        Me.Label1.Location = New System.Drawing.Point(362, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 209
         Me.Label1.Text = "Race / Ethnicity"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(362, 7)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 13)
-        Me.Label4.TabIndex = 208
-        Me.Label4.Text = "Place of Birth"
         '
         'lblDOB
         '
@@ -1007,6 +893,15 @@ Partial Class frmAdd
         Me.TabAdmission.TabIndex = 1
         Me.TabAdmission.Text = "Admission Request"
         Me.TabAdmission.UseVisualStyleBackColor = True
+        '
+        'btnConfirm2
+        '
+        Me.btnConfirm2.Location = New System.Drawing.Point(55, 245)
+        Me.btnConfirm2.Name = "btnConfirm2"
+        Me.btnConfirm2.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm2.TabIndex = 319
+        Me.btnConfirm2.Text = "Confirm"
+        Me.btnConfirm2.UseVisualStyleBackColor = True
         '
         'Label37
         '
@@ -1203,7 +1098,7 @@ Partial Class frmAdd
         Me.tabCredentials.Controls.Add(Me.txtCName2)
         Me.tabCredentials.Controls.Add(Me.txtCName1)
         Me.tabCredentials.Controls.Add(Me.Label24)
-        Me.tabCredentials.Controls.Add(Me.txtTSEDate)
+        Me.tabCredentials.Controls.Add(Me.txtGREDate)
         Me.tabCredentials.Controls.Add(Me.txtTOEFLDate)
         Me.tabCredentials.Controls.Add(Me.Label70)
         Me.tabCredentials.Controls.Add(Me.Label69)
@@ -1229,7 +1124,7 @@ Partial Class frmAdd
         Me.tabCredentials.Controls.Add(Me.txtUnderGPA)
         Me.tabCredentials.Controls.Add(Me.Label42)
         Me.tabCredentials.Controls.Add(Me.Label41)
-        Me.tabCredentials.Controls.Add(Me.txtTSETotal)
+        Me.tabCredentials.Controls.Add(Me.txtGRETotal)
         Me.tabCredentials.Controls.Add(Me.Label40)
         Me.tabCredentials.Controls.Add(Me.txtTOEFLTotal)
         Me.tabCredentials.Controls.Add(Me.Label36)
@@ -1250,6 +1145,15 @@ Partial Class frmAdd
         Me.tabCredentials.TabIndex = 2
         Me.tabCredentials.Text = "Credentials & Documents"
         Me.tabCredentials.UseVisualStyleBackColor = True
+        '
+        'btnConfirm3
+        '
+        Me.btnConfirm3.Location = New System.Drawing.Point(595, 421)
+        Me.btnConfirm3.Name = "btnConfirm3"
+        Me.btnConfirm3.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm3.TabIndex = 394
+        Me.btnConfirm3.Text = "Confirm"
+        Me.btnConfirm3.UseVisualStyleBackColor = True
         '
         'Label45
         '
@@ -1536,12 +1440,12 @@ Partial Class frmAdd
         Me.Label24.TabIndex = 246
         Me.Label24.Text = "(Taken or to be Taken):"
         '
-        'txtTSEDate
+        'txtGREDate
         '
-        Me.txtTSEDate.Location = New System.Drawing.Point(6, 114)
-        Me.txtTSEDate.Name = "txtTSEDate"
-        Me.txtTSEDate.Size = New System.Drawing.Size(70, 20)
-        Me.txtTSEDate.TabIndex = 51
+        Me.txtGREDate.Location = New System.Drawing.Point(6, 114)
+        Me.txtGREDate.Name = "txtGREDate"
+        Me.txtGREDate.Size = New System.Drawing.Size(70, 20)
+        Me.txtGREDate.TabIndex = 51
         '
         'txtTOEFLDate
         '
@@ -1771,16 +1675,16 @@ Partial Class frmAdd
         Me.Label41.AutoSize = True
         Me.Label41.Location = New System.Drawing.Point(197, 117)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(55, 13)
+        Me.Label41.Size = New System.Drawing.Size(57, 13)
         Me.Label41.TabIndex = 259
-        Me.Label41.Text = "TSE Total"
+        Me.Label41.Text = "GRE Total"
         '
-        'txtTSETotal
+        'txtGRETotal
         '
-        Me.txtTSETotal.Location = New System.Drawing.Point(160, 114)
-        Me.txtTSETotal.Name = "txtTSETotal"
-        Me.txtTSETotal.Size = New System.Drawing.Size(34, 20)
-        Me.txtTSETotal.TabIndex = 52
+        Me.txtGRETotal.Location = New System.Drawing.Point(160, 114)
+        Me.txtGRETotal.Name = "txtGRETotal"
+        Me.txtGRETotal.Size = New System.Drawing.Size(34, 20)
+        Me.txtGRETotal.TabIndex = 52
         '
         'Label40
         '
@@ -1853,9 +1757,9 @@ Partial Class frmAdd
         Me.Label30.AutoSize = True
         Me.Label30.Location = New System.Drawing.Point(82, 117)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(28, 13)
+        Me.Label30.Size = New System.Drawing.Size(30, 13)
         Me.Label30.TabIndex = 258
-        Me.Label30.Text = "TSE"
+        Me.Label30.Text = "GRE"
         '
         'Label29
         '
@@ -1935,6 +1839,15 @@ Partial Class frmAdd
         Me.tabStudentStatus.TabIndex = 3
         Me.tabStudentStatus.Text = "Student Status"
         Me.tabStudentStatus.UseVisualStyleBackColor = True
+        '
+        'btnConfirm4
+        '
+        Me.btnConfirm4.Location = New System.Drawing.Point(614, 414)
+        Me.btnConfirm4.Name = "btnConfirm4"
+        Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm4.TabIndex = 395
+        Me.btnConfirm4.Text = "Confirm"
+        Me.btnConfirm4.UseVisualStyleBackColor = True
         '
         'Label79
         '
@@ -2243,49 +2156,6 @@ Partial Class frmAdd
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(381, 457)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(94, 13)
-        Me.Label52.TabIndex = 320
-        Me.Label52.Text = "Alt. Email Address:"
-        '
-        'txtEmail2
-        '
-        Me.txtEmail2.Location = New System.Drawing.Point(480, 454)
-        Me.txtEmail2.Name = "txtEmail2"
-        Me.txtEmail2.Size = New System.Drawing.Size(132, 20)
-        Me.txtEmail2.TabIndex = 321
-        '
-        'btnConfirm2
-        '
-        Me.btnConfirm2.Location = New System.Drawing.Point(55, 245)
-        Me.btnConfirm2.Name = "btnConfirm2"
-        Me.btnConfirm2.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm2.TabIndex = 319
-        Me.btnConfirm2.Text = "Confirm"
-        Me.btnConfirm2.UseVisualStyleBackColor = True
-        '
-        'btnConfirm3
-        '
-        Me.btnConfirm3.Location = New System.Drawing.Point(595, 421)
-        Me.btnConfirm3.Name = "btnConfirm3"
-        Me.btnConfirm3.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm3.TabIndex = 394
-        Me.btnConfirm3.Text = "Confirm"
-        Me.btnConfirm3.UseVisualStyleBackColor = True
-        '
-        'btnConfirm4
-        '
-        Me.btnConfirm4.Location = New System.Drawing.Point(614, 414)
-        Me.btnConfirm4.Name = "btnConfirm4"
-        Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm4.TabIndex = 395
-        Me.btnConfirm4.Text = "Confirm"
-        Me.btnConfirm4.UseVisualStyleBackColor = True
-        '
         'frmAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2310,24 +2180,18 @@ Partial Class frmAdd
     Friend WithEvents tabApplication As TabControl
     Friend WithEvents tabPersonalInfo As TabPage
     Friend WithEvents lblBirthdayFormat As Label
-    Friend WithEvents cbxFState As ComboBox
     Friend WithEvents cbxLState As ComboBox
     Friend WithEvents cbxPState As ComboBox
     Friend WithEvents txtPZipCode As MaskedTextBox
     Friend WithEvents txtLZipCode As MaskedTextBox
-    Friend WithEvents txtFZipCode As MaskedTextBox
-    Friend WithEvents txtPPhone As MaskedTextBox
-    Friend WithEvents txtWorkPhone As MaskedTextBox
+    Friend WithEvents txtLphone As MaskedTextBox
+    Friend WithEvents txtpPhone As MaskedTextBox
     Friend WithEvents txtCurrentPhone As MaskedTextBox
     Friend WithEvents txtBirthday1 As MaskedTextBox
     Friend WithEvents txtSSN As MaskedTextBox
-    Friend WithEvents cbxOrigin As ComboBox
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label72 As Label
-    Friend WithEvents cbxCitizenship As ComboBox
     Friend WithEvents cbxGender As ComboBox
-    Friend WithEvents txtStudentID As TextBox
-    Friend WithEvents Label71 As Label
     Friend WithEvents Label66 As Label
     Friend WithEvents Label47 As Label
     Friend WithEvents cbxPrimaryContactNumber As ComboBox
@@ -2335,8 +2199,6 @@ Partial Class frmAdd
     Friend WithEvents Label2 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents Label65 As Label
-    Friend WithEvents txtFYears As TextBox
-    Friend WithEvents Label50 As Label
     Friend WithEvents Label46 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
@@ -2345,14 +2207,6 @@ Partial Class frmAdd
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents txtLAddress As TextBox
-    Friend WithEvents chkResident As CheckBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents txtFCity As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents txtFAddress As TextBox
-    Friend WithEvents Label11 As Label
     Friend WithEvents txtPYears As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
@@ -2362,11 +2216,9 @@ Partial Class frmAdd
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtPAddress As TextBox
-    Friend WithEvents Label49 As Label
     Friend WithEvents Label48 As Label
     Friend WithEvents cbxEthnic As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents lblDOB As Label
     Friend WithEvents lblSSN As Label
     Friend WithEvents txtPreferred As TextBox
@@ -2432,7 +2284,7 @@ Partial Class frmAdd
     Friend WithEvents txtCName2 As TextBox
     Friend WithEvents txtCName1 As TextBox
     Friend WithEvents Label24 As Label
-    Friend WithEvents txtTSEDate As TextBox
+    Friend WithEvents txtGREDate As TextBox
     Friend WithEvents txtTOEFLDate As TextBox
     Friend WithEvents Label70 As Label
     Friend WithEvents Label69 As Label
@@ -2458,7 +2310,7 @@ Partial Class frmAdd
     Friend WithEvents txtUnderGPA As TextBox
     Friend WithEvents Label42 As Label
     Friend WithEvents Label41 As Label
-    Friend WithEvents txtTSETotal As TextBox
+    Friend WithEvents txtGRETotal As TextBox
     Friend WithEvents Label40 As Label
     Friend WithEvents txtTOEFLTotal As TextBox
     Friend WithEvents Label36 As Label
@@ -2515,4 +2367,13 @@ Partial Class frmAdd
     Friend WithEvents btnConfirm2 As Button
     Friend WithEvents btnConfirm3 As Button
     Friend WithEvents btnConfirm4 As Button
+    Friend WithEvents txtLADR2 As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents txtpadr2 As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents chkHispanic As CheckBox
+    Friend WithEvents txtOCountry As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtCellPhone As MaskedTextBox
+    Friend WithEvents Label13 As Label
 End Class
