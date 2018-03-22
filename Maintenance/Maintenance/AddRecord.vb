@@ -46,45 +46,40 @@ Public Class frmAdd
 
         Dim command As New SqlCommand("INSERT StudentID = @StudID,First_Name = @first,Middle_Name = @middle,Last_Name = @last,SSN = @SSN,LocalAddress1 = @LocalAdd1,LocalAddress2 = @LocalAdd2,Local_City = @LocalCity,LocalStateProvince = @LocalStateProvince,LocalZip = @LocalZip,LocalHomePhone = @LocalHomePhone,PermAddress = @PermAdd1,PermAddress2 = @PermAdd2,Perm_City = @PermCity,PermStateProvince = @PermStateProvince,PermZip = @PermZip,PermHomePhone = @PermHomePhone,Email1 = @Email1,Email2 = @Email2,Birthdate = @birthday,Ethnicity = @ethnicity,Gender = @gender,OriginCountry = @origin,Preferred_name = @preferred INTO Student_Header", con)
 
-        'need to fix the data types!
         command.Parameters.Add("@StudID", SqlDbType.Int).Value = txtStudentID.Text
         command.Parameters.Add("@first", SqlDbType.VarChar).Value = txtFirstName.Text
         command.Parameters.Add("@middle", SqlDbType.VarChar).Value = txtMiddleName.Text
         command.Parameters.Add("@last", SqlDbType.VarChar).Value = txtLastName.Text
         command.Parameters.Add("@SSN", SqlDbType.VarChar).Value = txtSSN.Text
-
-        'local address in form = former address OR Mailing address???????
-        'command.Parameters.Add("@LocalAdd1", SqlDbType.VarChar).Value = 
-        'command.Parameters.Add("@LocalAdd2", SqlDbType.VarChar).Value = 
-        'command.Parameters.Add("@LocalCity", SqlDbType.VarChar).Value = 
-
-        'what is the province? a county???
-        'command.Parameters.Add("@LocalStateProvince", SqlDbType.VarChar).Value = 
-
-        'command.Parameters.Add("@LocalZip", SqlDbType.VarChar).Value = 
+        'local address in form = Mailing address
+        command.Parameters.Add("@LocalAdd1", SqlDbType.VarChar).Value = txtLAddress.Text
+        'no second address line added to form to fit DB
+        command.Parameters.Add("@LocalAdd2", SqlDbType.VarChar).Value = txtLocalLine2
+        command.Parameters.Add("@LocalCity", SqlDbType.VarChar).Value = txtLCity.Text
+        'for the sake of this, province = county
+        'had to add county field for each address
+        command.Parameters.Add("@LocalStateProvince", SqlDbType.VarChar).Value = txtLocalCounty.Text
+        command.Parameters.Add("@LocalZip", SqlDbType.Int).Value = txtLZipCode.Text
         command.Parameters.Add("@LocalHomePhone", SqlDbType.Int).Value = txtCurrentPhone.Text
-        'permanent address in form = perm
         command.Parameters.Add("@PermAdd1", SqlDbType.VarChar).Value = txtPAddress.Text
-        'command.Parameters.Add("@PermAdd2", SqlDbType.VarChar).Value = 
+        command.Parameters.Add("@PermAdd2", SqlDbType.VarChar).Value = txtPermLine2
         command.Parameters.Add("@PermCity", SqlDbType.VarChar).Value = txtPCity.Text
-
-        'another province...?
-        'command.Parameters.Add("@PermStateProvince", SqlDbType.VarChar).Value = 
-
+        command.Parameters.Add("@PermStateProvince", SqlDbType.VarChar).Value = txtPermCounty
         command.Parameters.Add("@PermZip", SqlDbType.Int).Value = txtPZipCode.Text
         command.Parameters.Add("@PermHomePhone", SqlDbType.Int).Value = txtPPhone.Text
         command.Parameters.Add("@Email1", SqlDbType.VarChar).Value = txtEmail.Text
         'no second email field originally, has been added to form to fit DB
         command.Parameters.Add("@Email2", SqlDbType.VarChar).Value = txtEmail2.Text
-
         command.Parameters.Add("@birthday", SqlDbType.DateTime).Value = txtBirthday1.Text
-        'why is this set to a 1 number int variable?
-        'command.Parameters.Add("@ethnicity", SqlDbType.Int).Value = cbxEthnic.SelectedText
+        'why is this set to a 1 number int variable? will selected index work?
+        command.Parameters.Add("@ethnicity", SqlDbType.Int).Value = cbxEthnic.SelectedIndex
         command.Parameters.Add("@gender", SqlDbType.Char).Value = cbxGender.SelectedText
         command.Parameters.Add("@origin", SqlDbType.VarChar).Value = cbxOrigin.SelectedText
         command.Parameters.Add("@preferred", SqlDbType.VarChar).Value = txtPreferred.Text
+        '---------------------NOTES-------------------------------
+        'data types vaerified and accurate 
 
-        'so where does this info go???
+        'exists on the form without a DB place...
         'command.Parameters.Add("@citizenship", SqlDbType.VarChar).Value = cbxCitizenship.SelectedText
 
 
@@ -188,6 +183,10 @@ Public Class frmAdd
 
         'command.Parameters.Add("@AcceptedOffer", SqlDbType.VarChar).Value = txtAcceptedOffer.Text
 
+
+    End Sub
+
+    Private Sub tabPersonalInfo_Click(sender As Object, e As EventArgs) Handles tabPersonalInfo.Click
 
     End Sub
 End Class

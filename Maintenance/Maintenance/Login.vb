@@ -61,11 +61,15 @@ Public Class frmLogin
         txtUser.Focus()
         txtPassword.Clear()
         txtUser.Clear()
+
+        radFaculty.Enabled = False
+        radStudent.Enabled = False
     End Sub
 
 
     Private Sub linkNewUser_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkNewUser.LinkClicked
-        frmAdd.Show()
+        'frmAdd.Show()
+        MessageBox.Show("Please contact the University Office of the Registrar to create an Account.")
         Me.Dispose()
         Me.Close()
 

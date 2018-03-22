@@ -24,6 +24,8 @@ Partial Class frmAdd
     Private Sub InitializeComponent()
         Me.tabApplication = New System.Windows.Forms.TabControl()
         Me.tabPersonalInfo = New System.Windows.Forms.TabPage()
+        Me.txtEmail2 = New System.Windows.Forms.TextBox()
+        Me.Label52 = New System.Windows.Forms.Label()
         Me.btnContinue = New System.Windows.Forms.Button()
         Me.ckWorkNone = New System.Windows.Forms.CheckBox()
         Me.ckLocalNone = New System.Windows.Forms.CheckBox()
@@ -97,6 +99,7 @@ Partial Class frmAdd
         Me.lblFirstName = New System.Windows.Forms.Label()
         Me.lblLastName = New System.Windows.Forms.Label()
         Me.TabAdmission = New System.Windows.Forms.TabPage()
+        Me.btnConfirm2 = New System.Windows.Forms.Button()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label67 = New System.Windows.Forms.Label()
@@ -115,6 +118,7 @@ Partial Class frmAdd
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.tabCredentials = New System.Windows.Forms.TabPage()
+        Me.btnConfirm3 = New System.Windows.Forms.Button()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
@@ -191,6 +195,7 @@ Partial Class frmAdd
         Me.txtGMATDate = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.tabStudentStatus = New System.Windows.Forms.TabPage()
+        Me.btnConfirm4 = New System.Windows.Forms.Button()
         Me.Label79 = New System.Windows.Forms.Label()
         Me.Label78 = New System.Windows.Forms.Label()
         Me.Label76 = New System.Windows.Forms.Label()
@@ -225,11 +230,15 @@ Partial Class frmAdd
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.txtEmail2 = New System.Windows.Forms.TextBox()
-        Me.btnConfirm2 = New System.Windows.Forms.Button()
-        Me.btnConfirm3 = New System.Windows.Forms.Button()
-        Me.btnConfirm4 = New System.Windows.Forms.Button()
+        Me.Label81 = New System.Windows.Forms.Label()
+        Me.txtPermLine2 = New System.Windows.Forms.TextBox()
+        Me.Label83 = New System.Windows.Forms.Label()
+        Me.txtLocalLine2 = New System.Windows.Forms.TextBox()
+        Me.Label85 = New System.Windows.Forms.Label()
+        Me.Label87 = New System.Windows.Forms.Label()
+        Me.txtPermCounty = New System.Windows.Forms.TextBox()
+        Me.txtLocalCounty = New System.Windows.Forms.TextBox()
+        Me.Label90 = New System.Windows.Forms.Label()
         Me.tabApplication.SuspendLayout()
         Me.tabPersonalInfo.SuspendLayout()
         Me.TabAdmission.SuspendLayout()
@@ -252,6 +261,15 @@ Partial Class frmAdd
         '
         'tabPersonalInfo
         '
+        Me.tabPersonalInfo.Controls.Add(Me.txtLocalCounty)
+        Me.tabPersonalInfo.Controls.Add(Me.Label90)
+        Me.tabPersonalInfo.Controls.Add(Me.txtPermCounty)
+        Me.tabPersonalInfo.Controls.Add(Me.Label87)
+        Me.tabPersonalInfo.Controls.Add(Me.Label85)
+        Me.tabPersonalInfo.Controls.Add(Me.Label83)
+        Me.tabPersonalInfo.Controls.Add(Me.txtLocalLine2)
+        Me.tabPersonalInfo.Controls.Add(Me.Label81)
+        Me.tabPersonalInfo.Controls.Add(Me.txtPermLine2)
         Me.tabPersonalInfo.Controls.Add(Me.txtEmail2)
         Me.tabPersonalInfo.Controls.Add(Me.Label52)
         Me.tabPersonalInfo.Controls.Add(Me.btnContinue)
@@ -276,7 +294,6 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Controls.Add(Me.cbxGender)
         Me.tabPersonalInfo.Controls.Add(Me.txtStudentID)
         Me.tabPersonalInfo.Controls.Add(Me.Label71)
-        Me.tabPersonalInfo.Controls.Add(Me.Label66)
         Me.tabPersonalInfo.Controls.Add(Me.Label47)
         Me.tabPersonalInfo.Controls.Add(Me.cbxPrimaryContactNumber)
         Me.tabPersonalInfo.Controls.Add(Me.Label3)
@@ -326,6 +343,7 @@ Partial Class frmAdd
         Me.tabPersonalInfo.Controls.Add(Me.lblMiddleName)
         Me.tabPersonalInfo.Controls.Add(Me.lblFirstName)
         Me.tabPersonalInfo.Controls.Add(Me.lblLastName)
+        Me.tabPersonalInfo.Controls.Add(Me.Label66)
         Me.tabPersonalInfo.Location = New System.Drawing.Point(4, 22)
         Me.tabPersonalInfo.Name = "tabPersonalInfo"
         Me.tabPersonalInfo.Padding = New System.Windows.Forms.Padding(3)
@@ -333,6 +351,22 @@ Partial Class frmAdd
         Me.tabPersonalInfo.TabIndex = 0
         Me.tabPersonalInfo.Text = "Personal Information"
         Me.tabPersonalInfo.UseVisualStyleBackColor = True
+        '
+        'txtEmail2
+        '
+        Me.txtEmail2.Location = New System.Drawing.Point(480, 454)
+        Me.txtEmail2.Name = "txtEmail2"
+        Me.txtEmail2.Size = New System.Drawing.Size(132, 20)
+        Me.txtEmail2.TabIndex = 321
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Location = New System.Drawing.Point(381, 457)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(94, 13)
+        Me.Label52.TabIndex = 320
+        Me.Label52.Text = "Alt. Email Address:"
         '
         'btnContinue
         '
@@ -378,7 +412,7 @@ Partial Class frmAdd
         '
         Me.cbxFState.FormattingEnabled = True
         Me.cbxFState.Items.AddRange(New Object() {"ALABAMA", "ALASKA", "AMERICAN SAMOA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "DISTRICT OF COLUMBIA", "FEDERATED STATES OF MICRONESIA", "FLORIDA", "GEORGIA", "GUAM", "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARSHALL ISLANDS", "MARYLAND", "MASSACHUSETTS", "MICHIGAN", "MINNESOTA", "MISSISSIPPI", "MISSOURI", "MONTANA", "NEBRASKA", "NEVADA", "NEW HAMPSHIRE", "NEW JERSEY", "NEW MEXICO", "NEW YORK", "NORTH CAROLINA", "NORTH DAKOTA", "NORTHERN MARIANA ISLANDS", "OHIO", "OKLAHOMA", "OREGON", "PALAU", "PENNSYLVANIA", "PUERTO RICO", "RHODE ISLAND", "SOUTH CAROLINA", "SOUTH DAKOTA", "TENNESSEE", "TEXAS", "UTAH", "VERMONT", "VIRGIN ISLANDS", "VIRGINIA", "WASHINGTON", "WEST VIRGINIA", "WISCONSIN", "WYOMING"})
-        Me.cbxFState.Location = New System.Drawing.Point(51, 369)
+        Me.cbxFState.Location = New System.Drawing.Point(51, 406)
         Me.cbxFState.Name = "cbxFState"
         Me.cbxFState.Size = New System.Drawing.Size(121, 21)
         Me.cbxFState.TabIndex = 23
@@ -387,7 +421,7 @@ Partial Class frmAdd
         '
         Me.cbxLState.FormattingEnabled = True
         Me.cbxLState.Items.AddRange(New Object() {"ALABAMA", "ALASKA", "AMERICAN SAMOA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "DISTRICT OF COLUMBIA", "FEDERATED STATES OF MICRONESIA", "FLORIDA", "GEORGIA", "GUAM", "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARSHALL ISLANDS", "MARYLAND", "MASSACHUSETTS", "MICHIGAN", "MINNESOTA", "MISSISSIPPI", "MISSOURI", "MONTANA", "NEBRASKA", "NEVADA", "NEW HAMPSHIRE", "NEW JERSEY", "NEW MEXICO", "NEW YORK", "NORTH CAROLINA", "NORTH DAKOTA", "NORTHERN MARIANA ISLANDS", "OHIO", "OKLAHOMA", "OREGON", "PALAU", "PENNSYLVANIA", "PUERTO RICO", "RHODE ISLAND", "SOUTH CAROLINA", "SOUTH DAKOTA", "TENNESSEE", "TEXAS", "UTAH", "VERMONT", "VIRGIN ISLANDS", "VIRGINIA", "WASHINGTON", "WEST VIRGINIA", "WISCONSIN", "WYOMING"})
-        Me.cbxLState.Location = New System.Drawing.Point(369, 216)
+        Me.cbxLState.Location = New System.Drawing.Point(369, 235)
         Me.cbxLState.Name = "cbxLState"
         Me.cbxLState.Size = New System.Drawing.Size(121, 21)
         Me.cbxLState.TabIndex = 19
@@ -396,14 +430,14 @@ Partial Class frmAdd
         '
         Me.cbxPState.FormattingEnabled = True
         Me.cbxPState.Items.AddRange(New Object() {"ALABAMA", "ALASKA", "AMERICAN SAMOA", "ARIZONA", "ARKANSAS", "CALIFORNIA", "COLORADO", "CONNECTICUT", "DELAWARE", "DISTRICT OF COLUMBIA", "FEDERATED STATES OF MICRONESIA", "FLORIDA", "GEORGIA", "GUAM", "HAWAII", "IDAHO", "ILLINOIS", "INDIANA", "IOWA", "KANSAS", "KENTUCKY", "LOUISIANA", "MAINE", "MARSHALL ISLANDS", "MARYLAND", "MASSACHUSETTS", "MICHIGAN", "MINNESOTA", "MISSISSIPPI", "MISSOURI", "MONTANA", "NEBRASKA", "NEVADA", "NEW HAMPSHIRE", "NEW JERSEY", "NEW MEXICO", "NEW YORK", "NORTH CAROLINA", "NORTH DAKOTA", "NORTHERN MARIANA ISLANDS", "OHIO", "OKLAHOMA", "OREGON", "PALAU", "PENNSYLVANIA", "PUERTO RICO", "RHODE ISLAND", "SOUTH CAROLINA", "SOUTH DAKOTA", "TENNESSEE", "TEXAS", "UTAH", "VERMONT", "VIRGIN ISLANDS", "VIRGINIA", "WASHINGTON", "WEST VIRGINIA", "WISCONSIN", "WYOMING"})
-        Me.cbxPState.Location = New System.Drawing.Point(48, 216)
+        Me.cbxPState.Location = New System.Drawing.Point(48, 241)
         Me.cbxPState.Name = "cbxPState"
         Me.cbxPState.Size = New System.Drawing.Size(121, 21)
         Me.cbxPState.TabIndex = 14
         '
         'txtPZipCode
         '
-        Me.txtPZipCode.Location = New System.Drawing.Point(47, 243)
+        Me.txtPZipCode.Location = New System.Drawing.Point(47, 268)
         Me.txtPZipCode.Mask = "00000-0000"
         Me.txtPZipCode.Name = "txtPZipCode"
         Me.txtPZipCode.Size = New System.Drawing.Size(75, 20)
@@ -412,7 +446,7 @@ Partial Class frmAdd
         '
         'txtLZipCode
         '
-        Me.txtLZipCode.Location = New System.Drawing.Point(370, 243)
+        Me.txtLZipCode.Location = New System.Drawing.Point(370, 262)
         Me.txtLZipCode.Mask = "00000-0000"
         Me.txtLZipCode.Name = "txtLZipCode"
         Me.txtLZipCode.Size = New System.Drawing.Size(75, 20)
@@ -421,7 +455,7 @@ Partial Class frmAdd
         '
         'txtFZipCode
         '
-        Me.txtFZipCode.Location = New System.Drawing.Point(51, 396)
+        Me.txtFZipCode.Location = New System.Drawing.Point(51, 433)
         Me.txtFZipCode.Mask = "00000-0000"
         Me.txtFZipCode.Name = "txtFZipCode"
         Me.txtFZipCode.Size = New System.Drawing.Size(75, 20)
@@ -617,7 +651,7 @@ Partial Class frmAdd
         '
         'txtFYears
         '
-        Me.txtFYears.Location = New System.Drawing.Point(156, 421)
+        Me.txtFYears.Location = New System.Drawing.Point(156, 458)
         Me.txtFYears.Name = "txtFYears"
         Me.txtFYears.Size = New System.Drawing.Size(22, 20)
         Me.txtFYears.TabIndex = 25
@@ -625,7 +659,7 @@ Partial Class frmAdd
         'Label50
         '
         Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(13, 424)
+        Me.Label50.Location = New System.Drawing.Point(13, 461)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(137, 13)
         Me.Label50.TabIndex = 228
@@ -643,7 +677,7 @@ Partial Class frmAdd
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(331, 246)
+        Me.Label16.Location = New System.Drawing.Point(331, 265)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(22, 13)
         Me.Label16.TabIndex = 222
@@ -652,7 +686,7 @@ Partial Class frmAdd
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(329, 219)
+        Me.Label17.Location = New System.Drawing.Point(329, 238)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(32, 13)
         Me.Label17.TabIndex = 221
@@ -660,7 +694,7 @@ Partial Class frmAdd
         '
         'txtLCity
         '
-        Me.txtLCity.Location = New System.Drawing.Point(369, 190)
+        Me.txtLCity.Location = New System.Drawing.Point(369, 209)
         Me.txtLCity.Name = "txtLCity"
         Me.txtLCity.Size = New System.Drawing.Size(273, 20)
         Me.txtLCity.TabIndex = 18
@@ -668,7 +702,7 @@ Partial Class frmAdd
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(329, 191)
+        Me.Label18.Location = New System.Drawing.Point(329, 210)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(24, 13)
         Me.Label18.TabIndex = 220
@@ -677,7 +711,7 @@ Partial Class frmAdd
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(328, 166)
+        Me.Label19.Location = New System.Drawing.Point(328, 160)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(35, 13)
         Me.Label19.TabIndex = 219
@@ -686,7 +720,7 @@ Partial Class frmAdd
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(328, 149)
+        Me.Label20.Location = New System.Drawing.Point(328, 143)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(84, 13)
         Me.Label20.TabIndex = 218
@@ -694,7 +728,7 @@ Partial Class frmAdd
         '
         'txtLAddress
         '
-        Me.txtLAddress.Location = New System.Drawing.Point(369, 164)
+        Me.txtLAddress.Location = New System.Drawing.Point(369, 158)
         Me.txtLAddress.Name = "txtLAddress"
         Me.txtLAddress.Size = New System.Drawing.Size(273, 20)
         Me.txtLAddress.TabIndex = 17
@@ -703,7 +737,7 @@ Partial Class frmAdd
         '
         Me.chkResident.AutoSize = True
         Me.chkResident.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkResident.Location = New System.Drawing.Point(208, 424)
+        Me.chkResident.Location = New System.Drawing.Point(208, 461)
         Me.chkResident.Name = "chkResident"
         Me.chkResident.Size = New System.Drawing.Size(115, 17)
         Me.chkResident.TabIndex = 26
@@ -713,7 +747,7 @@ Partial Class frmAdd
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(13, 399)
+        Me.Label12.Location = New System.Drawing.Point(13, 436)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(22, 13)
         Me.Label12.TabIndex = 227
@@ -722,7 +756,7 @@ Partial Class frmAdd
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(11, 372)
+        Me.Label13.Location = New System.Drawing.Point(11, 409)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(32, 13)
         Me.Label13.TabIndex = 226
@@ -730,7 +764,7 @@ Partial Class frmAdd
         '
         'txtFCity
         '
-        Me.txtFCity.Location = New System.Drawing.Point(51, 343)
+        Me.txtFCity.Location = New System.Drawing.Point(51, 380)
         Me.txtFCity.Name = "txtFCity"
         Me.txtFCity.Size = New System.Drawing.Size(273, 20)
         Me.txtFCity.TabIndex = 22
@@ -738,7 +772,7 @@ Partial Class frmAdd
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(11, 344)
+        Me.Label14.Location = New System.Drawing.Point(11, 381)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(24, 13)
         Me.Label14.TabIndex = 225
@@ -747,7 +781,7 @@ Partial Class frmAdd
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(10, 319)
+        Me.Label15.Location = New System.Drawing.Point(10, 356)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(35, 13)
         Me.Label15.TabIndex = 224
@@ -755,7 +789,7 @@ Partial Class frmAdd
         '
         'txtFAddress
         '
-        Me.txtFAddress.Location = New System.Drawing.Point(51, 317)
+        Me.txtFAddress.Location = New System.Drawing.Point(51, 354)
         Me.txtFAddress.Name = "txtFAddress"
         Me.txtFAddress.Size = New System.Drawing.Size(273, 20)
         Me.txtFAddress.TabIndex = 21
@@ -763,7 +797,7 @@ Partial Class frmAdd
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(10, 301)
+        Me.Label11.Location = New System.Drawing.Point(10, 338)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(83, 13)
         Me.Label11.TabIndex = 223
@@ -771,7 +805,7 @@ Partial Class frmAdd
         '
         'txtPYears
         '
-        Me.txtPYears.Location = New System.Drawing.Point(153, 272)
+        Me.txtPYears.Location = New System.Drawing.Point(153, 292)
         Me.txtPYears.Name = "txtPYears"
         Me.txtPYears.Size = New System.Drawing.Size(22, 20)
         Me.txtPYears.TabIndex = 16
@@ -779,7 +813,7 @@ Partial Class frmAdd
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(10, 275)
+        Me.Label10.Location = New System.Drawing.Point(10, 295)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(137, 13)
         Me.Label10.TabIndex = 217
@@ -788,7 +822,7 @@ Partial Class frmAdd
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 246)
+        Me.Label9.Location = New System.Drawing.Point(10, 271)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(22, 13)
         Me.Label9.TabIndex = 216
@@ -797,7 +831,7 @@ Partial Class frmAdd
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 219)
+        Me.Label8.Location = New System.Drawing.Point(8, 244)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(32, 13)
         Me.Label8.TabIndex = 215
@@ -805,7 +839,7 @@ Partial Class frmAdd
         '
         'txtPCity
         '
-        Me.txtPCity.Location = New System.Drawing.Point(48, 190)
+        Me.txtPCity.Location = New System.Drawing.Point(48, 215)
         Me.txtPCity.Name = "txtPCity"
         Me.txtPCity.Size = New System.Drawing.Size(273, 20)
         Me.txtPCity.TabIndex = 13
@@ -813,7 +847,7 @@ Partial Class frmAdd
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(8, 191)
+        Me.Label7.Location = New System.Drawing.Point(8, 216)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(24, 13)
         Me.Label7.TabIndex = 214
@@ -1007,6 +1041,15 @@ Partial Class frmAdd
         Me.TabAdmission.TabIndex = 1
         Me.TabAdmission.Text = "Admission Request"
         Me.TabAdmission.UseVisualStyleBackColor = True
+        '
+        'btnConfirm2
+        '
+        Me.btnConfirm2.Location = New System.Drawing.Point(55, 245)
+        Me.btnConfirm2.Name = "btnConfirm2"
+        Me.btnConfirm2.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm2.TabIndex = 319
+        Me.btnConfirm2.Text = "Confirm"
+        Me.btnConfirm2.UseVisualStyleBackColor = True
         '
         'Label37
         '
@@ -1250,6 +1293,15 @@ Partial Class frmAdd
         Me.tabCredentials.TabIndex = 2
         Me.tabCredentials.Text = "Credentials & Documents"
         Me.tabCredentials.UseVisualStyleBackColor = True
+        '
+        'btnConfirm3
+        '
+        Me.btnConfirm3.Location = New System.Drawing.Point(595, 421)
+        Me.btnConfirm3.Name = "btnConfirm3"
+        Me.btnConfirm3.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm3.TabIndex = 394
+        Me.btnConfirm3.Text = "Confirm"
+        Me.btnConfirm3.UseVisualStyleBackColor = True
         '
         'Label45
         '
@@ -1936,6 +1988,15 @@ Partial Class frmAdd
         Me.tabStudentStatus.Text = "Student Status"
         Me.tabStudentStatus.UseVisualStyleBackColor = True
         '
+        'btnConfirm4
+        '
+        Me.btnConfirm4.Location = New System.Drawing.Point(614, 414)
+        Me.btnConfirm4.Name = "btnConfirm4"
+        Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm4.TabIndex = 395
+        Me.btnConfirm4.Text = "Confirm"
+        Me.btnConfirm4.UseVisualStyleBackColor = True
+        '
         'Label79
         '
         Me.Label79.AutoSize = True
@@ -2243,48 +2304,78 @@ Partial Class frmAdd
         Me.Label74.TabIndex = 300
         Me.Label74.Text = "Assistantship Status:"
         '
-        'Label52
+        'Label81
         '
-        Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(381, 457)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(94, 13)
-        Me.Label52.TabIndex = 320
-        Me.Label52.Text = "Alt. Email Address:"
+        Me.Label81.AutoSize = True
+        Me.Label81.Location = New System.Drawing.Point(7, 192)
+        Me.Label81.Name = "Label81"
+        Me.Label81.Size = New System.Drawing.Size(36, 13)
+        Me.Label81.TabIndex = 323
+        Me.Label81.Text = "Line 2"
         '
-        'txtEmail2
+        'txtPermLine2
         '
-        Me.txtEmail2.Location = New System.Drawing.Point(480, 454)
-        Me.txtEmail2.Name = "txtEmail2"
-        Me.txtEmail2.Size = New System.Drawing.Size(132, 20)
-        Me.txtEmail2.TabIndex = 321
+        Me.txtPermLine2.Location = New System.Drawing.Point(48, 190)
+        Me.txtPermLine2.Name = "txtPermLine2"
+        Me.txtPermLine2.Size = New System.Drawing.Size(273, 20)
+        Me.txtPermLine2.TabIndex = 322
         '
-        'btnConfirm2
+        'Label83
         '
-        Me.btnConfirm2.Location = New System.Drawing.Point(55, 245)
-        Me.btnConfirm2.Name = "btnConfirm2"
-        Me.btnConfirm2.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm2.TabIndex = 319
-        Me.btnConfirm2.Text = "Confirm"
-        Me.btnConfirm2.UseVisualStyleBackColor = True
+        Me.Label83.AutoSize = True
+        Me.Label83.Location = New System.Drawing.Point(329, 185)
+        Me.Label83.Name = "Label83"
+        Me.Label83.Size = New System.Drawing.Size(36, 13)
+        Me.Label83.TabIndex = 325
+        Me.Label83.Text = "Line 2"
         '
-        'btnConfirm3
+        'txtLocalLine2
         '
-        Me.btnConfirm3.Location = New System.Drawing.Point(595, 421)
-        Me.btnConfirm3.Name = "btnConfirm3"
-        Me.btnConfirm3.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm3.TabIndex = 394
-        Me.btnConfirm3.Text = "Confirm"
-        Me.btnConfirm3.UseVisualStyleBackColor = True
+        Me.txtLocalLine2.Location = New System.Drawing.Point(370, 183)
+        Me.txtLocalLine2.Name = "txtLocalLine2"
+        Me.txtLocalLine2.Size = New System.Drawing.Size(273, 20)
+        Me.txtLocalLine2.TabIndex = 324
         '
-        'btnConfirm4
+        'Label85
         '
-        Me.btnConfirm4.Location = New System.Drawing.Point(614, 414)
-        Me.btnConfirm4.Name = "btnConfirm4"
-        Me.btnConfirm4.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm4.TabIndex = 395
-        Me.btnConfirm4.Text = "Confirm"
-        Me.btnConfirm4.UseVisualStyleBackColor = True
+        Me.Label85.AutoSize = True
+        Me.Label85.Location = New System.Drawing.Point(5, 317)
+        Me.Label85.Name = "Label85"
+        Me.Label85.Size = New System.Drawing.Size(307, 13)
+        Me.Label85.TabIndex = 326
+        Me.Label85.Text = "__________________________________________________"
+        '
+        'Label87
+        '
+        Me.Label87.AutoSize = True
+        Me.Label87.Location = New System.Drawing.Point(140, 271)
+        Me.Label87.Name = "Label87"
+        Me.Label87.Size = New System.Drawing.Size(40, 13)
+        Me.Label87.TabIndex = 327
+        Me.Label87.Text = "County"
+        '
+        'txtPermCounty
+        '
+        Me.txtPermCounty.Location = New System.Drawing.Point(191, 268)
+        Me.txtPermCounty.Name = "txtPermCounty"
+        Me.txtPermCounty.Size = New System.Drawing.Size(119, 20)
+        Me.txtPermCounty.TabIndex = 328
+        '
+        'txtLocalCounty
+        '
+        Me.txtLocalCounty.Location = New System.Drawing.Point(513, 262)
+        Me.txtLocalCounty.Name = "txtLocalCounty"
+        Me.txtLocalCounty.Size = New System.Drawing.Size(119, 20)
+        Me.txtLocalCounty.TabIndex = 330
+        '
+        'Label90
+        '
+        Me.Label90.AutoSize = True
+        Me.Label90.Location = New System.Drawing.Point(462, 265)
+        Me.Label90.Name = "Label90"
+        Me.Label90.Size = New System.Drawing.Size(40, 13)
+        Me.Label90.TabIndex = 329
+        Me.Label90.Text = "County"
         '
         'frmAdd
         '
@@ -2515,4 +2606,13 @@ Partial Class frmAdd
     Friend WithEvents btnConfirm2 As Button
     Friend WithEvents btnConfirm3 As Button
     Friend WithEvents btnConfirm4 As Button
+    Friend WithEvents Label83 As Label
+    Friend WithEvents txtLocalLine2 As TextBox
+    Friend WithEvents Label81 As Label
+    Friend WithEvents txtPermLine2 As TextBox
+    Friend WithEvents Label85 As Label
+    Friend WithEvents txtLocalCounty As TextBox
+    Friend WithEvents Label90 As Label
+    Friend WithEvents txtPermCounty As TextBox
+    Friend WithEvents Label87 As Label
 End Class
