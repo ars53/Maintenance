@@ -1,6 +1,15 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmAdd
-
+    Protected db As New db
+    Protected h As String = "N"
+    Protected eth As String = "white"
+    Protected gen As String = "M"
+    Protected before As String = "N"
+    Protected attend As String = "N"
+    Protected Sess As String = ""
+    Protected previousStatus As String = ""
+    Protected requestAssist As String = "N"
+    Protected sid As Integer
     Private Sub ckLocalNone_CheckedChanged(sender As Object, e As EventArgs) Handles ckLocalNone.CheckedChanged
 
         If ckLocalNone.Checked = True Then
@@ -13,8 +22,8 @@ Public Class frmAdd
     Private Sub ckWorkNone_CheckedChanged(sender As Object, e As EventArgs) Handles ckWorkNone.CheckedChanged
 
         If ckWorkNone.Checked = True Then
-            txtWorkPhone.Text = "None"
-            txtWorkPhone.Enabled = False
+            txtpPhone.Text = "None"
+            txtpPhone.Enabled = False
         End If
 
     End Sub
@@ -28,7 +37,7 @@ Public Class frmAdd
         lblStudentName.Text = First + Last
 
         Dim StudId As Integer
-        StudId = txtStudentID.Text
+        'StudId = txtStudentID.Text
         lblStudentID.Text = StudId
 
         txtDEnrolled.Enabled = False
@@ -40,120 +49,132 @@ Public Class frmAdd
     Private Sub txtSEnrolled_TextChanged(sender As Object, e As EventArgs) Handles txtSEnrolled.TextChanged
 
     End Sub
+    Private Sub chkHispanic_CheckedChanged(sender As Object, e As EventArgs) Handles chkHispanic.CheckedChanged
+        If chkHispanic.Checked = True Then
+            h = "Y"
+        ElseIf chkHispanic.Checked = False Then
+            h = "N"
+        End If
+    End Sub
 
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
-        Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+        Dim lphone As Integer
+        Dim pPhone As Integer
+        db.sql = "INSERT INTO Student_Header (First_Name, Middle_Name, Last_Name, SSN, LocalAddress1, LocalAddress2, Local_City, LocalStateProvince, LocalZip, LocalHomePhone, PermAddress, PermAddress2, Perm_City, PermStateProvince, PermZip, PermHomePhone, email1, Email2, Birthdate, hispanic, Ethnicity, Gender, OriginCountry, Preferred_name) values  (@first,@middle, @last, @ssn, @la1, @la2, @lcity, @lstate, @lzip, @lphone, @pa1, @pa2, @pcity, @pstate, @pzip, @pphone, @email1, @email2, @birth, @hispanic, @ethnicity, @gender, @oCountry, @cell)"
+        db.bind("@first", txtFirstName.Text)
+        db.bind("@middle", txtMiddleName.Text)
+        db.bind("@last", txtLastName.Text)
+        db.bind("@ssn", txtSSN.Text)
+        db.bind("@la1", txtLAddress.Text)
+        db.bind("@la2", txtLADR2.Text)
+        db.bind("@lcity", txtLCity.Text)
+        db.bind("@lstate", cbxLState.Text)
+        db.bind("@lzip", txtLZipCode.Text)
+        db.bind("@lphone", Int16.TryParse(txtLphone.Text, lphone))
+        db.bind("@pa1", txtPAddress.Text)
+        db.bind("@pa2", txtpadr2.Text)
+        db.bind("@pcity", txtPCity.Text)
+        db.bind("@pstate", cbxPState.Text)
+        db.bind("@pzip", txtPZipCode.Text)
+        db.bind("@pphone", Int16.TryParse(txtpPhone.Text, pPhone))
+        db.bind("@email1", txtEmail.Text)
+        db.bind("@email2", txtEmail2.Text)
+        db.bind("@birth", txtBirthday1.Text)
+        db.bind("@hispanic", h)
+        db.bind("@ethnicity", eth)
+        db.bind("@gender", gen)
+        db.bind("@oCountry", txtOCountry.Text)
+        db.bind("@cell", txtCellPhone.Text)
+        db.execute()
+        getstudentID()
 
-        Dim command As New SqlCommand("INSERT StudentID = @StudID,First_Name = @first,Middle_Name = @middle,Last_Name = @last,SSN = @SSN,LocalAddress1 = @LocalAdd1,LocalAddress2 = @LocalAdd2,Local_City = @LocalCity,LocalStateProvince = @LocalStateProvince,LocalZip = @LocalZip,LocalHomePhone = @LocalHomePhone,PermAddress = @PermAdd1,PermAddress2 = @PermAdd2,Perm_City = @PermCity,PermStateProvince = @PermStateProvince,PermZip = @PermZip,PermHomePhone = @PermHomePhone,Email1 = @Email1,Email2 = @Email2,Birthdate = @birthday,Ethnicity = @ethnicity,Gender = @gender,OriginCountry = @origin,Preferred_name = @preferred INTO Student_Header", con)
+        db.sql = "INSERT INTO Studentapp (studentid) values (@sid)"
+        db.bind("@sid", sid)
+        db.execute()
 
-        command.Parameters.Add("@StudID", SqlDbType.Int).Value = txtStudentID.Text
-        command.Parameters.Add("@first", SqlDbType.VarChar).Value = txtFirstName.Text
-        command.Parameters.Add("@middle", SqlDbType.VarChar).Value = txtMiddleName.Text
-        command.Parameters.Add("@last", SqlDbType.VarChar).Value = txtLastName.Text
-        command.Parameters.Add("@SSN", SqlDbType.VarChar).Value = txtSSN.Text
-        'local address in form = Mailing address
-        command.Parameters.Add("@LocalAdd1", SqlDbType.VarChar).Value = txtLAddress.Text
-        'no second address line added to form to fit DB
-        command.Parameters.Add("@LocalAdd2", SqlDbType.VarChar).Value = txtLocalLine2
-        command.Parameters.Add("@LocalCity", SqlDbType.VarChar).Value = txtLCity.Text
-        'for the sake of this, province = county
-        'had to add county field for each address
-        command.Parameters.Add("@LocalStateProvince", SqlDbType.VarChar).Value = txtLocalCounty.Text
-        command.Parameters.Add("@LocalZip", SqlDbType.Int).Value = txtLZipCode.Text
-        command.Parameters.Add("@LocalHomePhone", SqlDbType.Int).Value = txtCurrentPhone.Text
-        command.Parameters.Add("@PermAdd1", SqlDbType.VarChar).Value = txtPAddress.Text
-        command.Parameters.Add("@PermAdd2", SqlDbType.VarChar).Value = txtPermLine2
-        command.Parameters.Add("@PermCity", SqlDbType.VarChar).Value = txtPCity.Text
-        command.Parameters.Add("@PermStateProvince", SqlDbType.VarChar).Value = txtPermCounty
-        command.Parameters.Add("@PermZip", SqlDbType.Int).Value = txtPZipCode.Text
-        command.Parameters.Add("@PermHomePhone", SqlDbType.Int).Value = txtPPhone.Text
-        command.Parameters.Add("@Email1", SqlDbType.VarChar).Value = txtEmail.Text
-        'no second email field originally, has been added to form to fit DB
-        command.Parameters.Add("@Email2", SqlDbType.VarChar).Value = txtEmail2.Text
-        command.Parameters.Add("@birthday", SqlDbType.DateTime).Value = txtBirthday1.Text
-        'why is this set to a 1 number int variable? will selected index work?
-        command.Parameters.Add("@ethnicity", SqlDbType.Int).Value = cbxEthnic.SelectedIndex
-        command.Parameters.Add("@gender", SqlDbType.Char).Value = cbxGender.SelectedText
-        command.Parameters.Add("@origin", SqlDbType.VarChar).Value = cbxOrigin.SelectedText
-        command.Parameters.Add("@preferred", SqlDbType.VarChar).Value = txtPreferred.Text
-        '---------------------NOTES-------------------------------
-        'data types vaerified and accurate 
+        db.sql = "INSERT INTO Status (studentID) Values (@sid)"
+        db.bind("@sid", sid)
+        db.execute()
+        'creates a username for the new user
+        Dim username As String = txtFirstName.Text.Substring(0, 3) & txtLastName.Text.Substring(0, 2)
+        db.sql = "INSERT INTO Usernames (username, studentID) values (@user, @sid)"
+        db.bind("@user", username)
+        db.bind("@sid", sid)
+        db.execute()
+        'creates a login
+        Dim password As String = "password"
+        db.sql = "INSERT INTO Logins (username, password) Values (@user, @pass)"
+        db.bind("@user", username)
+        db.bind("@pass", password)
+        db.execute()
+        MsgBox("Your user name is" & username & "and your password is " & password)
 
-        'exists on the form without a DB place...
-        'command.Parameters.Add("@citizenship", SqlDbType.VarChar).Value = cbxCitizenship.SelectedText
 
 
     End Sub
 
-    Private Sub cbxCitizenship_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxCitizenship.SelectedIndexChanged
+    Private Sub getstudentID()
+        Dim connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
+        Dim command As New SqlCommand("SELECT MAX(StudentID) FROM Student_Header", connection)
 
+        Dim adapter As New SqlDataAdapter(command)
+        Dim table As New DataTable()
+        adapter.Fill(table)
+        If table.Rows.Count() <= 0 Then
+
+        Else
+            sid = table.Rows(0).Item(0)
+        End If
     End Sub
 
     Private Sub btnConfirm2_Click(sender As Object, e As EventArgs) Handles btnConfirm2.Click
-        Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
-        'below connection needs proper table name to insert into
-        'Dim command As New SqlCommand("INSERT  INTO Student_", con)
 
-        'need to fix the data types!
-        'need name of coulms in table to data entry
-        'command.Parameters.Add("@year", SqlDbType.VarChar).Value = txtRequestYear.Text
-        'command.Parameters.Add("@beforewhen", SqlDbType.VarChar).Value = txtBefore_when.Text
-        'command.Parameters.Add("@enrolledwhen", SqlDbType.VarChar).Value = txtEnrolled_When.Text
-        'command.Parameters.Add("@session", SqlDbType.VarChar).Value = cbxSession.SelectedText
-        'command.Parameters.Add("@standing", SqlDbType.VarChar).Value = cbxStanding.SelectedText
+        getstudentID()
+
+        db.sql = "UPDATE StudentApp SET yearrequest = @year , session = @sess, previousapp = @previousapp, prevappdate = @prevappdate, enrolled = @enrolled, enrolleddate = @enrolleddate, ifenrolled = @ifenrolled, AssistantShipRequested = @assistant WHERE StudentID = @sid"
+        db.bind("@year", txtRequestYear.Text)
+        db.bind("@sess", Sess)
+        db.bind("@previousapp", before)
+        db.bind("@prevappdate", txtBefore_when.Text)
+        db.bind("@enrolled", attend)
+        db.bind("@enrolleddate", txtEnrolled_When.Text)
+        db.bind("@ifenrolled", previousStatus)
+        db.bind("@assistant", requestAssist)
+        db.bind("@sid", sid)
+        db.execute()
+
     End Sub
 
     Private Sub btnConfirm3_Click(sender As Object, e As EventArgs) Handles btnConfirm3.Click
-        Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
-        'below connection needs proper table name to insert into
-        'Dim command As New SqlCommand("INSERT DateApplied = @dateapplied, DateAccepted = @dateaccepted, DateEnrolled = @dateenrolled, DateDeclined = @datedeclined, LOR1 = @, LOR2, = @, LOR3 = @, TranscriptsTN = @, ResumeYN = @, AssistantShip = @, GMATVerbal, = @GMATverbal, GMATQuant = @GMATquant, GMATTotal = @GMATtotal, GMATPercent = @, GRE = @, TOEFL = @, UndergradIns = @, UndergradGPA = @, UndergradMa = @, Degree = @, DegreeDate = @, SecondDegree = @,SecondDegree = @, SecondDegree = @, YearsWorkEx = @ @, DegreeSeeki = @, StatusFTPT = @, NondegreeS = @, StudentID = @  INTO StudentApp", con)
+        db.sql = "UPDATE StudentApp set GMATVerbal = @gmatVerbal, GMATQuant = @gmatQ, GMATTotal = @gmatT, Gre = @gre, TOEFL = @toefl, UndergradInst = @UGI, UndergradGPA = @UGGPA, UndergradMajor = @UGMajor, Degree = @degree1, DegreeDate = @degree1Date, SecondDegree = @degree2, SecondDegreDate = @degree2date, SecondDegreeInst = @degree2Ins, GMATDate = @gmatdate, TOEFLDate = @toeflDate, GREDate = @gredate WHERE StudentID = @sid"
+        db.bind("@gmatVerbal", txtGMATVerbal.Text)
+        db.bind("@gmatQ", txtGMATQuant.Text)
+        db.bind("@gmatT", txtGMATTotal.Text)
+        db.bind("@gre", txtGRETotal.Text)
+        db.bind("@toefl", txtTOEFLTotal.Text)
+        db.bind("@UGI", txtCName1.Text)
+        db.bind("@UGGPA", txtUnderGPA.Text)
+        db.bind("@UGMajor", txtMajor1.Text)
+        db.bind("@degree1", txtDegree1.Text)
+        db.bind("@degree1Date", txtDegreeDate1.Text)
+        db.bind("@degree2", txtDegree2.Text)
+        db.bind("@degree2Date", txtDegreeDate2.Text)
+        db.bind("@degree2Ins", txtCName2.Text)
+        db.bind("@gmatdate", txtGMATDate.Text)
+        db.bind("@gredate", txtGREDate.Text)
+        db.bind("@toefldate", txtTOEFLDate.Text)
+        getstudentID()
 
-        'need to fix the data types!
-        'need name of coulms in table to data entry
-        'command.Parameters.Add("@GMATdate", SqlDbType.DateTime).Value = txtGMATDate.Text
-        'command.Parameters.Add("@TOEFLdate", SqlDbType.DateTime).Value = txtTOEFLDate.Text
-        'command.Parameters.Add("@TSEdate", SqlDbType.DateTime).Value = txtTSEDate.Text
+        db.bind("@sid", sid)
+        db.execute()
 
-        'command.Parameters.Add("@GMATverbal", SqlDbType.Int).Value = txtGMATVerbal.Text
-        'command.Parameters.Add("@GMATquant", SqlDbType.Int).Value = txtGMATQuant.Text
-        'command.Parameters.Add("@GMATtotal", SqlDbType.Int).Value = txtGMATTotal.Text
-        'command.Parameters.Add("@underGPA", SqlDbType.Decimal).Value = txtUnderGPA.Text
-        'command.Parameters.Add("@GPAsenior", SqlDbType.Decimal).Value = txtGPASenior.Text
 
-        'command.Parameters.Add("@cname1", SqlDbType.VarChar).Value = txtCName1.Text
-        'command.Parameters.Add("@CName2", SqlDbType.VarChar).Value = txtCName2.Text
 
-        'command.Parameters.Add("@CTo1", SqlDbType.VarChar).Value = txtCTo1.Text
-        'command.Parameters.Add("@CTo2", SqlDbType.VarChar).Value = txtCTo2.Text
-
-        'command.Parameters.Add("@CFrom1", SqlDbType.VarChar).Value = txtCFrom1.Text
-        'command.Parameters.Add("@CFrom2", SqlDbType.VarChar).Value = txtCFrom2.Text
-
-        'command.Parameters.Add("@CGPA1", SqlDbType.Decimal).Value = txtCGPA1.Text
-        'command.Parameters.Add("@CGPA2", SqlDbType.Decimal).Value = txtCGPA2.Text
-
-        'command.Parameters.Add("@HoursEarned1", SqlDbType.VarChar).Value = txtHoursEarned1.Text
-        'command.Parameters.Add("@HoursEarned2", SqlDbType.VarChar).Value = txtHoursEarned2.Text
-
-        'command.Parameters.Add("@Degree1", SqlDbType.VarChar).Value = txtDegree1.Text
-        'command.Parameters.Add("@Degree2", SqlDbType.VarChar).Value = txtDegree2.Text
-
-        'command.Parameters.Add("@Major1", SqlDbType.VarChar).Value = txtMajor1.Text
-        'command.Parameters.Add("@Major2", SqlDbType.VarChar).Value = txtMajor2.Text
-
-        'command.Parameters.Add("@DegreeDate1", SqlDbType.VarChar).Value = txtDegreeDate1.Text
-        'command.Parameters.Add("@DegreeDate2", SqlDbType.VarChar).Value = txtDegreeDate2.Text
-
-        'command.Parameters.Add("@CurrentHours1", SqlDbType.VarChar).Value = txtCurrentHours1.Text
-        'command.Parameters.Add("@CurrentHours2", SqlDbType.VarChar).Value = txtCurrentHours2.Text
 
 
 
     End Sub
 
-    Private Sub tabCredentials_Click(sender As Object, e As EventArgs) Handles tabCredentials.Click
-
-    End Sub
 
     Private Sub btnConfirm4_Click(sender As Object, e As EventArgs) Handles btnConfirm4.Click
         Dim con As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283f1759; Trusted_Connection=yes"}
@@ -186,7 +207,67 @@ Public Class frmAdd
 
     End Sub
 
-    Private Sub tabPersonalInfo_Click(sender As Object, e As EventArgs) Handles tabPersonalInfo.Click
+    Private Sub cbxEthnic_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxEthnic.SelectedIndexChanged
+        If cbxEthnic.SelectedIndex = 0 Then
+            eth = "Alaskan Native/Am Indian"
+        ElseIf cbxEthnic.SelectedIndex = 1 Then
+            eth = "Black/African American"
+        ElseIf cbxEthnic.SelectedIndex = 2 Then
+            eth = "Asian/Pacific Islander"
+        ElseIf cbxEthnic.SelectedIndex = 3 Then
+            eth = "White"
+        End If
+    End Sub
 
+    Private Sub cbxGender_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxGender.SelectedIndexChanged
+        If cbxGender.SelectedIndex = 0 Then
+            gen = "M"
+        ElseIf cbxGender.SelectedIndex = 1 Then
+            gen = "F"
+        ElseIf cbxGender.SelectedIndex = 2 Then
+            gen = "O"
+        End If
+    End Sub
+
+    Private Sub chkBefore_CheckedChanged(sender As Object, e As EventArgs) Handles chkBefore.CheckedChanged
+        If chkBefore.Checked = True Then
+            before = "Y"
+        ElseIf chkBefore.Checked = False Then
+            before = "N"
+        End If
+    End Sub
+
+    Private Sub chkEnrolled_CheckedChanged(sender As Object, e As EventArgs) Handles chkEnrolled.CheckedChanged
+        If chkEnrolled.Checked = True Then
+            attend = "Y"
+        ElseIf chkEnrolled.Checked = False Then
+            attend = "N"
+        End If
+    End Sub
+
+    Private Sub cbxSession_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxSession.SelectedIndexChanged
+        If cbxSession.SelectedIndex = 0 Then
+            sess = "SP"
+        ElseIf cbxSession.SelectedIndex = 1 Then
+            sess = "FA"
+        End If
+    End Sub
+
+    Private Sub cbxStanding_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxStanding.SelectedIndexChanged
+        If cbxStanding.SelectedIndex = 0 Then
+            previousStatus = "Graduate"
+        ElseIf cbxStanding.SelectedIndex = 1 Then
+            previousStatus = "Undergrad"
+        ElseIf cbxStanding.SelectedIndex = 2 Then
+            previousStatus = "Other"
+        End If
+    End Sub
+
+    Private Sub chkRequested_CheckedChanged(sender As Object, e As EventArgs) Handles chkRequested.CheckedChanged
+        If chkRequested.Checked = True Then
+            requestAssist = "Y"
+        ElseIf chkRequested.Checked = False Then
+            requestAssist = "N"
+        End If
     End Sub
 End Class
