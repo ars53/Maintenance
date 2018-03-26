@@ -37,6 +37,7 @@ Partial Class frmStudentWelcome
         '
         'btnView
         '
+        Me.btnView.Enabled = False
         Me.btnView.Location = New System.Drawing.Point(191, 257)
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(107, 23)
@@ -101,7 +102,7 @@ Partial Class frmStudentWelcome
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'frmStudentWelcome

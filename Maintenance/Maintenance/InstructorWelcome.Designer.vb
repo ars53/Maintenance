@@ -59,7 +59,8 @@ Partial Class frmInstructorWelcome
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(12, 309)
+        Me.btnAdd.Enabled = False
+        Me.btnAdd.Location = New System.Drawing.Point(17, 309)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(107, 23)
         Me.btnAdd.TabIndex = 2
@@ -68,6 +69,7 @@ Partial Class frmInstructorWelcome
         '
         'btnSearch
         '
+        Me.btnSearch.Enabled = False
         Me.btnSearch.Location = New System.Drawing.Point(130, 280)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(107, 23)
@@ -112,7 +114,7 @@ Partial Class frmInstructorWelcome
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'frmInstructorWelcome

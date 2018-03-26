@@ -46,6 +46,11 @@ Public Class frmStudentViewRec
         loadValues()
 
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Show()
+        Me.Close()
+    End Sub
     'Public Function getEnrollID() As String
     ' Return getEnrollValue("ClassName")
     ' End Function

@@ -29,17 +29,19 @@ Partial Class frmStudentViewRec
         Me.lblSSN = New System.Windows.Forms.Label()
         Me.lblSSND = New System.Windows.Forms.Label()
         Me.grpLocal = New System.Windows.Forms.GroupBox()
-        Me.lblLocalADRL = New System.Windows.Forms.Label()
-        Me.ldlLocalAdr = New System.Windows.Forms.Label()
-        Me.lblLocalADR2 = New System.Windows.Forms.Label()
-        Me.lblLocalADR2D = New System.Windows.Forms.Label()
-        Me.lblCityLocalL = New System.Windows.Forms.Label()
-        Me.lblCityDL = New System.Windows.Forms.Label()
-        Me.lblLocalState = New System.Windows.Forms.Label()
-        Me.lblStateI = New System.Windows.Forms.Label()
-        Me.lblZipI = New System.Windows.Forms.Label()
         Me.lblZipLocal = New System.Windows.Forms.Label()
+        Me.lblZipI = New System.Windows.Forms.Label()
+        Me.lblStateI = New System.Windows.Forms.Label()
+        Me.lblLocalState = New System.Windows.Forms.Label()
+        Me.lblCityDL = New System.Windows.Forms.Label()
+        Me.lblCityLocalL = New System.Windows.Forms.Label()
+        Me.lblLocalADR2D = New System.Windows.Forms.Label()
+        Me.lblLocalADR2 = New System.Windows.Forms.Label()
+        Me.ldlLocalAdr = New System.Windows.Forms.Label()
+        Me.lblLocalADRL = New System.Windows.Forms.Label()
         Me.grpPermAdr = New System.Windows.Forms.GroupBox()
+        Me.lblPermZip = New System.Windows.Forms.Label()
+        Me.lblPCountry = New System.Windows.Forms.Label()
         Me.lblPermCountry = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblPermState = New System.Windows.Forms.Label()
@@ -50,8 +52,7 @@ Partial Class frmStudentViewRec
         Me.lblPAdr2 = New System.Windows.Forms.Label()
         Me.lblPermADR1 = New System.Windows.Forms.Label()
         Me.lblPA1 = New System.Windows.Forms.Label()
-        Me.lblPCountry = New System.Windows.Forms.Label()
-        Me.lblPermZip = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.grpLocal.SuspendLayout()
         Me.grpPermAdr.SuspendLayout()
         Me.SuspendLayout()
@@ -129,77 +130,14 @@ Partial Class frmStudentViewRec
         Me.grpLocal.TabStop = False
         Me.grpLocal.Text = "Local Address"
         '
-        'lblLocalADRL
+        'lblZipLocal
         '
-        Me.lblLocalADRL.AutoSize = True
-        Me.lblLocalADRL.Location = New System.Drawing.Point(6, 16)
-        Me.lblLocalADRL.Name = "lblLocalADRL"
-        Me.lblLocalADRL.Size = New System.Drawing.Size(77, 13)
-        Me.lblLocalADRL.TabIndex = 0
-        Me.lblLocalADRL.Text = "Address Line 1"
-        '
-        'ldlLocalAdr
-        '
-        Me.ldlLocalAdr.AutoSize = True
-        Me.ldlLocalAdr.Location = New System.Drawing.Point(91, 16)
-        Me.ldlLocalAdr.Name = "ldlLocalAdr"
-        Me.ldlLocalAdr.Size = New System.Drawing.Size(24, 13)
-        Me.ldlLocalAdr.TabIndex = 1
-        Me.ldlLocalAdr.Text = "text"
-        '
-        'lblLocalADR2
-        '
-        Me.lblLocalADR2.AutoSize = True
-        Me.lblLocalADR2.Location = New System.Drawing.Point(6, 33)
-        Me.lblLocalADR2.Name = "lblLocalADR2"
-        Me.lblLocalADR2.Size = New System.Drawing.Size(77, 13)
-        Me.lblLocalADR2.TabIndex = 2
-        Me.lblLocalADR2.Text = "Address Line 2"
-        '
-        'lblLocalADR2D
-        '
-        Me.lblLocalADR2D.AutoSize = True
-        Me.lblLocalADR2D.Location = New System.Drawing.Point(91, 33)
-        Me.lblLocalADR2D.Name = "lblLocalADR2D"
-        Me.lblLocalADR2D.Size = New System.Drawing.Size(24, 13)
-        Me.lblLocalADR2D.TabIndex = 3
-        Me.lblLocalADR2D.Text = "text"
-        '
-        'lblCityLocalL
-        '
-        Me.lblCityLocalL.AutoSize = True
-        Me.lblCityLocalL.Location = New System.Drawing.Point(6, 50)
-        Me.lblCityLocalL.Name = "lblCityLocalL"
-        Me.lblCityLocalL.Size = New System.Drawing.Size(53, 13)
-        Me.lblCityLocalL.TabIndex = 4
-        Me.lblCityLocalL.Text = "Local City"
-        '
-        'lblCityDL
-        '
-        Me.lblCityDL.AutoSize = True
-        Me.lblCityDL.Location = New System.Drawing.Point(91, 50)
-        Me.lblCityDL.Name = "lblCityDL"
-        Me.lblCityDL.Size = New System.Drawing.Size(24, 13)
-        Me.lblCityDL.TabIndex = 5
-        Me.lblCityDL.Text = "text"
-        '
-        'lblLocalState
-        '
-        Me.lblLocalState.AutoSize = True
-        Me.lblLocalState.Location = New System.Drawing.Point(4, 67)
-        Me.lblLocalState.Name = "lblLocalState"
-        Me.lblLocalState.Size = New System.Drawing.Size(79, 13)
-        Me.lblLocalState.TabIndex = 6
-        Me.lblLocalState.Text = "State/Province"
-        '
-        'lblStateI
-        '
-        Me.lblStateI.AutoSize = True
-        Me.lblStateI.Location = New System.Drawing.Point(91, 67)
-        Me.lblStateI.Name = "lblStateI"
-        Me.lblStateI.Size = New System.Drawing.Size(24, 13)
-        Me.lblStateI.TabIndex = 7
-        Me.lblStateI.Text = "text"
+        Me.lblZipLocal.AutoSize = True
+        Me.lblZipLocal.Location = New System.Drawing.Point(91, 84)
+        Me.lblZipLocal.Name = "lblZipLocal"
+        Me.lblZipLocal.Size = New System.Drawing.Size(24, 13)
+        Me.lblZipLocal.TabIndex = 9
+        Me.lblZipLocal.Text = "text"
         '
         'lblZipI
         '
@@ -210,14 +148,77 @@ Partial Class frmStudentViewRec
         Me.lblZipI.TabIndex = 8
         Me.lblZipI.Text = "Zipcode"
         '
-        'lblZipLocal
+        'lblStateI
         '
-        Me.lblZipLocal.AutoSize = True
-        Me.lblZipLocal.Location = New System.Drawing.Point(91, 84)
-        Me.lblZipLocal.Name = "lblZipLocal"
-        Me.lblZipLocal.Size = New System.Drawing.Size(24, 13)
-        Me.lblZipLocal.TabIndex = 9
-        Me.lblZipLocal.Text = "text"
+        Me.lblStateI.AutoSize = True
+        Me.lblStateI.Location = New System.Drawing.Point(91, 67)
+        Me.lblStateI.Name = "lblStateI"
+        Me.lblStateI.Size = New System.Drawing.Size(24, 13)
+        Me.lblStateI.TabIndex = 7
+        Me.lblStateI.Text = "text"
+        '
+        'lblLocalState
+        '
+        Me.lblLocalState.AutoSize = True
+        Me.lblLocalState.Location = New System.Drawing.Point(4, 67)
+        Me.lblLocalState.Name = "lblLocalState"
+        Me.lblLocalState.Size = New System.Drawing.Size(79, 13)
+        Me.lblLocalState.TabIndex = 6
+        Me.lblLocalState.Text = "State/Province"
+        '
+        'lblCityDL
+        '
+        Me.lblCityDL.AutoSize = True
+        Me.lblCityDL.Location = New System.Drawing.Point(91, 50)
+        Me.lblCityDL.Name = "lblCityDL"
+        Me.lblCityDL.Size = New System.Drawing.Size(24, 13)
+        Me.lblCityDL.TabIndex = 5
+        Me.lblCityDL.Text = "text"
+        '
+        'lblCityLocalL
+        '
+        Me.lblCityLocalL.AutoSize = True
+        Me.lblCityLocalL.Location = New System.Drawing.Point(6, 50)
+        Me.lblCityLocalL.Name = "lblCityLocalL"
+        Me.lblCityLocalL.Size = New System.Drawing.Size(53, 13)
+        Me.lblCityLocalL.TabIndex = 4
+        Me.lblCityLocalL.Text = "Local City"
+        '
+        'lblLocalADR2D
+        '
+        Me.lblLocalADR2D.AutoSize = True
+        Me.lblLocalADR2D.Location = New System.Drawing.Point(91, 33)
+        Me.lblLocalADR2D.Name = "lblLocalADR2D"
+        Me.lblLocalADR2D.Size = New System.Drawing.Size(24, 13)
+        Me.lblLocalADR2D.TabIndex = 3
+        Me.lblLocalADR2D.Text = "text"
+        '
+        'lblLocalADR2
+        '
+        Me.lblLocalADR2.AutoSize = True
+        Me.lblLocalADR2.Location = New System.Drawing.Point(6, 33)
+        Me.lblLocalADR2.Name = "lblLocalADR2"
+        Me.lblLocalADR2.Size = New System.Drawing.Size(77, 13)
+        Me.lblLocalADR2.TabIndex = 2
+        Me.lblLocalADR2.Text = "Address Line 2"
+        '
+        'ldlLocalAdr
+        '
+        Me.ldlLocalAdr.AutoSize = True
+        Me.ldlLocalAdr.Location = New System.Drawing.Point(91, 16)
+        Me.ldlLocalAdr.Name = "ldlLocalAdr"
+        Me.ldlLocalAdr.Size = New System.Drawing.Size(24, 13)
+        Me.ldlLocalAdr.TabIndex = 1
+        Me.ldlLocalAdr.Text = "text"
+        '
+        'lblLocalADRL
+        '
+        Me.lblLocalADRL.AutoSize = True
+        Me.lblLocalADRL.Location = New System.Drawing.Point(6, 16)
+        Me.lblLocalADRL.Name = "lblLocalADRL"
+        Me.lblLocalADRL.Size = New System.Drawing.Size(77, 13)
+        Me.lblLocalADRL.TabIndex = 0
+        Me.lblLocalADRL.Text = "Address Line 1"
         '
         'grpPermAdr
         '
@@ -239,6 +240,24 @@ Partial Class frmStudentViewRec
         Me.grpPermAdr.TabIndex = 7
         Me.grpPermAdr.TabStop = False
         Me.grpPermAdr.Text = "Permanant Address"
+        '
+        'lblPermZip
+        '
+        Me.lblPermZip.AutoSize = True
+        Me.lblPermZip.Location = New System.Drawing.Point(94, 107)
+        Me.lblPermZip.Name = "lblPermZip"
+        Me.lblPermZip.Size = New System.Drawing.Size(24, 13)
+        Me.lblPermZip.TabIndex = 11
+        Me.lblPermZip.Text = "text"
+        '
+        'lblPCountry
+        '
+        Me.lblPCountry.AutoSize = True
+        Me.lblPCountry.Location = New System.Drawing.Point(6, 84)
+        Me.lblPCountry.Name = "lblPCountry"
+        Me.lblPCountry.Size = New System.Drawing.Size(43, 13)
+        Me.lblPCountry.TabIndex = 10
+        Me.lblPCountry.Text = "Country"
         '
         'lblPermCountry
         '
@@ -330,29 +349,21 @@ Partial Class frmStudentViewRec
         Me.lblPA1.TabIndex = 0
         Me.lblPA1.Text = "Address Line 1"
         '
-        'lblPCountry
+        'btnBack
         '
-        Me.lblPCountry.AutoSize = True
-        Me.lblPCountry.Location = New System.Drawing.Point(6, 84)
-        Me.lblPCountry.Name = "lblPCountry"
-        Me.lblPCountry.Size = New System.Drawing.Size(43, 13)
-        Me.lblPCountry.TabIndex = 10
-        Me.lblPCountry.Text = "Country"
-        '
-        'lblPermZip
-        '
-        Me.lblPermZip.AutoSize = True
-        Me.lblPermZip.Location = New System.Drawing.Point(94, 107)
-        Me.lblPermZip.Name = "lblPermZip"
-        Me.lblPermZip.Size = New System.Drawing.Size(24, 13)
-        Me.lblPermZip.TabIndex = 11
-        Me.lblPermZip.Text = "text"
+        Me.btnBack.Location = New System.Drawing.Point(13, 417)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBack.TabIndex = 8
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'frmStudentViewRec
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(508, 452)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.grpPermAdr)
         Me.Controls.Add(Me.grpLocal)
         Me.Controls.Add(Me.lblSSND)
@@ -402,4 +413,5 @@ Partial Class frmStudentViewRec
     Friend WithEvents lblPAdr2 As Label
     Friend WithEvents lblPermADR1 As Label
     Friend WithEvents lblPA1 As Label
+    Friend WithEvents btnBack As Button
 End Class

@@ -62,8 +62,7 @@ Public Class frmLogin
         txtPassword.Clear()
         txtUser.Clear()
 
-        radFaculty.Enabled = False
-        radStudent.Enabled = False
+
     End Sub
 
 
@@ -72,6 +71,10 @@ Public Class frmLogin
         MessageBox.Show("Please contact the University Office of the Registrar to create an Account.")
         Me.Dispose()
         Me.Close()
+
+    End Sub
+
+    Private Sub radFaculty_CheckedChanged(sender As Object, e As EventArgs) Handles radFaculty.CheckedChanged
 
     End Sub
 End Class
